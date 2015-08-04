@@ -1,0 +1,9 @@
+name: HALLo
+author: JarJarBings12
+version: 1.0.0.0
+main: ch.jarjarbings12.uprotectOLD.core.Core
+
+commands:
+  hallo:
+    description: hallo
+    usage: /<command>

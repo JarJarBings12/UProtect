@@ -1,0 +1,25 @@
+# Pleas verify that this settings are okay!
+# If they are okay, replace 'false' with 'true'
+enable: false
+
+database:
+  mysql:
+    host: default
+    port: 3306
+    user: default
+    pass: default
+    database: uprotect
+    
+dynmap:
+  enable:
+    support: false
+    markers:
+      prefix:
+        use: false
+        prefix: uprotect_
+      sufix:
+        use: false
+        sufix: _uprotect
+  
+
+

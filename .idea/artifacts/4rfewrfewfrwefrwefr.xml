@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="4rfewrfewfrwefrwefr">
+    <output-path>$PROJECT_DIR$/out/artifacts/4rfewrfewfrwefrwefr</output-path>
+    <root id="archive" name="4rfewrfewfrwefrwefr.jar">
+      <element id="module-output" name="UProtect" />
+    </root>
+  </artifact>
+</component>
