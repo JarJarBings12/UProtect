@@ -57,3 +57,6 @@ $RECYCLE.BIN/
 
 # Windows shortcuts
 *.lnk
+
+/src/ch/jarjarbings12/uprotect
+/src/ch/jarjarbings12/uprotect2
