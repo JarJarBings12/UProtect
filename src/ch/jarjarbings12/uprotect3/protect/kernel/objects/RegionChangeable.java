@@ -7,7 +7,9 @@ import org.bukkit.entity.Player;
 import java.util.UUID;
 
 /**
- * Created by tobias on 26.08.2015.
+ * @author JarJarBings12
+ * @creationDate 26.08.2015
+ * @since 1.0.0.0
  */
 public interface RegionChangeable
 {

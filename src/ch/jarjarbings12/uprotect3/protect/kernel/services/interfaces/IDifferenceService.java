@@ -8,7 +8,9 @@ import java.util.Set;
 import java.util.UUID;
 
 /**
- * Created by tobias on 29.08.2015.
+ * @author JarJarBings12
+ * @creationDate 29.08.2015
+ * @since 1.0.0.0
  */
 public interface IDifferenceService
 {

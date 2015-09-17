@@ -1,7 +1,9 @@
 package ch.jarjarbings12.uprotect3.protect.utils;
 
 /**
- * Created by tobias on 29.08.2015.
+ * @author JarJarBings12
+ * @creationDate 29.08.2015
+ * @since 1.0.0.0
  */
 public class ChunkVector
 {

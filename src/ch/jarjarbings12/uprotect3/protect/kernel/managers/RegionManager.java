@@ -5,7 +5,9 @@ import ch.jarjarbings12.uprotect3.protect.kernel.managers.index.RegionDatabase;
 import java.util.HashMap;
 
 /**
- * Created by tobias on 26.08.2015.
+ * @author JarJarBings12
+ * @creationDate 26.08.2015
+ * @since 1.0.0.0
  */
 public class RegionManager
 {

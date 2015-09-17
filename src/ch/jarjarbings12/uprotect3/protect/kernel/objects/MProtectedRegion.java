@@ -1,7 +1,7 @@
 package ch.jarjarbings12.uprotect3.protect.kernel.objects;
 
 import ch.jarjarbings12.uprotect3.core.UProtect;
-import ch.jarjarbings12.uprotect3.protect.flags.Flag;
+import ch.jarjarbings12.uprotect3.protect.FlagModule.low.Flag;
 import org.bukkit.Bukkit;
 import org.bukkit.World;
 import org.bukkit.util.BlockVector;
@@ -12,7 +12,9 @@ import java.util.UUID;
 import java.util.concurrent.CopyOnWriteArraySet;
 
 /**
- * Created by tobias on 08.08.2015.
+ * @author JarJarBings12
+ * @creationDate 08.08.2015
+ * @since 1.0.0.0
  */
 public class MProtectedRegion
 {
@@ -136,20 +138,20 @@ public class MProtectedRegion
         return this;
     }
 
-    public Set<Flag<?>> getFlags()
+    public Set<Flag> getFlags()
     {
         return this.protectedChunkRegion.getFlags();
     }
 
     public boolean hasFlag(String name) {
-        Iterator<Flag<?>> flags = this.protectedChunkRegion.getFlags().iterator();
+        Iterator<Flag> flags = this.protectedChunkRegion.getFlags().iterator();
 
         while (flags.hasNext())
             if (flags.next().getName().equals(name)) return true;
 
         return false;
     }
-    public MProtectedRegion addFlag(Flag<?> flag)
+    public MProtectedRegion addFlag(Flag flag)
     {
         if (hasFlag(flag.getName()))
             removeFlag(flag.getName());
@@ -164,7 +166,7 @@ public class MProtectedRegion
         return this;
     }
 
-    public MProtectedRegion setFlags(Set<Flag<?>> flags)
+    public MProtectedRegion setFlags(Set<Flag> flags)
     {
         this.protectedChunkRegion.setFlags(flags);
         return this;

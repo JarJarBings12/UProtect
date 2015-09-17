@@ -11,10 +11,18 @@ import java.util.Set;
 import java.util.UUID;
 
 /**
- * Created by tobias on 23.08.2015.
+ * @author JarJarBings12
+ * @creationDate 23.08.2015
+ * @since 1.0.0.0
  */
 public interface RegionIndex extends RegionChangeable, IDifferenceService
 {
+
+    boolean isProtected(Chunk chunk);
+
+    boolean isProtected(Location location);
+
+    boolean isProtected(Player player);
 
     /* get */
 

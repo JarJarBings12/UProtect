@@ -16,7 +16,9 @@ import org.bukkit.entity.Player;
 import java.util.*;
 
 /**
- * Created by tobias on 29.08.2015.
+ * @author JarJarBings12
+ * @creationDate 29.08.2015
+ * @since 1.1.0.0
  */
 public class RegionDatabase implements RegionIndex
 {
@@ -51,6 +53,24 @@ public class RegionDatabase implements RegionIndex
                 this.chunkUUIDIndex.put(new ChunkVector(pc.getX(), pc.getZ()), pcr.getUUID());
             });
         });
+    }
+
+    @Override
+    public boolean isProtected(Chunk chunk)
+    {
+        return chunkUUIDIndex.containsKey(new ChunkVector(chunk.getX(), chunk.getZ()));
+    }
+
+    @Override
+    public boolean isProtected(Location location)
+    {
+        return isProtected(location.getChunk());
+    }
+
+    @Override
+    public boolean isProtected(Player player)
+    {
+        return isProtected(player.getLocation());
     }
 
     @Override
@@ -190,7 +210,7 @@ public class RegionDatabase implements RegionIndex
     @Override
     public void save(ProtectedChunkRegion protectedChunkRegion)
     {
-        UProtect.getUProtect().getUProtectAPI().getDatabaseService().getRegionDatabase().saveRegion(protectedChunkRegion);
+       // UProtect.getUProtect().getUProtectAPI().getDatabaseService().getRegionDatabase().saveRegion(protectedChunkRegion);
     }
 
     @Override

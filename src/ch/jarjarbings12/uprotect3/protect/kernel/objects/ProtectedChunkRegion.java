@@ -1,6 +1,6 @@
 package ch.jarjarbings12.uprotect3.protect.kernel.objects;
 
-import ch.jarjarbings12.uprotect3.protect.flags.Flag;
+import ch.jarjarbings12.uprotect3.protect.FlagModule.low.Flag;
 
 import java.util.HashSet;
 import java.util.Iterator;
@@ -9,7 +9,9 @@ import java.util.UUID;
 import java.util.concurrent.CopyOnWriteArraySet;
 
 /**
- * Created by tobias on 03.08.2015.
+ * @author JarJarBings12
+ * @creationDate 03.08.2015
+ * @since 1.0.0.0
  */
 public class ProtectedChunkRegion
 {
@@ -20,9 +22,9 @@ public class ProtectedChunkRegion
     private Set<ProtectedChunk> protectedChunks = new HashSet<>();
     private Set<UUID> owners;
     private Set<UUID> members;
-    private Set<Flag<?>> flags;
+    private Set<Flag> flags;
 
-    public ProtectedChunkRegion(final String id, String name, String worldName, CopyOnWriteArraySet<ProtectedChunk> protectedChunks, CopyOnWriteArraySet<UUID> owners, CopyOnWriteArraySet<UUID> members, CopyOnWriteArraySet<Flag<?>> flags)
+    public ProtectedChunkRegion(final String id, String name, String worldName, CopyOnWriteArraySet<ProtectedChunk> protectedChunks, CopyOnWriteArraySet<UUID> owners, CopyOnWriteArraySet<UUID> members, CopyOnWriteArraySet<Flag> flags)
     {
         this.uuid = UUID.randomUUID();
         this.id = id;
@@ -158,13 +160,13 @@ public class ProtectedChunkRegion
         return;
     }
 
-    public Set<Flag<?>> getFlags()
+    public Set<Flag> getFlags()
     {
         return this.flags;
     }
 
     public boolean hasFlag(String name) {
-        Iterator<Flag<?>> flags = this.flags.iterator();
+        Iterator<Flag> flags = this.flags.iterator();
 
         while (flags.hasNext())
             if (flags.next().getName().equals(name)) return true;
@@ -172,7 +174,7 @@ public class ProtectedChunkRegion
         return false;
     }
 
-    public void addFlag(Flag<?> flag)
+    public void addFlag(Flag flag)
     {
         if (hasFlag(flag.getName()))
             removeFlag(flag.getName());
@@ -186,7 +188,7 @@ public class ProtectedChunkRegion
        return this.flags.removeIf(f -> f.getName().equals(name));
     }
 
-    public void setFlags(Set<Flag<?>> flags)
+    public void setFlags(Set<Flag> flags)
     {
         this.flags = flags;
         return;

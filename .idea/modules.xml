@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/UPro-Sqlite-Driver/UPro-Sqlite-Driver.iml" filepath="$PROJECT_DIR$/UPro-Sqlite-Driver/UPro-Sqlite-Driver.iml" />
       <module fileurl="file://$PROJECT_DIR$/UProtect.iml" filepath="$PROJECT_DIR$/UProtect.iml" />
     </modules>
   </component>

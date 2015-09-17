@@ -7,10 +7,6 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="library" name="worldguard-6.11" level="application" />
-    <orderEntry type="library" name="LWC-API-5.0.0-SNAPSHOT" level="application" />
-    <orderEntry type="library" name="LWC" level="application" />
-    <orderEntry type="library" name="dynmap-2.2" level="application" />
-    <orderEntry type="library" name="spigot-1.8.7" level="application" />
+    <orderEntry type="library" name="spigot-1.8.8" level="application" />
   </component>
 </module>
