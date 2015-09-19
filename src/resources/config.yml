@@ -2,7 +2,7 @@
 # If they are okay, replace 'false' with 'true'
 enable: false
 
-local: gearman
+local: german
 database:
   driver:
     id: upro-sqlite-driver

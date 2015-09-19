@@ -1,0 +1,7 @@
+Prefixes:
+
+[CORE] Core Class
+[ESM] Event Subscribe Module
+[DBS] Database Service
+[DSM] Driver Service Module
+[FMS] Flag Module Service
