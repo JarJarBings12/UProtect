@@ -1,6 +1,6 @@
 package ch.jarjarbings12.uprotect.protect.kernel.objects;
 
-import ch.jarjarbings12.uprotect.protect.kernel.flag.module.low.Flag;
+import ch.jarjarbings12.uprotect.protect.kernel.flags.module.low.Flag;
 
 import java.util.HashSet;
 import java.util.Iterator;

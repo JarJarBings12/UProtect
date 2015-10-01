@@ -1,5 +1,6 @@
 package ch.jarjarbings12.uprotect.protect.kernel.events.module.low;
 
+import ch.jarjarbings12.uprotect.protect.utils.exceptions.NotInUseException;
 import org.bukkit.event.Event;
 
 import java.util.UUID;
@@ -13,13 +14,13 @@ public abstract class AbstractEventSubscription implements BasicSubscription
 {
     public abstract void call(Event event);
 
-    public abstract UUID getSubscriberID();
+    public abstract UUID getSubscriberID() throws NotInUseException;
 
-    public void onSubscribe()
+    public void onSubscribe() throws NotInUseException
     {
     }
 
-    public void onUnsubscribe()
+    public void onUnsubscribe() throws NotInUseException
     {
     }
 }

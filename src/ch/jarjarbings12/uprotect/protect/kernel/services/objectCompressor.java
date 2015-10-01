@@ -19,7 +19,7 @@ public class objectCompressor implements compressor
     {
         try
         {
-            ByteArrayOutputStream byteArrayOutputStream = null;
+            ByteArrayOutputStream byteArrayOutputStream = new ByteArrayOutputStream();
             new ObjectOutputStream(new GZIPOutputStream(byteArrayOutputStream)).writeObject(object);
             return byteArrayOutputStream.toByteArray();
         }

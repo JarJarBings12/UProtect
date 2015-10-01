@@ -25,8 +25,6 @@ public class objectSerialize implements serialize
         {
             ObjectOutputStream oos = new ObjectOutputStream(baos);
             oos.writeObject(object);
-            oos.flush();
-            baos.flush();
         }
         catch (IOException e)
         {

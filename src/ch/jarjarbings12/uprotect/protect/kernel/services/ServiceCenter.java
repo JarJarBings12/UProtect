@@ -1,8 +1,9 @@
 package ch.jarjarbings12.uprotect.protect.kernel.services;
 
 import ch.jarjarbings12.uprotect.protect.kernel.events.SubscriptionManager;
-import ch.jarjarbings12.uprotect.protect.kernel.flag.module.high.FlagService;
+import ch.jarjarbings12.uprotect.protect.kernel.flags.module.high.FlagService;
 import ch.jarjarbings12.uprotect.protect.kernel.storage.DatabaseService;
+import ch.jarjarbings12.uprotect.protect.kernel.world.WorldServices;
 
 /**
  * @author JarJarBings12
@@ -15,6 +16,7 @@ public class ServiceCenter
     private SubscriptionManager subscriptionManager = new SubscriptionManager();
     private DatabaseService databaseService = new DatabaseService();
     private ObjectService objectService = new ObjectService();
+    private WorldServices worldServices = new WorldServices();
 
     public DatabaseService getDatabaseService()
     {
@@ -34,6 +36,11 @@ public class ServiceCenter
     public ObjectService getObjectService()
     {
         return this.objectService;
+    }
+
+    public WorldServices getWorldServices()
+    {
+        return worldServices;
     }
 
 }

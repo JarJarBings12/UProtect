@@ -22,4 +22,9 @@ public class RegionManager
     {
         this.worldIndex.put(world, regionDatabase);
     }
+
+    public void setup()
+    {
+
+    }
 }

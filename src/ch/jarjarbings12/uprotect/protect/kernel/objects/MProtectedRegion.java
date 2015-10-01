@@ -1,7 +1,7 @@
 package ch.jarjarbings12.uprotect.protect.kernel.objects;
 
 import ch.jarjarbings12.uprotect.core.UProtect;
-import ch.jarjarbings12.uprotect.protect.kernel.flag.module.low.Flag;
+import ch.jarjarbings12.uprotect.protect.kernel.flags.module.low.Flag;
 import org.bukkit.Bukkit;
 import org.bukkit.World;
 import org.bukkit.util.BlockVector;

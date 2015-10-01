@@ -6,5 +6,11 @@ local: german
 database:
   driver:
     id: upro-sqlite-driver
-
-
+    
+world:
+  chunk:
+    restore:
+      use: true
+      dont-record:
+        - NONE
+version: 5

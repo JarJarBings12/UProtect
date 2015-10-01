@@ -1,5 +1,7 @@
 package ch.jarjarbings12.uprotect.core;
 
+import ch.jarjarbings12.uprotect.protect.kernel.events.internal.ChunkGenSubscription;
+import ch.jarjarbings12.uprotect.protect.kernel.events.module.bukkit.ChunkEvents;
 import ch.jarjarbings12.uprotect.utils.eventtest;
 import org.bukkit.Bukkit;
 import org.bukkit.plugin.java.JavaPlugin;
@@ -25,14 +27,17 @@ public class UProtect extends JavaPlugin
         this.uProtectAPI = new UProtectAPI();
         this.getUProtectAPI().getServiceCenter().getDatabaseService().setup();
         this.getUProtectAPI().getServiceCenter().getFlagService().setup();
-        //evenListenerInitialize();
+        this.getUProtectAPI().getServiceCenter().getWorldServices().setup();
         Bukkit.getPluginManager().registerEvents(d, this);
+        Bukkit.getPluginManager().registerEvents(new ChunkEvents(), this);
+        this.getUProtectAPI().getServiceCenter().getSubscriptionManager().subscribe(200, new ChunkGenSubscription());
     }
 
     @Override
     public void onDisable()
     {
-
+        this.getUProtectAPI().getServiceCenter().getDatabaseService().shutdown();
+        this.getUProtectAPI().getServiceCenter().getWorldServices();
     }
 
     public static UProtect getUProtect()
@@ -57,6 +62,19 @@ public class UProtect extends JavaPlugin
             System.out.println("[UProtect][I] Dir path => plugins/UProtect/extensions");
         if (new File("plugins/UProtect/extensions/flags").mkdir())
             System.out.println("[UProtect][I] Dir path => plugins/UProtect/extensions/flags");
+        if (new File("plugins/UProtect/storage").mkdir())
+            System.out.println("[UProtect][I] Dir path => plugins/UProtect/storage");
+        if (new File("plugins/UProtect/storage/internal/world/chunk").mkdirs())
+            System.out.println("[UProtect][I] Dir path => plugins/UProtect/storage/internal/world/chunk");
+        try
+        {
+            if (new File("plugins/UProtect/storage/internal/world/chunk/cbs.db").createNewFile())
+                System.out.println("[UProtect][I] Create new file at path => plugins/UProtect/storage/internal/world/chunk/cbs.db");
+        }
+        catch (IOException e)
+        {
+            e.printStackTrace();
+        }
 
         resourceCopy("resources/config.yml", "plugins/UProtect/config.yml");
         resourceCopy("resources/languages/gearman.properties", "plugins/UProtect/i18n/gearman.properties");

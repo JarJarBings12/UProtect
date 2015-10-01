@@ -2,6 +2,8 @@ package ch.jarjarbings12.uprotect.protect.kernel.events;
 
 import ch.jarjarbings12.uprotect.protect.kernel.events.module.low.AbstractEventSubscription;
 import ch.jarjarbings12.uprotect.protect.kernel.events.module.low.Events;
+import ch.jarjarbings12.uprotect.protect.kernel.flags.module.low.AFlagEventSupport;
+import ch.jarjarbings12.uprotect.protect.utils.exceptions.NotInUseException;
 import org.bukkit.event.Event;
 
 import java.util.HashMap;
@@ -20,6 +22,10 @@ public class SubscriptionManager
     private HashMap<Integer, Set<AbstractEventSubscription>> subscriptions = new HashMap<>();
     private HashMap<UUID, Integer> subscriptionsByUUID = new HashMap<>();
 
+    public SubscriptionManager()
+    {
+    }
+
     public void subscribe(Events event, AbstractEventSubscription abstractEventSubscription)
     {
         subscribe(event.getID(), abstractEventSubscription);
@@ -27,15 +33,27 @@ public class SubscriptionManager
 
     public void subscribe(int eventID, AbstractEventSubscription abstractEventSubscription)
     {
-        System.out.println(String.format("[UProtect][ESM][->] Register event for %s subscriber id %s", Events.getNameByID(eventID), abstractEventSubscription.getSubscriberID().toString()));
-        if (subscriptions.containsKey(eventID))
+        try
         {
-            subscriptions.get(eventID).add(abstractEventSubscription);
-            return;
+            if (!(abstractEventSubscription instanceof AFlagEventSupport))
+                System.out.println(String.format("[UProtect][ESM][->] Register event for %s subscriber id %s", Events.getNameByID(eventID), abstractEventSubscription.getSubscriberID().toString()));
         }
-        Set<AbstractEventSubscription> temp = new HashSet<>();
-        temp.add(abstractEventSubscription);
-        subscriptions.put(eventID, temp);
+        catch (NotInUseException e)
+        { e.printStackTrace(); }
+
+        if (!subscriptions.containsKey(eventID))
+        {
+            Set<AbstractEventSubscription> temp = new HashSet<>();
+            subscriptions.put(eventID, temp);
+        }
+        subscriptions.get(eventID).add(abstractEventSubscription);
+
+        try
+        {
+            if (!(abstractEventSubscription instanceof AFlagEventSupport))
+                abstractEventSubscription.onSubscribe();
+        } catch (NotInUseException e)
+        { e.printStackTrace(); }
         return;
     }
 
@@ -44,11 +62,6 @@ public class SubscriptionManager
         unsubscribe(event.getID(), uuid);
     }
 
-    public void unsubscribe(int eventID, UUID uuid)
-    {
-        subscriptions.get(eventID).removeIf(sub -> sub.getSubscriberID() == uuid);
-        return;
-    }
 
     public void unsubscribe(Events event, Set<UUID> uuids)
     {
@@ -57,11 +70,46 @@ public class SubscriptionManager
 
     public void unsubscribe(int eventID, Set<UUID> uuids)
     {
-        uuids.forEach(uuid -> subscriptions.get(eventID).removeIf(sub -> sub.getSubscriberID() == uuid));
+        uuids.forEach(uuid -> {
+            unsubscribe(eventID, uuid);
+        });
+    }
+
+    public void unsubscribe(int eventID, UUID uuid)
+    {
+        subscriptions.get(eventID).removeIf(sub -> {
+            try
+            {
+                if (sub.getSubscriberID() == uuid)
+                {
+                    sub.onUnsubscribe();
+                    return true;
+                }
+                return false;
+            }
+            catch (NotInUseException e)
+            {
+                e.printStackTrace();
+            }
+            return false;
+        });
+        return;
     }
 
     public void callSubscribers(int eventID, Event event)
     {
         subscriptions.get(eventID).forEach(e -> e.call(event));
+    }
+
+    public boolean hasSubscribers()
+    {
+        return !subscriptions.isEmpty();
+    }
+
+    public Set<AbstractEventSubscription> getSubscribersFor(int eventID)
+    {
+        if (!subscriptions.containsKey(eventID) && Events.getEventByID(eventID) != null)
+            subscriptions.put(eventID, new HashSet<>());
+        return subscriptions.get(eventID);
     }
 }

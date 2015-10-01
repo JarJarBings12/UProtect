@@ -1,9 +1,9 @@
 package ch.jarjarbings12.uprotect.utils;
 
-import ch.jarjarbings12.uprotect.protect.kernel.flag.module.high.BooleanFlag;
-import ch.jarjarbings12.uprotect.protect.kernel.flag.module.low.Flag;
-import ch.jarjarbings12.uprotect.protect.kernel.flag.module.low.flagCall;
-import ch.jarjarbings12.uprotect.protect.kernel.flag.module.low.support.FlagExtension;
+import ch.jarjarbings12.uprotect.protect.kernel.flags.module.high.BooleanFlag;
+import ch.jarjarbings12.uprotect.protect.kernel.flags.module.low.Flag;
+import ch.jarjarbings12.uprotect.protect.kernel.flags.module.low.flagCall;
+import ch.jarjarbings12.uprotect.protect.kernel.flags.module.low.support.FlagExtension;
 import org.bukkit.event.Event;
 import org.bukkit.event.block.BlockBreakEvent;
 import org.bukkit.event.block.BlockPlaceEvent;
@@ -54,4 +54,5 @@ public class test extends FlagExtension
     {
         register(build, 1);
     }
+
 }
