@@ -2,7 +2,6 @@ package ch.jarjarbings12.uprotect.protect.kernel.objects;
 
 
 import ch.jarjarbings12.uprotect.protect.kernel.services.interfaces.IDifferenceService;
-import ch.jarjarbings12.uprotect.protect.kernel.services.objects.IndexDifference;
 import org.bukkit.Chunk;
 import org.bukkit.Location;
 import org.bukkit.entity.Player;
@@ -24,6 +23,12 @@ public interface RegionIndex extends RegionChangeable, IDifferenceService
 
     boolean isProtected(Player player);
 
+    /* exist */
+
+    boolean existRegion(String id);
+
+    boolean existRegion(UUID uuid);
+
     /* get */
 
     ProtectedChunkRegion getRegion(UUID uuid);
@@ -38,7 +43,17 @@ public interface RegionIndex extends RegionChangeable, IDifferenceService
 
     Set<ProtectedChunkRegion> getAllRegions();
 
-    Set<IndexDifference> getAllChangedRegions();
+    /* Remove */
+
+    void removeRegion(UUID uuid);
+
+    void removeRegion(String id);
+
+    void removeRegion(Chunk chunk);
+
+    void removeRegion(Location location);
+
+    void removeRegion(Player player);
 
     /* set */
 

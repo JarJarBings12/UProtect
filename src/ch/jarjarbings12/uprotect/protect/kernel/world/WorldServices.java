@@ -52,7 +52,7 @@ public class WorldServices
 
         if (!configuration.getBoolean("world.chunk.restore.use"))
         {
-            System.out.println("[UProtect][->]Disable restore Service.");
+            System.out.println("[UProtect][CRS][->] Disable restore Service.");
             return;
         }
 

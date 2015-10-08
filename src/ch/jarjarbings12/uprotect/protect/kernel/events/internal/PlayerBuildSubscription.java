@@ -22,6 +22,6 @@ public class PlayerBuildSubscription extends AbstractEventSubscription
     @Override
     public UUID getSubscriberID() throws NotInUseException
     {
-        return null;
+        return UUID.fromString("9be14ada-5c83-426e-a242-d96bda1ff4eb");
     }
 }

@@ -1,7 +1,14 @@
 package ch.jarjarbings12.uprotect.protect.kernel.objects;
 
+import ch.jarjarbings12.uprotect.core.UProtect;
 import ch.jarjarbings12.uprotect.protect.kernel.flags.module.low.Flag;
+import ch.jarjarbings12.uprotect.protect.kernel.managers.index.RegionDatabase;
+import ch.jarjarbings12.uprotect.protect.kernel.services.objects.DifferenceType;
+import ch.jarjarbings12.uprotect.protect.utils.exceptions.UnknownWorldException;
+import org.bukkit.Bukkit;
+import org.bukkit.World;
 
+import java.io.Serializable;
 import java.util.HashSet;
 import java.util.Iterator;
 import java.util.Set;
@@ -13,23 +20,23 @@ import java.util.concurrent.CopyOnWriteArraySet;
  * @creationDate 03.08.2015
  * © 2015 JarJarBings12
  */
-public class ProtectedChunkRegion
+public class ProtectedChunkRegion implements Serializable
 {
     private final UUID uuid;
     private final String id;
+    private final UUID world;
     private String name;
-    private final String world;
     private Set<ProtectedChunk> protectedChunks = new HashSet<>();
     private Set<UUID> owners;
     private Set<UUID> members;
     private Set<Flag> flags;
 
-    public ProtectedChunkRegion(final String id, String name, String worldName, CopyOnWriteArraySet<ProtectedChunk> protectedChunks, CopyOnWriteArraySet<UUID> owners, CopyOnWriteArraySet<UUID> members, CopyOnWriteArraySet<Flag> flags)
+    public ProtectedChunkRegion(final String id, String name, UUID worldUUID, CopyOnWriteArraySet<ProtectedChunk> protectedChunks, CopyOnWriteArraySet<UUID> owners, CopyOnWriteArraySet<UUID> members, CopyOnWriteArraySet<Flag> flags)
     {
         this.uuid = UUID.randomUUID();
         this.id = id;
         this.name = name;
-        this.world = worldName;
+        this.world = worldUUID;
         this.protectedChunks = protectedChunks;
         this.owners = owners;
         this.members = members;
@@ -51,14 +58,15 @@ public class ProtectedChunkRegion
         return this.name;
     }
 
-    public final String getWorld()
+    public final World getWorld()
     {
-        return this.world;
+        return Bukkit.getWorld(world);
     }
 
     public void setName(String name)
     {
         this.name = name;
+        applyChanges();
         return;
     }
 
@@ -75,17 +83,22 @@ public class ProtectedChunkRegion
     public void addProtectedChunk(ProtectedChunk protectedChunk)
     {
         this.protectedChunks.add(protectedChunk);
+        applyChanges();
         return;
     }
 
     public boolean removeProtectedChunk(int x, int z)
     {
-        return this.protectedChunks.removeIf(pc -> pc.getX() == x && pc.getZ() == z);
+        boolean var1 = this.protectedChunks.removeIf(pc -> pc.getX() == x && pc.getZ() == z);
+        if (var1)
+            applyChanges();
+        return var1;
     }
 
     public void setProtectedChunks(CopyOnWriteArraySet<ProtectedChunk> protectedChunks)
     {
         this.protectedChunks = protectedChunks;
+        applyChanges();
         return;
     }
 
@@ -122,13 +135,15 @@ public class ProtectedChunkRegion
     {
         if (!isOwner(uuid))
             return false;
-
-        return this.owners.remove(uuid);
+        this.owners.remove(uuid);
+        applyChanges();
+        return true;
     }
 
     public void setOwners(CopyOnWriteArraySet<UUID> owners)
     {
         this.owners = owners;
+        applyChanges();
         return;
     }
 
@@ -143,6 +158,7 @@ public class ProtectedChunkRegion
             return;
 
         this.members.add(uuid);
+        applyChanges();
         return;
     }
 
@@ -150,13 +166,15 @@ public class ProtectedChunkRegion
     {
         if (!isMember(uuid))
             return false;
-
-        return this.members.remove(uuid);
+        this.members.remove(uuid);
+        applyChanges();
+        return true;
     }
 
     public void setMembers(CopyOnWriteArraySet<UUID> members)
     {
         this.members = members;
+        applyChanges();
         return;
     }
 
@@ -181,6 +199,7 @@ public class ProtectedChunkRegion
         if (hasFlag(flag.getFlagID()))
             removeFlag(flag.getFlagID());
         this.flags.add(flag);
+        applyChanges();
         return;
     }
 
@@ -191,7 +210,10 @@ public class ProtectedChunkRegion
 
     public boolean removeFlag(UUID flagID)
     {
-        return this.flags.removeIf(f -> f.getFlagID().equals(flagID));
+        boolean var1 = this.flags.removeIf(f -> f.getFlagID().equals(flagID));
+        if (var1)
+            applyChanges();
+        return var1;
     }
 
     public void setFlags(Set<Flag> flags)
@@ -200,4 +222,16 @@ public class ProtectedChunkRegion
         return;
     }
 
+    public RegionDatabase getRegionDatabase() throws UnknownWorldException
+    {
+        return UProtect.getUProtect().getUProtectAPI().getRegionManager().getRegionDatabase(world);
+    }
+
+    protected void applyChanges()
+    {
+        try
+        { getRegionDatabase().addDifference(this, DifferenceType.CHANGED); }
+        catch (UnknownWorldException e)
+        { e.printStackTrace(); }
+    }
 }

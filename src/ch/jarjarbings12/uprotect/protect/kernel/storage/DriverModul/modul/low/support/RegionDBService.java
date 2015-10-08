@@ -1,6 +1,5 @@
 package ch.jarjarbings12.uprotect.protect.kernel.storage.DriverModul.modul.low.support;
 
-import ch.jarjarbings12.uprotect.protect.kernel.managers.RegionManager;
 import ch.jarjarbings12.uprotect.protect.kernel.managers.index.RegionDatabase;
 import ch.jarjarbings12.uprotect.protect.kernel.objects.ProtectedChunkRegion;
 import org.bukkit.Chunk;
@@ -17,13 +16,6 @@ import java.util.UUID;
  */
 public interface RegionDBService
 {
-
-    /**
-     * Save region manager
-     **/
-
-    void save(RegionManager regionManager);
-
     /**
      * Save region database/s
      **/
@@ -52,7 +44,11 @@ public interface RegionDBService
 
     RegionDatabase load(Chunk chunk);
 
+    RegionDatabase load(UUID worldUUID);
+
     RegionDatabase load(String worldName);
+
+    boolean isWorldNew(World world);
 
     /**
      * Fetch single region by location.
@@ -87,4 +83,30 @@ public interface RegionDBService
     ProtectedChunkRegion getRegion(Location location, String ID);
 
     ProtectedChunkRegion getRegion(Chunk chunk, String ID);
+
+    /**
+     * Remove by UUID
+     **/
+
+    void removeRegion(Player player, UUID regionUUID);
+
+    void removeRegion(World world, UUID regionUUID);
+
+    void removeRegion(Location location, UUID regionUUID);
+
+    void removeRegion(Chunk chunk, UUID regionUUID);
+
+    void removeRegion(UUID worldUUID, UUID regionUUID);
+
+    /**
+     * Remove by ID
+     **/
+
+    void removeRegion(Player player, String ID);
+
+    void removeRegion(World world, String ID);
+
+    void removeRegion(Location location, String ID);
+
+    void removeRegion(Chunk chunk, String ID);
 }

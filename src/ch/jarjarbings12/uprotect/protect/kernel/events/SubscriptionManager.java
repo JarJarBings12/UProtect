@@ -98,7 +98,9 @@ public class SubscriptionManager
 
     public void callSubscribers(int eventID, Event event)
     {
-        subscriptions.get(eventID).forEach(e -> e.call(event));
+        Set<AbstractEventSubscription> temp = getSubscribersFor(eventID);
+        if (!temp.isEmpty())
+            temp.forEach(e -> e.call(event));
     }
 
     public boolean hasSubscribers()

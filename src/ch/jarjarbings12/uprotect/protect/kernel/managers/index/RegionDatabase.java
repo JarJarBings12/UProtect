@@ -31,6 +31,9 @@ public class RegionDatabase implements RegionIndex
     private HashMap<String, UUID> nameUUIDIndex = new HashMap<>();
     private HashMap<ChunkVector, UUID> chunkUUIDIndex = new HashMap<>();
 
+    public RegionDatabase()
+    {}
+
     public RegionDatabase(Set<byte[]> byteArrays)
     {
         ObjectService objectService = UProtect.getUProtect().getUProtectAPI().getServiceCenter().getObjectService();
@@ -61,7 +64,7 @@ public class RegionDatabase implements RegionIndex
     @Override
     public boolean isProtected(Chunk chunk)
     {
-        return chunkUUIDIndex.containsKey(new ChunkVector(chunk.getX(), chunk.getZ()));
+        return chunkUUIDIndex.keySet().stream().filter(key -> key.Z == chunk.getZ() && key.X == chunk.getX()).findFirst().isPresent();
     }
 
     @Override
@@ -74,6 +77,18 @@ public class RegionDatabase implements RegionIndex
     public boolean isProtected(Player player)
     {
         return isProtected(player.getLocation());
+    }
+
+    @Override
+    public boolean existRegion(String id)
+    {
+        return nameUUIDIndex.containsKey(id);
+    }
+
+    @Override
+    public boolean existRegion(UUID uuid)
+    {
+        return uuidIDIndex.containsKey(uuid);
     }
 
     @Override
@@ -114,9 +129,37 @@ public class RegionDatabase implements RegionIndex
     }
 
     @Override
-    public Set<IndexDifference> getAllChangedRegions()
+    public void removeRegion(UUID uuid)
     {
-        return new HashSet<>(this.indexDifferences.values());
+        addDifference(getRegion(uuid), DifferenceType.REMOVED);
+        this.nameUUIDIndex.remove(getRegionID(uuid));
+        this.uuidIDIndex.remove(uuid);
+        this.index.remove(uuid);
+        this.chunkUUIDIndex.entrySet().removeIf(entry -> entry.getValue().equals(uuid));
+    }
+
+    @Override
+    public void removeRegion(String id)
+    {
+        removeRegion(getRegionUUID(id));
+    }
+
+    @Override
+    public void removeRegion(Chunk chunk)
+    {
+        removeRegion(getRegionUUID(chunk));
+    }
+
+    @Override
+    public void removeRegion(Location location)
+    {
+        removeRegion(getRegionUUID(location));
+    }
+
+    @Override
+    public void removeRegion(Player player)
+    {
+        removeRegion(getRegionUUID(player));
     }
 
     @Override
@@ -124,13 +167,24 @@ public class RegionDatabase implements RegionIndex
     {
         Validate.notNull(uuid);
         Validate.notNull(protection);
-        if (!this.indexDifferences.containsKey(uuid))
+        if (!this.uuidIDIndex.containsKey(protection.getUUID()))
         {
             this.index.put(uuid, protection);
+            this.uuidIDIndex.put(protection.getUUID(), protection.getId());
+            this.nameUUIDIndex.put(protection.getId(), uuid);
+            protection.getProtectedChunks().forEach(protectedChunk -> {
+                chunkUUIDIndex.put(new ChunkVector(protectedChunk.getX(), protectedChunk.getZ()), protection.getUUID());
+            });
+        }
+
+        if (this.indexDifferences.containsKey(protection.getUUID()))
+        {
+            this.indexDifferences.get(uuid).setRegion(protection);
+            this.indexDifferences.get(uuid).setDifferenceType(DifferenceType.CHANGED);
             return;
         }
-        this.indexDifferences.get(uuid).setRegion(protection);
-        this.indexDifferences.get(uuid).setDifferenceType(DifferenceType.SET);
+        this.indexDifferences.put(uuid, new IndexDifference(protection, DifferenceType.ADDED));
+        return;
     }
 
     @Override
@@ -168,7 +222,7 @@ public class RegionDatabase implements RegionIndex
     public UUID getRegionUUID(Chunk chunk)
     {
         Validate.notNull(chunk);
-        return chunkUUIDIndex.get(new ChunkVector(chunk.getX(), chunk.getZ()));
+        return chunkUUIDIndex.entrySet().stream().filter(entry -> entry.getKey().Z == chunk.getZ() && entry.getKey().X == chunk.getX()).findFirst().get().getValue();
     }
 
     @Override
@@ -212,7 +266,7 @@ public class RegionDatabase implements RegionIndex
     @Override
     public void save(ProtectedChunkRegion protectedChunkRegion)
     {
-        // UProtect.getUProtect().getUProtectAPI().getDatabaseService().getRegionDatabase().saveRegion(protectedChunkRegion);
+        UProtect.getUProtect().getUProtectAPI().getServiceCenter().getDatabaseService().getDriverServices().getRegionDBService().save(protectedChunkRegion);
     }
 
     @Override

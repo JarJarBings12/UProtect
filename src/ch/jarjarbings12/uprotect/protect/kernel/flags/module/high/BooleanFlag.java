@@ -42,12 +42,6 @@ public class BooleanFlag extends Flag implements ValueFlag<Boolean>, PermissionF
     }
 
     @Override
-    public String getFlagTag()
-    {
-        return null;
-    }
-
-    @Override
     public void eventTriggeredCall(Event event)
     {
         callFlag(event);

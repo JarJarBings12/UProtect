@@ -18,6 +18,6 @@ public class UnknownWorldException extends Exception
 
     public UnknownWorldException(String world)
     {
-        super(String.format("The %s hello don't exist.", world));
+        super(String.format("The World %s don't exist.", world));
     }
 }

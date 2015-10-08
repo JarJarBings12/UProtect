@@ -3,6 +3,7 @@ package ch.jarjarbings12.uprotect.protect.kernel.flags.module.low;
 import ch.jarjarbings12.uprotect.protect.utils.exceptions.NotInUseException;
 import org.bukkit.event.Event;
 
+import java.io.Serializable;
 import java.util.UUID;
 
 /**
@@ -10,13 +11,11 @@ import java.util.UUID;
  * @creationDate 05.09.2015
  * © 2015 JarJarBings12
  */
-public abstract class Flag extends AFlagEventSupport
+public abstract class Flag extends AFlagEventSupport implements Serializable
 {
     public abstract UUID getFlagID();
 
     public abstract String getName();
-
-    public abstract String getFlagTag();
 
     public void eventTriggeredCall(Event event)
     {

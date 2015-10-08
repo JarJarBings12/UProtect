@@ -4,6 +4,7 @@ import ch.jarjarbings12.uprotect.core.UProtect;
 import ch.jarjarbings12.uprotect.protect.kernel.events.module.low.AbstractEventSubscription;
 import ch.jarjarbings12.uprotect.protect.kernel.managers.index.RegionDatabase;
 import ch.jarjarbings12.uprotect.protect.kernel.objects.ProtectedChunkRegion;
+import ch.jarjarbings12.uprotect.protect.utils.exceptions.UnknownWorldException;
 import org.bukkit.Location;
 import org.bukkit.event.Event;
 import org.bukkit.event.block.BlockEvent;
@@ -41,7 +42,11 @@ public class FlagCallerService extends AbstractEventSubscription
     public void call(Event event)
     {
         Location location = getLocation(event);
-        RegionDatabase db = UProtect.getUProtect().getUProtectAPI().getRegionManager().getRegionDatabase(getLocation(event).getWorld().getName());
+        RegionDatabase db = null;
+        try
+        { db = UProtect.getUProtect().getUProtectAPI().getRegionManager().getRegionDatabase(getLocation(event).getWorld().getName()); }
+        catch (UnknownWorldException e)
+        { e.printStackTrace(); }
 
         if (db.isProtected(location))
         {

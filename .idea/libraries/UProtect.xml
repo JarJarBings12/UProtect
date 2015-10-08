@@ -1,6 +1,8 @@
 <component name="libraryTable">
   <library name="UProtect">
-    <CLASSES />
+    <CLASSES>
+      <root url="jar://$USER_HOME$/Desktop/UNSER-MINECRAFT.DE ETST/plugins/UProtect.jar!/" />
+    </CLASSES>
     <JAVADOC />
     <SOURCES />
   </library>

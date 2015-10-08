@@ -2,10 +2,12 @@ package ch.jarjarbings12.uprotect.protect.kernel.objects;
 
 import ch.jarjarbings12.uprotect.core.UProtect;
 import ch.jarjarbings12.uprotect.protect.kernel.flags.module.low.Flag;
+import ch.jarjarbings12.uprotect.protect.utils.exceptions.UnknownWorldException;
 import org.bukkit.Bukkit;
 import org.bukkit.World;
 import org.bukkit.util.BlockVector;
 
+import java.io.Serializable;
 import java.util.Iterator;
 import java.util.Set;
 import java.util.UUID;
@@ -16,15 +18,16 @@ import java.util.concurrent.CopyOnWriteArraySet;
  * @creationDate 08.08.2015
  * © 2015 JarJarBings12
  */
-public class MProtectedRegion
+public class MProtectedRegion implements Serializable
 {
+    //TODO
     private final ProtectedChunkRegion protectedChunkRegion;
     private final World world;
 
     public MProtectedRegion(final ProtectedChunkRegion protectedChunkRegion)
     {
         this.protectedChunkRegion = protectedChunkRegion;
-        this.world = Bukkit.getServer().getWorld(protectedChunkRegion.getWorld());
+        this.world = Bukkit.getServer().getWorld(protectedChunkRegion.getUUID());
     }
 
     public ProtectedChunkRegion getSnapshot()
@@ -34,7 +37,10 @@ public class MProtectedRegion
 
     public void update()
     {
-        UProtect.getUProtect().getUProtectAPI().getRegionManager().getRegionDatabase(world.getName()).setRegion(protectedChunkRegion.getUUID(), protectedChunkRegion);
+        try
+        { UProtect.getUProtect().getUProtectAPI().getRegionManager().getRegionDatabase(world.getName()).setRegion(protectedChunkRegion.getUUID(), protectedChunkRegion); }
+        catch (UnknownWorldException e)
+        { e.printStackTrace(); }
     }
 
     public Set<ProtectedChunk> getProtectedChunks()
@@ -44,7 +50,7 @@ public class MProtectedRegion
 
     public MProtectedRegion addProtectedChunk(BlockVector vector)
     {
-        this.protectedChunkRegion.addProtectedChunk(new ProtectedChunk(vector.getBlockX(), vector.getBlockZ(), world.getChunkAt(vector.getBlockX(), vector.getBlockZ())));
+        this.protectedChunkRegion.addProtectedChunk(new ProtectedChunk(vector.getBlockX(), vector.getBlockZ()));
         return this;
     }
 

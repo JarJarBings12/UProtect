@@ -1,23 +1,21 @@
 package ch.jarjarbings12.uprotect.protect.kernel.objects;
 
-import org.bukkit.Chunk;
+import java.io.Serializable;
 
 /**
  * @author JarJarBings12
  * @creationDate 03.08.2015
  * © 2015 JarJarBings12
  */
-public class ProtectedChunk
+public class ProtectedChunk implements Serializable
 {
     private final int X;
     private final int Z;
-    private final Chunk chunk;
 
-    public ProtectedChunk(final int X, final int Z, final Chunk chunk)
+    public ProtectedChunk(final int X, final int Z)
     {
         this.X = X;
         this.Z = Z;
-        this.chunk = chunk;
     }
 
     public int getX()
@@ -28,10 +26,5 @@ public class ProtectedChunk
     public int getZ()
     {
         return this.Z;
-    }
-
-    public Chunk getChunk()
-    {
-        return this.chunk;
     }
 }

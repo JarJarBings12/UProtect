@@ -1,12 +1,11 @@
 package ch.jarjarbings12.uprotect.protect.kernel.flags.module.high;
 
 import ch.jarjarbings12.uprotect.core.UProtect;
-import ch.jarjarbings12.uprotect.protect.kernel.flags.module.low.FlagInfo;
-import ch.jarjarbings12.uprotect.protect.kernel.flags.module.low.FlagUtils;
-import ch.jarjarbings12.uprotect.protect.kernel.flags.module.low.properties.ini.IniReader;
-import ch.jarjarbings12.uprotect.protect.kernel.flags.module.low.support.FlagExtension;
 import ch.jarjarbings12.uprotect.protect.kernel.flags.module.low.Flag;
 import ch.jarjarbings12.uprotect.protect.kernel.flags.module.low.FlagClassLoader;
+import ch.jarjarbings12.uprotect.protect.kernel.flags.module.low.FlagInfo;
+import ch.jarjarbings12.uprotect.protect.kernel.flags.module.low.properties.ini.IniReader;
+import ch.jarjarbings12.uprotect.protect.kernel.flags.module.low.support.FlagExtension;
 
 import java.io.File;
 import java.util.HashMap;
@@ -22,7 +21,6 @@ import java.util.UUID;
 public class FlagService
 {
     private FlagClassLoader flagClassLoader = new FlagClassLoader();
-    private FlagUtils flagUtils = new FlagUtils();
     private HashMap<UUID, Flag> flags = new HashMap<>(); //FlagID -> Flag
     private HashMap<String, UUID> flagTagUUID = new HashMap<>(); //Flag tag -> FlagID
     private HashMap<Integer, Set<UUID>> usedEvents = new HashMap<>(); //EventID -> Flags who use this event
@@ -57,16 +55,11 @@ public class FlagService
             FlagExtension flag = flagClassLoader.loadModule(g.get("FILE"), g.get("CLASSPATH"));
             flag.load();
         });
-        flags.values().forEach(f -> {
-            System.out.println(flagUtils.getTechnicalInformation(f));
-        });
-
     }
 
     public void register(UUID flagID, Flag flag, int... requiredEvents)
     {
         flags.put(flagID, flag);
-        flagTagUUID.put(flag.getFlagTag(), flagID);
 
         if (requiredEvents != null)
             for (int i : requiredEvents)
@@ -92,7 +85,7 @@ public class FlagService
     {
         System.out.println("[UProtect][FMS][->] Flags:");
         flags.values().forEach(f -> {
-            System.out.printf("[UProtect][FMS][->] - %s - %s - %s", f.getName(), f.getFlagTag(), f.getFlagID());
+            System.out.printf("[UProtectUProtect][FMS][->] - %s - %s", f.getName(), f.getFlagID());
         });
     }
 

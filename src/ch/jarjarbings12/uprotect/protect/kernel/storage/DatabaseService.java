@@ -46,6 +46,7 @@ public final class DatabaseService
         driver = driverService.getDriver(UProtect.getUProtect().getUProtectAPI().getConfiguration().getString("database.driver.id"));
         DescriptionParser descriptionParser = driverService.getDescriptionParser(driver.getID());
         driver = new ModuleInitializer(UProtect.getUProtect(), UProtect.getUProtect().getUProtectAPI(), descriptionParser.getDriverDescription(), descriptionParser.getProperty(), new URLClassLoader(driverService.getDriverClassLoader().makeURL(driverService.getDriverFileByID(driver.getID())))).initialize(driver);
+        driver.onLoad();
         driver.onEnable();
     }
 

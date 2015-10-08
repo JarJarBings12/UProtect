@@ -25,7 +25,7 @@ public class DefaultFlags
             }
             else
             {
-                e1.getDamager().sendMessage("[UProtect] No PVP");
+                e1.getDamager().sendMessage("[UProtectCommand] No PVP");
                 e1.setCancelled(true);
             }
         }
@@ -41,7 +41,7 @@ public class DefaultFlags
                 BlockPlaceEvent e1 = (BlockPlaceEvent) event;
                 if (value)
                 {
-                    e1.getPlayer().sendMessage("[UProtect] No Build");
+                    e1.getPlayer().sendMessage("[UProtectCommand] No Build");
                     e1.setCancelled(true);
                     return;
                 }
@@ -54,7 +54,7 @@ public class DefaultFlags
 
                 if (value)
                 {
-                    e1.getPlayer().sendMessage("[UProtect] No Build");
+                    e1.getPlayer().sendMessage("[UProtectCommand] No Build");
                     e1.setCancelled(true);
                     return;
                 }

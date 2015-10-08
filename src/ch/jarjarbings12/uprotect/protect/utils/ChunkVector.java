@@ -7,12 +7,12 @@ package ch.jarjarbings12.uprotect.protect.utils;
  */
 public class ChunkVector
 {
-    private int X;
-    private int Y;
+    public int X;
+    public int Z;
 
     public ChunkVector(int X, int Z)
     {
         this.X = X;
-        this.Y = Y;
+        this.Z = Z;
     }
 }

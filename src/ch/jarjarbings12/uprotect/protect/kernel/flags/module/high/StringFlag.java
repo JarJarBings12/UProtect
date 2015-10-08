@@ -42,12 +42,6 @@ public class StringFlag extends Flag implements ValueFlag<String>, PermissionFla
     }
 
     @Override
-    public String getFlagTag()
-    {
-        return this.flagTag;
-    }
-
-    @Override
     public void eventTriggeredCall(Event event)
     {
         callFlag(event);

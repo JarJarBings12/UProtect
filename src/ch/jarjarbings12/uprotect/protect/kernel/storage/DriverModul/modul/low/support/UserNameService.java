@@ -9,6 +9,11 @@ import java.util.UUID;
  */
 public interface UserNameService
 {
+
+    boolean isUUIDRegistered(UUID uuid);
+
+    boolean isNameCurrently(UUID uuid, String name);
+
     void setUserNameFor(UUID uuid, String name);
 
     String getUserNameFor(UUID uuid);
