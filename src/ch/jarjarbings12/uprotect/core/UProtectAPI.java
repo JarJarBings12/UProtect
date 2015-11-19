@@ -38,5 +38,4 @@ public class UProtectAPI
     {
         return this.configuration;
     }
-
 }

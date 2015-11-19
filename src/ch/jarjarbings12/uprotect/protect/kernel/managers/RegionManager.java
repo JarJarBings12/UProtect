@@ -98,9 +98,10 @@ public class RegionManager
 
     public RegionDatabase loadDatabase(World world)
     {
-        System.out.println(world.getUID() + " - " + world.getName());
         if (UProtect.getUProtect().getUProtectAPI().getServiceCenter().getDatabaseService().getDriverServices().getRegionDBService().isWorldNew(world))
+        {
             return new RegionDatabase();
+        }
         return UProtect.getUProtect().getUProtectAPI().getServiceCenter().getDatabaseService().getDriverServices().getRegionDBService().load(world);
     }
 

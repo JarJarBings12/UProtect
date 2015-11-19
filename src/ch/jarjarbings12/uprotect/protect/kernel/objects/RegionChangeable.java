@@ -13,13 +13,13 @@ import java.util.UUID;
  */
 public interface RegionChangeable
 {
-    MProtectedRegion modifyRegion(UUID uuid);
+    MProtectedChunkRegion modifyRegion(UUID uuid);
 
-    MProtectedRegion modifyRegion(String id);
+    MProtectedChunkRegion modifyRegion(String id);
 
-    MProtectedRegion modifyRegion(Chunk chunk);
+    MProtectedChunkRegion modifyRegion(Chunk chunk);
 
-    MProtectedRegion modifyRegion(Location location);
+    MProtectedChunkRegion modifyRegion(Location location);
 
-    MProtectedRegion modifyRegion(Player player);
+    MProtectedChunkRegion modifyRegion(Player player);
 }

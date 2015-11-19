@@ -1,7 +1,7 @@
 package ch.jarjarbings12.uprotect.protect.kernel.managers.index;
 
 import ch.jarjarbings12.uprotect.core.UProtect;
-import ch.jarjarbings12.uprotect.protect.kernel.objects.MProtectedRegion;
+import ch.jarjarbings12.uprotect.protect.kernel.objects.MProtectedChunkRegion;
 import ch.jarjarbings12.uprotect.protect.kernel.objects.ProtectedChunkRegion;
 import ch.jarjarbings12.uprotect.protect.kernel.objects.RegionIndex;
 import ch.jarjarbings12.uprotect.protect.kernel.services.ObjectService;
@@ -308,33 +308,33 @@ public class RegionDatabase implements RegionIndex
     }
 
     @Override
-    public MProtectedRegion modifyRegion(UUID uuid)
+    public MProtectedChunkRegion modifyRegion(UUID uuid)
     {
-        return new MProtectedRegion(getRegion(uuid));
+        return new MProtectedChunkRegion(getRegion(uuid));
     }
 
     @Override
-    public MProtectedRegion modifyRegion(String id)
+    public MProtectedChunkRegion modifyRegion(String id)
     {
         Validate.notNull(id);
         return modifyRegion(getRegionUUID(id));
     }
 
     @Override
-    public MProtectedRegion modifyRegion(Chunk chunk)
+    public MProtectedChunkRegion modifyRegion(Chunk chunk)
     {
         Validate.notNull(chunk);
         return modifyRegion(getRegionUUID(chunk));
     }
 
     @Override
-    public MProtectedRegion modifyRegion(Location location)
+    public MProtectedChunkRegion modifyRegion(Location location)
     {
         return modifyRegion(location.getChunk());
     }
 
     @Override
-    public MProtectedRegion modifyRegion(Player player)
+    public MProtectedChunkRegion modifyRegion(Player player)
     {
         return modifyRegion(player.getLocation());
     }

@@ -66,7 +66,7 @@ public class FlagService
                 if (usedEvents.containsKey(i))
                 {
                     usedEvents.get(i).add(flagID);
-                    if (UProtect.getUProtect().getUProtectAPI().getServiceCenter().getSubscriptionManager().hasSubscribers() || UProtect.getUProtect().getUProtectAPI().getServiceCenter().getSubscriptionManager().getSubscribersFor(i).isEmpty() || UProtect.getUProtect().getUProtectAPI().getServiceCenter().getSubscriptionManager().getSubscribersFor(i).stream().filter(s -> s instanceof FlagCallerService).findFirst().get() == null)
+                    if (!UProtect.getUProtect().getUProtectAPI().getServiceCenter().getSubscriptionManager().hasSubscribers() || UProtect.getUProtect().getUProtectAPI().getServiceCenter().getSubscriptionManager().getSubscribersFor(i).stream().filter(s -> s instanceof FlagCallerService).findFirst().get() == null)
                     {
                         FlagCallerService temp = new FlagCallerService(i);
                         UProtect.getUProtect().getUProtectAPI().getServiceCenter().getSubscriptionManager().subscribe(i, temp);

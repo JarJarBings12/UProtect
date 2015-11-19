@@ -2,6 +2,7 @@ package ch.jarjarbings12.uprotect.protect.kernel.flags.module.high;
 
 import ch.jarjarbings12.uprotect.protect.kernel.flags.module.low.*;
 import org.bukkit.event.Event;
+import org.json.simple.JSONObject;
 
 import java.util.UUID;
 
@@ -14,16 +15,14 @@ public class StringFlag extends Flag implements ValueFlag<String>, PermissionFla
 {
     private final UUID flagID;
     private final String name;
-    private final String flagTag;
     private String value;
     private final String permission;
     private final ch.jarjarbings12.uprotect.protect.kernel.flags.module.low.flagCall<Event, String> flagCall;
 
-    public StringFlag(UUID flagID, String name, String flagTag, String value, String permission, flagCall<Event, String> flagCall)
+    public StringFlag(UUID flagID, String name, String value, String permission, flagCall<Event, String> flagCall)
     {
         this.flagID = flagID;
         this.name = name;
-        this.flagTag = flagTag;
         this.value = value;
         this.permission = permission;
         this.flagCall = flagCall;
@@ -32,7 +31,7 @@ public class StringFlag extends Flag implements ValueFlag<String>, PermissionFla
     @Override
     public UUID getFlagID()
     {
-        return null;
+        return this.flagID;
     }
 
     @Override
@@ -69,7 +68,22 @@ public class StringFlag extends Flag implements ValueFlag<String>, PermissionFla
     @Override
     public void callFlag(Event event)
     {
-        this.flagCall.flagCall(event, this.value);
+        this.flagCall.flagCall(this, event, this.value);
+    }
+
+    @Override
+    public JSONObject serialize()
+    {
+        JSONObject object = new JSONObject();
+        object.put("fid", flagID.toString());
+        object.put("value", value);
+        return object;
+    }
+
+    @Override
+    public Flag deserialize(JSONObject value)
+    {
+        return new StringFlag(flagID, name, (String)value.get("value"), permission, flagCall);
     }
 
 

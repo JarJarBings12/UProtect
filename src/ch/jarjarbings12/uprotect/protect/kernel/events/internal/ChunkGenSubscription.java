@@ -16,6 +16,8 @@ import java.util.UUID;
  */
 public class ChunkGenSubscription extends AbstractEventSubscription
 {
+    private final UUID subid = UUID.fromString("0b9f54e9-df2f-4fdb-9f8f-74fbef50ef2d");
+
     @Override
     public void call(Event event)
     {
@@ -32,7 +34,7 @@ public class ChunkGenSubscription extends AbstractEventSubscription
     @Override
     public UUID getSubscriberID() throws NotInUseException
     {
-        return UUID.fromString("0b9f54e9-df2f-4fdb-9f8f-74fbef50ef2d");
+        return subid;
     }
 
     @Override
@@ -45,6 +47,7 @@ public class ChunkGenSubscription extends AbstractEventSubscription
             { e.printStackTrace(); }
         else
             System.out.println("[UProtect][->] Enable: Chunk generate listener.");
+        return;
     }
 
     @Override

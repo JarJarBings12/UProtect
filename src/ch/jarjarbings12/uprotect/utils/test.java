@@ -17,10 +17,10 @@ import java.util.UUID;
  */
 public class test extends FlagExtension
 {
-    public Flag build = new BooleanFlag(UUID.fromString("70e997ce-bf4c-40f0-be6e-1b733c76a89c"), "build", "BUILD", true, "uprotect.flags.build.set", new flagCall<Event, Boolean>()
+    public Flag build = new BooleanFlag(UUID.fromString("70e997ce-bf4c-40f0-be6e-1b733c76a89c"), "BUILD", true, "uprotect.flags.build.set", new flagCall<Event, Boolean>()
     {
         @Override
-        public void flagCall(Event event, Boolean value)
+        public void flagCall(Flag flag, Event event, Boolean value)
         {
             System.out.println("cancle");
             if (event instanceof BlockPlaceEvent)

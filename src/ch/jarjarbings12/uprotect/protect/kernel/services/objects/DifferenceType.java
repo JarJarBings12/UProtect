@@ -9,6 +9,5 @@ public enum DifferenceType
 {
     ADDED,
     CHANGED,
-    SET,
     REMOVED
 }

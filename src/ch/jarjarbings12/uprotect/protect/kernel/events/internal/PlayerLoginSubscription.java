@@ -16,6 +16,8 @@ import java.util.UUID;
  */
 public class PlayerLoginSubscription extends AbstractEventSubscription
 {
+    private final UUID subid = UUID.fromString("d7ab0505-6e42-45cc-bef5-5bca989ed9d9");
+
     @Override
     public void call(Event event)
     {
@@ -39,6 +41,6 @@ public class PlayerLoginSubscription extends AbstractEventSubscription
     @Override
     public UUID getSubscriberID() throws NotInUseException
     {
-        return UUID.fromString("d7ab0505-6e42-45cc-bef5-5bca989ed9d9");
+        return subid;
     }
 }

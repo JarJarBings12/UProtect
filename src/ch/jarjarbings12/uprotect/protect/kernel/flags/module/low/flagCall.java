@@ -9,5 +9,5 @@ import org.bukkit.event.Event;
  */
 public abstract class flagCall <E extends Event, V>
 {
-    public abstract void flagCall(E event, V value);
+    public abstract void flagCall(Flag flag, Event event, V value);
 }

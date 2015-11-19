@@ -10,7 +10,7 @@ import java.util.UUID;
  * @creationDate 18.09.2015
  * © 2015 JarJarBings12
  */
-public abstract class FlagExtension<E>
+public abstract class FlagExtension
 {
     public abstract void load();
 

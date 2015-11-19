@@ -5,7 +5,7 @@ enable: false
 local: german
 database:
   driver:
-    id: upro-sqlite-driver
+    id: UPRO-SQLITE-DRIVER
     
 world:
   chunk:

@@ -1,46 +1,29 @@
 package ch.jarjarbings12.uprotect.protect.kernel.objects;
 
-import ch.jarjarbings12.uprotect.core.UProtect;
 import ch.jarjarbings12.uprotect.protect.kernel.flags.module.low.Flag;
-import ch.jarjarbings12.uprotect.protect.utils.exceptions.UnknownWorldException;
 import org.bukkit.Bukkit;
 import org.bukkit.World;
 import org.bukkit.util.BlockVector;
 
-import java.io.Serializable;
 import java.util.Iterator;
 import java.util.Set;
 import java.util.UUID;
-import java.util.concurrent.CopyOnWriteArraySet;
 
 /**
  * @author JarJarBings12
  * @creationDate 08.08.2015
  * © 2015 JarJarBings12
  */
-public class MProtectedRegion implements Serializable
+public class MProtectedChunkRegion
 {
     //TODO
     private final ProtectedChunkRegion protectedChunkRegion;
     private final World world;
 
-    public MProtectedRegion(final ProtectedChunkRegion protectedChunkRegion)
+    public MProtectedChunkRegion(final ProtectedChunkRegion protectedChunkRegion)
     {
         this.protectedChunkRegion = protectedChunkRegion;
         this.world = Bukkit.getServer().getWorld(protectedChunkRegion.getUUID());
-    }
-
-    public ProtectedChunkRegion getSnapshot()
-    {
-        return this.protectedChunkRegion;
-    }
-
-    public void update()
-    {
-        try
-        { UProtect.getUProtect().getUProtectAPI().getRegionManager().getRegionDatabase(world.getName()).setRegion(protectedChunkRegion.getUUID(), protectedChunkRegion); }
-        catch (UnknownWorldException e)
-        { e.printStackTrace(); }
     }
 
     public Set<ProtectedChunk> getProtectedChunks()
@@ -48,31 +31,31 @@ public class MProtectedRegion implements Serializable
         return this.protectedChunkRegion.getProtectedChunks();
     }
 
-    public MProtectedRegion addProtectedChunk(BlockVector vector)
+    public MProtectedChunkRegion addProtectedChunk(BlockVector vector)
     {
         this.protectedChunkRegion.addProtectedChunk(new ProtectedChunk(vector.getBlockX(), vector.getBlockZ()));
         return this;
     }
 
-    public MProtectedRegion addProtectedChunk(CopyOnWriteArraySet<ProtectedChunk> protectedChunks)
+    public MProtectedChunkRegion addProtectedChunk(Set<ProtectedChunk> protectedChunks)
     {
         protectedChunks.forEach(c -> this.protectedChunkRegion.addProtectedChunk(c));
         return this;
     }
 
-    public MProtectedRegion removeProtectedChunks(BlockVector vector)
+    public MProtectedChunkRegion removeProtectedChunks(BlockVector vector)
     {
         this.protectedChunkRegion.removeProtectedChunk(vector.getBlockX(), vector.getBlockZ());
         return this;
     }
 
-    public MProtectedRegion removeProtectedChunks(CopyOnWriteArraySet<BlockVector> vectors)
+    public MProtectedChunkRegion removeProtectedChunks(Set<BlockVector> vectors)
     {
         vectors.forEach(v -> this.protectedChunkRegion.removeProtectedChunk(v.getBlockX(), v.getBlockX()));
         return this;
     }
 
-    public MProtectedRegion setProtectedChunks(CopyOnWriteArraySet<ProtectedChunk> protectedChunks)
+    public MProtectedChunkRegion setProtectedChunks(Set<ProtectedChunk> protectedChunks)
     {
         this.protectedChunkRegion.setProtectedChunks(protectedChunks);
         return this;
@@ -98,21 +81,21 @@ public class MProtectedRegion implements Serializable
         return this.protectedChunkRegion.getOwners();
     }
 
-    public MProtectedRegion addOwner(UUID uuid)
+    public MProtectedChunkRegion addOwner(UUID uuid)
     {
         if (!isOwner(uuid))
             this.protectedChunkRegion.addOwner(uuid);
         return this;
     }
 
-    public MProtectedRegion removeOwner(UUID uuid)
+    public MProtectedChunkRegion removeOwner(UUID uuid)
     {
         if (isOwner(uuid))
             this.protectedChunkRegion.getOwners().remove(uuid);
         return this;
     }
 
-    public MProtectedRegion setOwners(CopyOnWriteArraySet<UUID> owners)
+    public MProtectedChunkRegion setOwners(Set<UUID> owners)
     {
         this.protectedChunkRegion.setOwners(owners);
         return this;
@@ -123,14 +106,14 @@ public class MProtectedRegion implements Serializable
         return this.protectedChunkRegion.getMembers();
     }
 
-    public MProtectedRegion addMember(UUID uuid)
+    public MProtectedChunkRegion addMember(UUID uuid)
     {
         if (!isMember(uuid))
             this.protectedChunkRegion.addMember(uuid);
         return this;
     }
 
-    public MProtectedRegion removeMember(UUID uuid)
+    public MProtectedChunkRegion removeMember(UUID uuid)
     {
         if (isMember(uuid))
             this.protectedChunkRegion.removeMember(uuid);
@@ -138,7 +121,7 @@ public class MProtectedRegion implements Serializable
         return this;
     }
 
-    public MProtectedRegion setMembers(CopyOnWriteArraySet<UUID> members)
+    public MProtectedChunkRegion setMembers(Set<UUID> members)
     {
         this.protectedChunkRegion.setMembers(members);
         return this;
@@ -160,7 +143,7 @@ public class MProtectedRegion implements Serializable
         return false;
     }
 
-    public MProtectedRegion addFlag(Flag flag)
+    public MProtectedChunkRegion addFlag(Flag flag)
     {
         if (hasFlag(flag.getName()))
             removeFlag(flag.getName());
@@ -169,15 +152,26 @@ public class MProtectedRegion implements Serializable
         return this;
     }
 
-    public MProtectedRegion removeFlag(String name)
+    public MProtectedChunkRegion removeFlag(String name)
     {
         this.protectedChunkRegion.getFlags().removeIf(f -> f.getName().equals(name));
         return this;
     }
 
-    public MProtectedRegion setFlags(Set<Flag> flags)
+    public MProtectedChunkRegion setFlags(Set<Flag> flags)
     {
         this.protectedChunkRegion.setFlags(flags);
         return this;
+    }
+
+
+    public ProtectedChunkRegion getSnapshot()
+    {
+        return this.protectedChunkRegion;
+    }
+
+    public void update()
+    {
+        getSnapshot().update();
     }
 }

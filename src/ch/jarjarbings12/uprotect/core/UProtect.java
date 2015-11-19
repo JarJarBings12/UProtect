@@ -1,9 +1,9 @@
 package ch.jarjarbings12.uprotect.core;
 
-import ch.jarjarbings12.uprotect.commands.UChunkCommand;
-import ch.jarjarbings12.uprotect.protect.kernel.events.internal.ChunkGenSubscription;
-import ch.jarjarbings12.uprotect.protect.kernel.events.internal.PlayerLoginSubscription;
-import ch.jarjarbings12.uprotect.protect.kernel.events.internal.PlayerQuitSubscription;
+import ch.jarjarbings12.uprotect.commands.ChunkProtectCommands;
+import ch.jarjarbings12.uprotect.commands.UProtectCommand;
+import ch.jarjarbings12.uprotect.protect.kernel.events.internal.*;
+import ch.jarjarbings12.uprotect.protect.kernel.events.module.bukkit.BlockEvents;
 import ch.jarjarbings12.uprotect.protect.kernel.events.module.bukkit.ChunkEvents;
 import ch.jarjarbings12.uprotect.protect.kernel.events.module.bukkit.PlayerEvents;
 import org.bukkit.Bukkit;
@@ -36,9 +36,14 @@ public class UProtect extends JavaPlugin
         this.getUProtectAPI().getServiceCenter().getWorldServices().setup();
         Bukkit.getPluginManager().registerEvents(new ChunkEvents(), this);
         Bukkit.getPluginManager().registerEvents(new PlayerEvents(), this);
-        this.getUProtectAPI().getServiceCenter().getSubscriptionManager().subscribe(20, new PlayerLoginSubscription());
-        this.getUProtectAPI().getServiceCenter().getSubscriptionManager().subscribe(21, new PlayerQuitSubscription());
+        Bukkit.getPluginManager().registerEvents(new BlockEvents(), this);
+        this.getUProtectAPI().getServiceCenter().getSubscriptionManager().subscribe(0, new PlayerBuildSubscription());
+        this.getUProtectAPI().getServiceCenter().getSubscriptionManager().subscribe(1, new PlayerBreakSubscription());
+        //this.getUProtectAPI().getServiceCenter().getSubscriptionManager().subscribe(20, new PlayerLoginSubscription());
+        //this.getUProtectAPI().getServiceCenter().getSubscriptionManager().subscribe(21, new PlayerQuitSubscription());
         this.getUProtectAPI().getServiceCenter().getSubscriptionManager().subscribe(200, new ChunkGenSubscription());
+
+
     }
 
     @Override
@@ -61,17 +66,19 @@ public class UProtect extends JavaPlugin
     private void initSource()
     {
         if (new File("plugins/UProtect").mkdirs())
-            System.out.println("[UProtect][I] Dir path => plugins/UProtect");
+            System.out.println("[UProtect][INIT] Dir path => plugins/UProtect");
         if (new File("plugins/UProtect/i18n").mkdir())
-            System.out.println("[UProtect][I] Dir path => plugins/UProtect/i18n");
-        if (new File("plugins/UProtect/drivers").mkdir())
-            System.out.println("[UProtect][I] Dir path => plugins/UProtect/extensions");
+            System.out.println("[UProtect][INIT] Dir path => plugins/UProtect/i18n");
+        if (new File("plugins/UProtect/extensions").mkdir())
+            System.out.println("[UProtect][INIT] Dir path => plugins/UProtect/extensions");
         if (new File("plugins/UProtect/extensions/flags").mkdir())
-            System.out.println("[UProtect][I] Dir path => plugins/UProtect/extensions/flags");
+            System.out.println("[UProtect][INIT] Dir path => plugins/UProtect/extensions/flags");
+        if (new File("plugins/UProtect/storage").mkdir())
+            System.out.println("[UProtect][INIT] Dir path => plugins/UProtect/storage");
         if (new File("plugins/UProtect/storage/drivers").mkdir())
-            System.out.println("[UProtect][I] Dir path => plugins/UProtect/storage/drivers");
+            System.out.println("[UProtect][INIT Dir path => plugins/UProtect/storage/drivers");
         if (new File("plugins/UProtect/storage/internal/world/chunk").mkdirs())
-            System.out.println("[UProtect][I] Dir path => plugins/UProtect/storage/internal/world/chunk");
+            System.out.println("[UProtect][INIT] Dir path => plugins/UProtect/storage/internal/world/chunk");
         try
         {
             if (new File("plugins/UProtect/storage/internal/world/chunk/cbs.db").createNewFile())
@@ -83,10 +90,11 @@ public class UProtect extends JavaPlugin
         }
 
         resourceCopy("resources/config.yml", "plugins/UProtect/config.yml");
-        resourceCopy("resources/languages/gearman.properties", "plugins/UProtect/i18n/gearman.properties");
+        resourceCopy("resources/languages/german.properties", "plugins/UProtect/i18n/german.properties");
         resourceCopy("resources/flagconfig.ini", "plugins/UProtect/extensions/flags/flagconfig.ini");
         resourceCopy("resources/notices.txt", "plugins/UProtect/notices.txt");
         resourceCopy("ch/jarjarbings12/uprotect/utils/test.class", "plugins/UProtect/extensions/flags/test.class");
+        resourceCopy("resources/drivers/UPRO-SQLITE-DRIVER.jar", "plugins/UProtect/storage/drivers/UPRO-SQLITE-DRIVER.jar");
     }
 
     private void initCommands()
@@ -96,7 +104,8 @@ public class UProtect extends JavaPlugin
             Field fieldCommandMap = Bukkit.getServer().getClass().getDeclaredField("commandMap");
             fieldCommandMap.setAccessible(true);
             CommandMap commandMap = (CommandMap) fieldCommandMap.get(Bukkit.getServer());
-            commandMap.register("UManager", new UChunkCommand("chunkregion"));
+            commandMap.register("UProtect", new ChunkProtectCommands("ChunkProtect"));
+            commandMap.register("UProtect", new UProtectCommand("UProtect"));
         }
         catch (NoSuchFieldException e)
         {

@@ -51,7 +51,11 @@ public class FlagCallerService extends AbstractEventSubscription
         if (db.isProtected(location))
         {
             ProtectedChunkRegion pcr = db.getRegion(location);
-            UProtect.getUProtect().getUProtectAPI().getServiceCenter().getFlagService().getFlagIDsForEventID(eventID).forEach(uuid -> pcr.getFlag(uuid).eventTriggeredCall(event));
+            UProtect.getUProtect().getUProtectAPI().getServiceCenter().getFlagService().getFlagIDsForEventID(eventID)
+                    .forEach(flag -> {
+                        if (pcr.hasFlag(flag))
+                            pcr.getFlag(flag).eventTriggeredCall(event);
+                    });
         }
     }
 

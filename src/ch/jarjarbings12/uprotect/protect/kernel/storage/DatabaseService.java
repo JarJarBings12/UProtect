@@ -34,6 +34,11 @@ public final class DatabaseService
         return driver.getDriverDescription();
     }
 
+    public DriverService getDriverService()
+    {
+        return driverService;
+    }
+
     public DriverServices getDriverServices()
     {
         return driver;
@@ -48,6 +53,7 @@ public final class DatabaseService
         driver = new ModuleInitializer(UProtect.getUProtect(), UProtect.getUProtect().getUProtectAPI(), descriptionParser.getDriverDescription(), descriptionParser.getProperty(), new URLClassLoader(driverService.getDriverClassLoader().makeURL(driverService.getDriverFileByID(driver.getID())))).initialize(driver);
         driver.onLoad();
         driver.onEnable();
+        driver.setEnabled();
     }
 
     public void shutdown()

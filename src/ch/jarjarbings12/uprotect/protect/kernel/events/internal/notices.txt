@@ -1,0 +1,20 @@
+Block Events
+ 0      - Block place
+ 1      - Block break
+
+Player Interact
+ 2      - Player left click block
+ 3      - Player right click block
+ 4      - Player left click air
+ 5      - Player right click air
+ ...
+ 20     - Player join event
+ 21     - Player left event
+ ...
+Entity Events
+ 50     - Entity damage by entity
+ 51     - Entity damage by block
+
+Chunk Events
+ 200    - Chunk load
+
