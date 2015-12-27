@@ -8,16 +8,16 @@ package ch.jarjarbings12.uprotect.protect.kernel.flags.module.low;
 public class FlagInfo
 {
 
-    private String file;
-    private String classpath;
-    private String tag;
-    private String description;
+    private final String file;
+    private final String classpath;
+    private final String name;
+    private final String description;
 
-    public FlagInfo(String file, String classpath, String tag, String description)
+    public FlagInfo(String file, String classpath, String name, String description)
     {
         this.file = file;
         this.classpath = classpath;
-        this.tag = tag;
+        this.name = name;
         this.description = description;
     }
 
@@ -31,9 +31,9 @@ public class FlagInfo
         return this.classpath;
     }
 
-    public String getTag()
+    public String getName()
     {
-        return this.tag;
+        return this.name;
     }
 
     public String getDescription()

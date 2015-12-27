@@ -5,7 +5,7 @@ package ch.jarjarbings12.uprotect.protect.kernel.storage.DriverModul.modul.excep
  * @creationDate 16.09.2015
  * © 2015 JarJarBings12
  */
-public class InvalidClassPathException extends Exception
+public class InvalidClassPathException extends RuntimeException
 {
     public InvalidClassPathException(String filePath, String classPath)
     {

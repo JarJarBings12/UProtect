@@ -19,15 +19,7 @@ public class UClassLoader
             ClassLoader classLoader = new URLClassLoader(makeURL(new File(filePath)), parentClassLoader);
             return classLoader.loadClass(classPath).newInstance();
         }
-        catch (ClassNotFoundException e)
-        {
-            e.printStackTrace();
-        }
-        catch (InstantiationException e)
-        {
-            e.printStackTrace();
-        }
-        catch (IllegalAccessException e)
+        catch (ClassNotFoundException | InstantiationException | IllegalAccessException e)
         {
             e.printStackTrace();
         }
@@ -38,7 +30,7 @@ public class UClassLoader
     {
         try
         {
-            return Class.forName(classPath, false, new URLClassLoader(makeURL(file), parentClassLoader)) != null ? true : false;
+            return Class.forName(classPath, false, new URLClassLoader(makeURL(file), parentClassLoader)) != null;
         }
         catch (ClassNotFoundException e)
         {

@@ -13,11 +13,11 @@ import java.util.Properties;
  */
 public class ModuleInitializer
 {
-    private UProtect uProtect;
-    private UProtectAPI uProtectAPI;
-    private Properties driverProperties;
-    private DriverDescription driverDescription;
-    private ClassLoader classLoader;
+    private final UProtect uProtect;
+    private final UProtectAPI uProtectAPI;
+    private final Properties driverProperties;
+    private final DriverDescription driverDescription;
+    private final ClassLoader classLoader;
 
     public ModuleInitializer(UProtect uProtect, UProtectAPI uProtectAPI, DriverDescription driverDescription, Properties driverProperties, ClassLoader classLoader)
     {
@@ -30,8 +30,7 @@ public class ModuleInitializer
 
     public UDriver initialize(UDriver uDriver)
     {
-        UDriver initializedDriver = uDriver;
-        initializedDriver.initialize(uProtect, uProtectAPI, driverDescription, driverProperties, classLoader);
+        uDriver.initialize(uProtect, uProtectAPI, driverDescription, driverProperties, classLoader);
         return uDriver;
     }
 }

@@ -1,7 +1,7 @@
 package ch.jarjarbings12.uprotect.protect.kernel.flags.module.low;
 
 import ch.jarjarbings12.uprotect.protect.kernel.events.module.low.AbstractEventSubscription;
-import ch.jarjarbings12.uprotect.protect.utils.exceptions.NotInUseException;
+import ch.jarjarbings12.uprotect.protect.kernel.events.module.low.SubscriptionPriority;
 import org.bukkit.event.Event;
 
 import java.util.UUID;
@@ -13,6 +13,9 @@ import java.util.UUID;
  */
 public abstract class AFlagEventSupport extends AbstractEventSubscription
 {
+    AFlagEventSupport()
+    { setPriority(SubscriptionPriority.MEDIUM); }
+
     @Override
     public final void call(Event event)
     {
@@ -20,7 +23,7 @@ public abstract class AFlagEventSupport extends AbstractEventSubscription
     }
 
     @Override
-    public UUID getSubscriberID() throws NotInUseException
+    public UUID getSubscriberID()
     {
         return UUID.fromString("00000000-0000-0000-0000-000000000000");
     }

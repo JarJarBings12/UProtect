@@ -42,7 +42,7 @@ public class RegionService implements RegionDBService
         int removedRegions = 0;
 
         Iterator<IndexDifference> iterator = regionDatabase.getAllDifferences().iterator();
-        IndexDifference difference = null;
+        IndexDifference difference;
         while (iterator.hasNext())
         {
             difference = iterator.next();
@@ -86,25 +86,29 @@ public class RegionService implements RegionDBService
     @Override
     public void save(ProtectedChunkRegion protectedChunkRegion)
     {
-        PreparedStatement var1 = null;
+        PreparedStatement var1;
         Iterator<ProtectedChunk> var2 = protectedChunkRegion.getProtectedChunks().iterator();
-        ProtectedChunk var3 = null;
+        ProtectedChunk var3;
+        UUID currentUUID;
+
         while (var2.hasNext())
         {
             try
             {
                 var1 = baseSqliteConnection.createPreparedStatement(baseSqliteConnection.insertRegionIndex.replace("%w", protectedChunkRegion.getWorld().getUID().toString().replace("-", "")));
+
                 var3 = var2.next();
 
+                currentUUID = protectedChunkRegion.getUUID();
                 var1.setString(1, protectedChunkRegion.getId());
                 var1.setInt(2, var3.getX());
                 var1.setInt(3, var3.getZ());
-                var1.setString(4, protectedChunkRegion.getUUID().toString());
+                var1.setString(4, String.format("%s:%s", String.valueOf(currentUUID.getMostSignificantBits()), String.valueOf(currentUUID.getLeastSignificantBits())));
                 var1.executeUpdate();
                 var1.close();
 
                 var1 = baseSqliteConnection.createPreparedStatement(baseSqliteConnection.insertRegion.replace("%w", protectedChunkRegion.getWorld().getUID().toString().replace("-", "")));
-                var1.setString(1, protectedChunkRegion.getUUID().toString());
+                var1.setString(1, String.format("%s:%s", String.valueOf(currentUUID.getMostSignificantBits()), String.valueOf(currentUUID.getLeastSignificantBits())));
                 var1.setString(2, protectedChunkRegion.serialize());
                 var1.executeUpdate();
                 var1.close();
@@ -180,10 +184,8 @@ public class RegionService implements RegionDBService
     public RegionDatabase load(String s)
     {
         if (Bukkit.getWorld(s) == null)
-            new UnknownWorldException(s).printStackTrace();
-        else
-            return load(Bukkit.getWorld(s).getUID());
-        return null;
+            throw new UnknownWorldException(s);
+        return load(Bukkit.getWorld(s).getUID());
     }
 
     @Override
@@ -192,7 +194,7 @@ public class RegionService implements RegionDBService
         try
         {
             Statement statement = baseSqliteConnection.createStatement();
-            boolean newWorld = statement.executeQuery(baseSqliteConnection.existsWorld.replace("%w", world.getUID().toString().replace("-", ""))).getInt("_RESULT_") > 0 ? false : true;
+            boolean newWorld = statement.executeQuery(baseSqliteConnection.existsWorld.replace("%w", world.getUID().toString().replace("-", ""))).getInt("_RESULT_") <= 0;
             statement.close();
             return newWorld;
         }
@@ -329,13 +331,14 @@ public class RegionService implements RegionDBService
             preparedStatement.setString(1, s);
             UUID uuid = UUID.fromString(preparedStatement.executeQuery().getString("R_UUID")); //Get UUID
             preparedStatement.close();
+            // Remove from chunk index
             preparedStatement = baseSqliteConnection.createPreparedStatement(baseSqliteConnection.removeRegionIndexByUUID.replace("%w", world.getUID().toString().replace("-", "")));
-            preparedStatement.setString(1, uuid.toString().toString().replace("-", ""));
+            preparedStatement.setString(1, String.format("%s:%s", String.valueOf(uuid.getMostSignificantBits()), String.valueOf(uuid.getLeastSignificantBits())));
             preparedStatement.execute(); //REMOVE INDEXES
             preparedStatement.close();
-            //--
+            // Remove from data table
             preparedStatement = baseSqliteConnection.createPreparedStatement(baseSqliteConnection.removeRegion.replace("%w", world.getUID().toString().replace("-", "")));
-            preparedStatement.setString(1, uuid.toString().replace("-", ""));
+            preparedStatement.setString(1, String.format("%s:%s", String.valueOf(uuid.getMostSignificantBits()), String.valueOf(uuid.getLeastSignificantBits())));
             preparedStatement.execute(); //REMOVE REGION
             preparedStatement.close();
         }

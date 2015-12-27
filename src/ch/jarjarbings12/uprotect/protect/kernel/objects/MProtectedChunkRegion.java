@@ -1,11 +1,8 @@
 package ch.jarjarbings12.uprotect.protect.kernel.objects;
 
 import ch.jarjarbings12.uprotect.protect.kernel.flags.module.low.Flag;
-import org.bukkit.Bukkit;
-import org.bukkit.World;
 import org.bukkit.util.BlockVector;
 
-import java.util.Iterator;
 import java.util.Set;
 import java.util.UUID;
 
@@ -18,12 +15,10 @@ public class MProtectedChunkRegion
 {
     //TODO
     private final ProtectedChunkRegion protectedChunkRegion;
-    private final World world;
 
     public MProtectedChunkRegion(final ProtectedChunkRegion protectedChunkRegion)
     {
         this.protectedChunkRegion = protectedChunkRegion;
-        this.world = Bukkit.getServer().getWorld(protectedChunkRegion.getUUID());
     }
 
     public Set<ProtectedChunk> getProtectedChunks()
@@ -39,7 +34,7 @@ public class MProtectedChunkRegion
 
     public MProtectedChunkRegion addProtectedChunk(Set<ProtectedChunk> protectedChunks)
     {
-        protectedChunks.forEach(c -> this.protectedChunkRegion.addProtectedChunk(c));
+        protectedChunks.forEach(this.protectedChunkRegion::addProtectedChunk);
         return this;
     }
 
@@ -63,7 +58,7 @@ public class MProtectedChunkRegion
 
     public boolean hasAccess(UUID uuid)
     {
-        return (isMember(uuid) || isOwner(uuid)) ? true : false;
+        return (isMember(uuid) || isOwner(uuid));
     }
 
     public boolean isOwner(UUID uuid)
@@ -134,11 +129,12 @@ public class MProtectedChunkRegion
 
     public boolean hasFlag(String name)
     {
-        Iterator<Flag> flags = this.protectedChunkRegion.getFlags().iterator();
 
-        while (flags.hasNext())
-            if (flags.next().getName().equals(name))
+        for (Flag flag : this.protectedChunkRegion.getFlags())
+            if (flag.getName().equals(name))
+            {
                 return true;
+            }
 
         return false;
     }

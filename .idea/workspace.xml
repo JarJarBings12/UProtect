@@ -2,53 +2,80 @@
 <project version="4">
   <component name="ArtifactsWorkspaceSettings">
     <artifacts-to-build>
-      <artifact name="Addon" />
+      <artifact name="UProtect" />
     </artifacts-to-build>
   </component>
   <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/protect/kernel/events/internal/PlayerBreakSubscription.java" line="38" mnemonic="8" />
+    <bookmark url="file://$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/protect/kernel/events/internal/PlayerBreakSubscription.java" line="37" mnemonic="8" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="109a1794-a90b-48be-80d4-990bb4ca5d7a" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/UPro-SQLITE-Driver/src/ch/jarjarbings12/uprotect/driver/BaseSqliteConnection.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/UPro-SQLITE-Driver/src/ch/jarjarbings12/uprotect/driver/user/NameUUIDService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/UPro-SQLITE-Driver/src/ch/jarjarbings12/uprotect/driver/user/PlayTimeService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/UPro-SQLITE-Driver/src/ch/jarjarbings12/uprotect/driver/PlayerService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/UPro-SQLITE-Driver/src/ch/jarjarbings12/uprotect/driver/RegionService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/UPro-SQLITE-Driver/src/ch/jarjarbings12/uprotect/driver/SqliteDriver.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/UPro-SQLITE-Driver/src/udriver.properties" />
-      <change type="DELETED" beforePath="E:\JAVA-WORKSPACE\UProtect\src\ch\jarjarbings12\uprotect\protect\kernel\objects\MProtectedRegion.java" afterPath="" />
+      <change type="DELETED" beforePath="E:\JAVA-WORKSPACE\UProtect\src\ch\jarjarbings12\uprotect\utils\test.java" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/protect/kernel/flags/module/low/AFlagEventSupport.java" afterPath="$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/protect/kernel/flags/module/low/AFlagEventSupport.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/protect/kernel/events/module/low/AbstractEventSubscription.java" afterPath="$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/protect/kernel/events/module/low/AbstractEventSubscription.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/artifacts/Addon.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/Addon.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/protect/kernel/world/chunk/AsyncRecodingThread.java" afterPath="$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/protect/kernel/world/chunk/AsyncRecodingThread.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/UPro-SQLITE-Driver/src/ch/jarjarbings12/uprotect/driver/BaseSqliteConnection.java" afterPath="$PROJECT_DIR$/UPro-SQLITE-Driver/src/ch/jarjarbings12/uprotect/driver/BaseSqliteConnection.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/protect/kernel/events/module/low/BasicSubscription.java" afterPath="$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/protect/kernel/events/module/low/BasicSubscription.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/protect/kernel/flags/module/high/BooleanFlag.java" afterPath="$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/protect/kernel/flags/module/high/BooleanFlag.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/protect/kernel/events/internal/ChunkGenSubscription.java" afterPath="$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/protect/kernel/events/internal/ChunkGenSubscription.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/commands/ChunkProtectCommands.java" afterPath="$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/commands/ChunkProtectCommands.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/protect/kernel/world/chunk/ChunkRestorer.java" afterPath="$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/protect/kernel/world/chunk/ChunkRestorer.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/protect/utils/ChunkVector.java" afterPath="$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/protect/utils/ChunkVector.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/protect/kernel/storage/DatabaseService.java" afterPath="$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/protect/kernel/storage/DatabaseService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/protect/kernel/services/objects/DifferenceType.java" afterPath="$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/protect/kernel/services/objects/DifferenceType.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/protect/kernel/flags/module/high/DefaultFlags.java" afterPath="$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/protect/kernel/flags/module/high/DefaultFlags.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/protect/kernel/storage/DriverModul/modul/low/DriverClassLoader.java" afterPath="$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/protect/kernel/storage/DriverModul/modul/low/DriverClassLoader.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/protect/kernel/storage/DriverModul/modul/high/DriverService.java" afterPath="$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/protect/kernel/storage/DriverModul/modul/high/DriverService.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/protect/kernel/events/module/low/Events.java" afterPath="$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/protect/kernel/events/module/low/Events.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/protect/kernel/flags/module/low/Flag.java" afterPath="$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/protect/kernel/flags/module/low/Flag.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/protect/kernel/flags/module/high/FlagCallerService.java" afterPath="$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/protect/kernel/flags/module/high/FlagCallerService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/protect/kernel/flags/module/low/support/FlagExtension.java" afterPath="$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/protect/kernel/flags/module/low/support/FlagExtension.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/protect/kernel/flags/module/low/FlagClassLoader.java" afterPath="$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/protect/kernel/flags/module/low/FlagClassLoader.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/protect/kernel/flags/module/low/FlagInfo.java" afterPath="$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/protect/kernel/flags/module/low/FlagInfo.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/protect/kernel/flags/module/high/FlagService.java" afterPath="$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/protect/kernel/flags/module/high/FlagService.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/protect/kernel/flags/module/low/properties/ini/IniGroup.java" afterPath="$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/protect/kernel/flags/module/low/properties/ini/IniGroup.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/protect/kernel/flags/module/low/properties/ini/IniReader.java" afterPath="$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/protect/kernel/flags/module/low/properties/ini/IniReader.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/protect/kernel/storage/DriverModul/modul/exceptions/InvalidClassPathException.java" afterPath="$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/protect/kernel/storage/DriverModul/modul/exceptions/InvalidClassPathException.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/protect/kernel/storage/DriverModul/modul/exceptions/InvalidModuleDescription.java" afterPath="$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/protect/kernel/storage/DriverModul/modul/exceptions/InvalidModuleDescription.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/protect/kernel/objects/MProtectedChunkRegion.java" afterPath="$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/protect/kernel/objects/MProtectedChunkRegion.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/protect/kernel/storage/DriverModul/modul/high/extensions/ModuleInitializer.java" afterPath="$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/protect/kernel/storage/DriverModul/modul/high/extensions/ModuleInitializer.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/UPro-SQLITE-Driver/src/ch/jarjarbings12/uprotect/driver/user/NameUUIDService.java" afterPath="$PROJECT_DIR$/UPro-SQLITE-Driver/src/ch/jarjarbings12/uprotect/driver/user/NameUUIDService.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/protect/utils/exceptions/NotInUseException.java" afterPath="$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/protect/utils/exceptions/NotInUseException.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/protect/kernel/storage/DriverModul/modul/low/support/PlayTimeService.java" afterPath="$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/protect/kernel/storage/DriverModul/modul/low/support/PlayTimeService.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/protect/kernel/events/internal/PlayerBreakSubscription.java" afterPath="$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/protect/kernel/events/internal/PlayerBreakSubscription.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/protect/kernel/events/internal/PlayerBuildSubscription.java" afterPath="$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/protect/kernel/events/internal/PlayerBuildSubscription.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/protect/kernel/events/internal/PlayerLoginSubscription.java" afterPath="$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/protect/kernel/events/internal/PlayerLoginSubscription.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/protect/kernel/events/internal/PlayerQuitSubscription.java" afterPath="$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/protect/kernel/events/internal/PlayerQuitSubscription.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/protect/kernel/objects/ProtectedChunk.java" afterPath="$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/protect/kernel/objects/ProtectedChunk.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/UPro-SQLITE-Driver/src/ch/jarjarbings12/uprotect/driver/PlayerService.java" afterPath="$PROJECT_DIR$/UPro-SQLITE-Driver/src/ch/jarjarbings12/uprotect/driver/PlayerService.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/protect/kernel/storage/DriverModul/modul/low/properties/PropertyLoader.java" afterPath="$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/protect/kernel/storage/DriverModul/modul/low/properties/PropertyLoader.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/protect/kernel/objects/ProtectedChunkRegion.java" afterPath="$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/protect/kernel/objects/ProtectedChunkRegion.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/protect/kernel/world/chunk/RDB/Querys.java" afterPath="$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/protect/kernel/world/chunk/RDB/Querys.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/protect/kernel/world/chunk/RDB/RecordDatabase.java" afterPath="$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/protect/kernel/world/chunk/RDB/RecordDatabase.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/protect/kernel/world/chunk/CSF/RecordedChunk.java" afterPath="$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/protect/kernel/world/chunk/CSF/RecordedChunk.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/protect/kernel/objects/RegionChangeable.java" afterPath="$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/protect/kernel/objects/RegionChangeable.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/commands/subcommands/RegionCommands.java" afterPath="$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/commands/subcommands/RegionCommands.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/protect/kernel/managers/index/RegionDatabase.java" afterPath="$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/protect/kernel/managers/index/RegionDatabase.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/protect/kernel/managers/RegionManager.java" afterPath="$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/protect/kernel/managers/RegionManager.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/UPro-SQLITE-Driver/src/ch/jarjarbings12/uprotect/driver/RegionService.java" afterPath="$PROJECT_DIR$/UPro-SQLITE-Driver/src/ch/jarjarbings12/uprotect/driver/RegionService.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/protect/kernel/services/ServiceCenter.java" afterPath="$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/protect/kernel/services/ServiceCenter.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/UPro-SQLITE-Driver/src/ch/jarjarbings12/uprotect/driver/SqliteDriver.java" afterPath="$PROJECT_DIR$/UPro-SQLITE-Driver/src/ch/jarjarbings12/uprotect/driver/SqliteDriver.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/protect/kernel/flags/module/high/StringFlag.java" afterPath="$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/protect/kernel/flags/module/high/StringFlag.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/UProtect.iml" afterPath="$PROJECT_DIR$/UProtect.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/protect/kernel/events/SubscriptionManager.java" afterPath="$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/protect/kernel/events/SubscriptionManager.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/protect/utils/UClassLoader.java" afterPath="$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/protect/utils/UClassLoader.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/UPro-SQLITE-Driver/UPro-SQLITE-Driver.iml" afterPath="$PROJECT_DIR$/UPro-SQLITE-Driver/UPro-SQLITE-Driver.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/core/UProtect.java" afterPath="$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/core/UProtect.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/UProtect.xml" afterPath="$PROJECT_DIR$/.idea/libraries/UProtect.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/core/UProtectAPI.java" afterPath="$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/core/UProtectAPI.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/commands/UProtectCommand.java" afterPath="$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/commands/UProtectCommand.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/protect/utils/exceptions/UnknownWorldException.java" afterPath="$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/protect/utils/exceptions/UnknownWorldException.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/commands/subcommands/UserCommands.java" afterPath="$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/commands/subcommands/UserCommands.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/protect/kernel/storage/DriverModul/modul/low/support/UserNameService.java" afterPath="$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/protect/kernel/storage/DriverModul/modul/low/support/UserNameService.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/protect/kernel/world/chunk/WorldChunkService.java" afterPath="$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/protect/kernel/world/chunk/WorldChunkService.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/protect/kernel/world/WorldServices.java" afterPath="$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/protect/kernel/world/WorldServices.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/codeStyleSettings.xml" afterPath="$PROJECT_DIR$/.idea/codeStyleSettings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/resources/config.yml" afterPath="$PROJECT_DIR$/src/resources/config.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/protect/kernel/flags/module/low/flagCall.java" afterPath="$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/protect/kernel/flags/module/low/flagCall.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/utils/test.java" afterPath="$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/utils/test.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/resources/flagconfig.ini" afterPath="$PROJECT_DIR$/src/resources/flagconfig.ini" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/resources/notices.txt" afterPath="$PROJECT_DIR$/src/resources/notices.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dictionaries/tobias.xml" afterPath="$PROJECT_DIR$/.idea/dictionaries/tobias.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MOVED" beforePath="E:\JAVA-WORKSPACE\UProtect\UPro-SQLITE-Driver\src\ch\jarjarbings12\uprotect\driver\user\PlayTimeService.java" afterPath="$PROJECT_DIR$/UPro-SQLITE-Driver/src/ch/jarjarbings12/uprotect/driver/user/UserPlayTimeService.java" />
     </list>
     <ignored path="UProtect.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -72,98 +99,108 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="RegionCommands.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/commands/subcommands/RegionCommands.java">
+      <file leaf-file-name="FlagCallerService.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/protect/kernel/flags/module/high/FlagCallerService.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="237" column="0" selection-start-line="237" selection-start-column="0" selection-end-line="237" selection-end-column="0" />
+              <caret line="18" column="3" selection-start-line="18" selection-start-column="3" selection-end-line="18" selection-end-column="3" />
               <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="method#FlagCallerService#0;class#FlagCallerService#0" expanded="true" />
+                <element signature="method#call#0;class#FlagCallerService#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UserCommands.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/commands/subcommands/UserCommands.java">
+      <file leaf-file-name="AbstractEventSubscription.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/protect/kernel/events/module/low/AbstractEventSubscription.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="33" column="17" selection-start-line="33" selection-start-column="17" selection-end-line="33" selection-end-column="17" />
+              <caret line="37" column="28" selection-start-line="37" selection-start-column="25" selection-end-line="37" selection-end-column="29" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BaseSqliteConnection.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/UPro-SQLITE-Driver/src/ch/jarjarbings12/uprotect/driver/BaseSqliteConnection.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5144429">
-              <caret line="29" column="116" selection-start-line="29" selection-start-column="116" selection-end-line="29" selection-end-column="116" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="config.yml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/resources/config.yml">
+      <file leaf-file-name="AFlagEventSupport.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/protect/kernel/flags/module/low/AFlagEventSupport.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="11" column="12" selection-start-line="11" selection-start-column="12" selection-end-line="11" selection-end-column="12" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SqliteDriver.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/UPro-SQLITE-Driver/src/ch/jarjarbings12/uprotect/driver/SqliteDriver.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="43" column="36" selection-start-line="43" selection-start-column="36" selection-end-line="43" selection-end-column="36" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="RegionService.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/UPro-SQLITE-Driver/src/ch/jarjarbings12/uprotect/driver/RegionService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="102" column="37" selection-start-line="102" selection-start-column="37" selection-end-line="102" selection-end-column="37" />
+              <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="16" selection-end-column="49" />
               <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="method#save#0;class#RegionService#0" expanded="true" />
-                <element signature="method#save#1;class#RegionService#0" expanded="true" />
-                <element signature="method#load#4;class#RegionService#0" expanded="true" />
+                <element signature="method#AFlagEventSupport#0;class#AFlagEventSupport#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PlayerService.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/UPro-SQLITE-Driver/src/ch/jarjarbings12/uprotect/driver/PlayerService.java">
+      <file leaf-file-name="DefaultFlags.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/protect/kernel/flags/module/high/DefaultFlags.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+              <caret line="32" column="5" selection-start-line="32" selection-start-column="5" selection-end-line="32" selection-end-column="5" />
+              <folding>
+                <element signature="class#1382:2132" expanded="false" />
+                <element signature="class#2317:2723" expanded="false" />
+                <element signature="method#flagCall#0;class#2317:2723" expanded="true" />
+                <element signature="class#2914:3321" expanded="false" />
+                <element signature="method#flagCall#0;class#2914:3321" expanded="true" />
+                <element signature="class#3475:4163" expanded="false" />
+                <element signature="method#flagCall#0;class#3475:4163" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="german.properties" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/resources/languages/german.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ChunkProtectCommands.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/commands/ChunkProtectCommands.java">
+      <file leaf-file-name="flagconfig.ini" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/resources/flagconfig.ini">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="43" column="32" selection-start-line="43" selection-start-column="32" selection-end-line="43" selection-end-column="32" />
+            <state vertical-scroll-proportion="0.39005736">
+              <caret line="12" column="12" selection-start-line="12" selection-start-column="12" selection-end-line="12" selection-end-column="12" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UProtectCommand.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/commands/UProtectCommand.java">
+      <file leaf-file-name="UCommand.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/commands/UCommand.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="27" column="9" selection-start-line="27" selection-start-column="9" selection-end-line="27" selection-end-column="9" />
+              <caret line="9" column="19" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="19" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UProtect.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/core/UProtect.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="46" column="72" selection-start-line="46" selection-start-column="72" selection-end-line="46" selection-end-column="72" />
+              <folding>
+                <element signature="method#initSource#0;class#UProtect#0" expanded="true" />
+                <element signature="method#initCommands#0;class#UProtect#0" expanded="true" />
+                <element signature="method#resourceCopy#0;class#UProtect#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SubscriptionPriority.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/protect/kernel/events/module/low/SubscriptionPriority.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="7" column="12" selection-start-line="7" selection-start-column="12" selection-end-line="7" selection-end-column="12" />
               <folding />
             </state>
           </provider>
@@ -174,14 +211,14 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Enum" />
         <option value="Object" />
         <option value="package-info" />
         <option value="Abstract Class" />
         <option value="Interface" />
         <option value="AnnotationType" />
-        <option value="Exception" />
         <option value="Tag Library Descriptor" />
+        <option value="Enum" />
+        <option value="Exception" />
         <option value="Class" />
       </list>
     </option>
@@ -198,57 +235,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/resources/log4j.properties" />
-        <option value="$PROJECT_DIR$/src/ch/log4j.xml" />
-        <option value="$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/core/UProtectAPI.java" />
-        <option value="$PROJECT_DIR$/src/log4j.xml" />
-        <option value="$PROJECT_DIR$/src/ch/java/test/FlagKernelTest.java" />
-        <option value="$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/protect/utils/ChunkUtils.java" />
-        <option value="$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/protect/kernel/objects/MProtectedRegion.java" />
+        <option value="$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/protect/kernel/world/WorldServices.java" />
+        <option value="$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/protect/kernel/events/module/low/BasicSubscription.java" />
+        <option value="$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/protect/kernel/events/internal/ChunkGenSubscription.java" />
+        <option value="$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/protect/kernel/storage/DriverModul/modul/exceptions/InvalidClassPathException.java" />
+        <option value="$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/protect/kernel/storage/DriverModul/modul/exceptions/InvalidModuleDescription.java" />
+        <option value="$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/protect/kernel/flags/module/low/properties/ini/IniWriter.java" />
+        <option value="$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/protect/kernel/flags/module/low/properties/ini/IniGroupFactory.java" />
+        <option value="$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/protect/kernel/events/module/low/AbstractEventSubscription.java" />
+        <option value="$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/protect/kernel/flags/module/low/Flag.java" />
+        <option value="$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/protect/kernel/flags/module/low/properties/ini/IniReader.java" />
+        <option value="$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/protect/kernel/world/chunk/CSF/RecordedChunk.java" />
+        <option value="$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/protect/kernel/flags/module/low/properties/ini/IniGroup.java" />
+        <option value="$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/protect/kernel/storage/DriverModul/modul/low/properties/PropertyLoader.java" />
+        <option value="$PROJECT_DIR$/UPro-SQLITE-Driver/src/ch/jarjarbings12/uprotect/driver/SqliteDriver.java" />
+        <option value="$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/protect/kernel/objects/MProtectedChunkRegion.java" />
+        <option value="$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/protect/kernel/objects/ProtectedChunkRegion.java" />
+        <option value="$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/protect/kernel/world/chunk/RDB/RecordDatabase.java" />
+        <option value="$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/protect/utils/UClassLoader.java" />
+        <option value="$PROJECT_DIR$/UPro-SQLITE-Driver/src/ch/jarjarbings12/uprotect/driver/RegionService.java" />
+        <option value="$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/protect/kernel/world/chunk/AsyncRecodingThread.java" />
+        <option value="$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/protect/kernel/flags/module/high/BooleanFlag.java" />
+        <option value="$PROJECT_DIR$/UPro-SQLITE-Driver/src/ch/jarjarbings12/uprotect/driver/user/NameUUIDService.java" />
+        <option value="$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/protect/kernel/events/internal/PlayerQuitSubscription.java" />
+        <option value="$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/commands/subcommands/RegionCommands.java" />
+        <option value="$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/protect/kernel/flags/module/high/StringFlag.java" />
         <option value="$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/utils/test.java" />
         <option value="$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/commands/subcommands/UserCommands.java" />
-        <option value="$PROJECT_DIR$/UPro-Sqlite-Driver/src/ch/jarjarbings12/uprotect/addon/UserDBSupport.java" />
-        <option value="$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/protect/kernel/objects/v2/ProtectedChunk.java" />
-        <option value="$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/protect/utils/JSON/JSONSerializable.java" />
-        <option value="$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/protect/utils/JSON/JSONObject.java" />
-        <option value="$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/protect/utils/HashMapFactory.java" />
-        <option value="$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/protect/kernel/objects/v2/ProtectedChunkRegion.java" />
-        <option value="$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/protect/kernel/flags/module/low/ValueFlag.java" />
-        <option value="$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/protect/kernel/flags/module/high/StringFlag.java" />
-        <option value="$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/protect/kernel/flags/module/low/Flag.java" />
-        <option value="$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/protect/kernel/flags/module/high/BooleanFlag.java" />
-        <option value="$PROJECT_DIR$/UPro-SQLITE-Driver/src/ch/jarjarbings12/uprotect/driver/user/UUIDService.java" />
-        <option value="$PROJECT_DIR$/UPro-SQLITE-Driver/src/ch/jarjarbings12/uprotect/driver/user/UserNameService.java" />
-        <option value="$PROJECT_DIR$/UPro-SQLITE-Driver/src/ch/jarjarbings12/uprotect/driver/PlayerService.java" />
-        <option value="$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/protect/kernel/objects/MProtectedChunkRegion.java" />
-        <option value="$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/protect/kernel/services/objects/DifferenceType.java" />
-        <option value="$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/protect/kernel/events/internal/PlayerLoginSubscription.java" />
-        <option value="$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/protect/kernel/events/internal/PlayerBuildSubscription.java" />
-        <option value="$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/protect/kernel/events/internal/PlayerQuitSubscription.java" />
-        <option value="$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/protect/kernel/events/internal/PlayerBreakEvent.java" />
-        <option value="$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/protect/kernel/events/internal/ChunkGenSubscription.java" />
-        <option value="$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/protect/kernel/events/internal/PlayerBreakSubscription.java" />
-        <option value="$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/commands/UProtect.java" />
-        <option value="$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/protect/kernel/events/module/bukkit/PlayerEvents.java" />
-        <option value="$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/protect/kernel/events/module/bukkit/EntityEvents.java" />
-        <option value="$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/protect/kernel/events/internal/notices.txt" />
-        <option value="$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/protect/kernel/events/internal/PlayerWorldInteractions.java" />
-        <option value="$PROJECT_DIR$/UPro-SQLITE-Driver/src/ch/jarjarbings12/uprotect/driver/user/NameUUIDService.java" />
-        <option value="$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/protect/kernel/storage/DriverModul/modul/low/support/RegionDBService.java" />
-        <option value="$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/commands/ConsoleCommands.java" />
-        <option value="$PROJECT_DIR$/src/resources/config.yml" />
-        <option value="$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/core/UProtect.java" />
-        <option value="$PROJECT_DIR$/UPro-SQLITE-Driver/src/udriver.properties" />
-        <option value="$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/protect/kernel/managers/RegionManager.java" />
-        <option value="$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/protect/kernel/storage/DatabaseService.java" />
-        <option value="$PROJECT_DIR$/UPro-SQLITE-Driver/src/ch/jarjarbings12/uprotect/driver/SqliteDriver.java" />
-        <option value="$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/protect/kernel/objects/ProtectedChunkRegion.java" />
-        <option value="$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/protect/kernel/flags/module/high/FlagCallerService.java" />
-        <option value="$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/protect/kernel/objects/ProtectedChunk.java" />
+        <option value="$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/protect/utils/ChunkVector.java" />
         <option value="$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/commands/ChunkProtectCommands.java" />
-        <option value="$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/commands/subcommands/RegionCommands.java" />
-        <option value="$PROJECT_DIR$/UPro-SQLITE-Driver/src/ch/jarjarbings12/uprotect/driver/RegionService.java" />
-        <option value="$PROJECT_DIR$/UPro-SQLITE-Driver/src/ch/jarjarbings12/uprotect/driver/BaseSqliteConnection.java" />
+        <option value="$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/protect/utils/BooleanValue.java" />
+        <option value="$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/protect/kernel/storage/DriverModul/modul/low/DriverClassLoader.java" />
+        <option value="$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/protect/kernel/storage/DriverModul/modul/high/DriverService.java" />
+        <option value="$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/protect/kernel/events/module/low/Events.java" />
+        <option value="$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/protect/kernel/flags/module/low/FlagClassLoader.java" />
+        <option value="$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/protect/kernel/storage/DriverModul/modul/high/extensions/ModuleInitializer.java" />
+        <option value="$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/protect/kernel/world/chunk/RDB/Querys.java" />
+        <option value="$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/protect/kernel/services/ServiceCenter.java" />
+        <option value="$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/protect/kernel/events/module/low/SubscriptionPriority.java" />
+        <option value="$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/core/UProtectAPI.java" />
+        <option value="$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/protect/kernel/storage/DatabaseService.java" />
+        <option value="$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/protect/kernel/managers/index/RegionDatabase.java" />
+        <option value="$PROJECT_DIR$/src/resources/flagconfig.ini" />
+        <option value="$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/protect/kernel/events/internal/PlayerBuildSubscription.java" />
+        <option value="$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/protect/kernel/events/SubscriptionManager.java" />
+        <option value="$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/protect/kernel/events/internal/PlayerLoginSubscription.java" />
+        <option value="$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/protect/kernel/events/internal/PlayerBreakSubscription.java" />
+        <option value="$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/protect/kernel/flags/module/high/FlagService.java" />
+        <option value="$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/core/UProtect.java" />
+        <option value="$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/protect/kernel/flags/module/low/AFlagEventSupport.java" />
+        <option value="$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/protect/kernel/flags/module/high/FlagCallerService.java" />
+        <option value="$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/protect/kernel/flags/module/high/DefaultFlags.java" />
       </list>
     </option>
   </component>
@@ -267,10 +304,10 @@
     <order />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="1912" />
+    <option name="x" value="-8" />
     <option name="y" value="-8" />
-    <option name="width" value="1936" />
-    <option name="height" value="1176" />
+    <option name="width" value="1456" />
+    <option name="height" value="876" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -280,12 +317,15 @@
             <id />
           </State>
           <State>
+            <id>Declaration redundancyJava</id>
+          </State>
+          <State>
             <id>Java</id>
           </State>
         </expanded-state>
         <selected-state>
           <State>
-            <id>Dependency issuesJava</id>
+            <id>CanBeFinal</id>
           </State>
         </selected-state>
       </profile-state>
@@ -314,10 +354,94 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="Scratches" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="UProtect" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="External Libraries" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="spigot-1.8.81" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="UProtect" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="External Libraries" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="spigot-1.8.8" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="spigot-1.8.8.jar" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="UProtect" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="External Libraries" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="spigot-1.8.8" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="spigot-1.8.8.jar" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="org" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="yaml" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="snakeyaml" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="UProtect" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="External Libraries" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="spigot-1.8.8" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="spigot-1.8.8.jar" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="org" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
           <PATH>
             <PATH_ELEMENT>
               <option name="myItemId" value="UProtect" />
@@ -510,28 +634,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="drivers" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="UProtect" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="UProtect" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="ch" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -541,936 +643,12 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="uprotect" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="utils" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="UProtect" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="UProtect" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ch" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jarjarbings12" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="uprotect" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="protect" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="utils" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="UProtect" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="UProtect" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ch" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jarjarbings12" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="uprotect" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="protect" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="kernel" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="world" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="UProtect" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="UProtect" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ch" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jarjarbings12" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="uprotect" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="protect" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="kernel" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="world" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="chunk" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="UProtect" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="UProtect" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ch" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jarjarbings12" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="uprotect" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="protect" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="kernel" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="world" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="chunk" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="RDB" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="UProtect" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="UProtect" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ch" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jarjarbings12" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="uprotect" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="protect" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="kernel" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="world" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="chunk" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="CSF" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="UProtect" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="UProtect" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ch" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jarjarbings12" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="uprotect" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="protect" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="kernel" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="storage" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="UProtect" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="UProtect" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ch" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jarjarbings12" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="uprotect" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="protect" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="kernel" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="storage" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DriverModul" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="modul" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="low" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="UProtect" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="UProtect" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ch" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jarjarbings12" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="uprotect" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="protect" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="kernel" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="storage" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DriverModul" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="modul" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="low" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="properties" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="UProtect" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="UProtect" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ch" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jarjarbings12" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="uprotect" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="protect" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="kernel" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="storage" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DriverModul" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="modul" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="high" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="UProtect" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="UProtect" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ch" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jarjarbings12" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="uprotect" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="protect" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="kernel" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="storage" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DriverModul" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="modul" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="high" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="extensions" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="UProtect" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="UProtect" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ch" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jarjarbings12" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="uprotect" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="protect" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="kernel" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="storage" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DriverModul" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="modul" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="UProtect" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="UProtect" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ch" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jarjarbings12" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="uprotect" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="protect" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="kernel" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="services" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="UProtect" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="UProtect" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ch" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jarjarbings12" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="uprotect" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="protect" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="kernel" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="services" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="objects" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="UProtect" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="UProtect" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ch" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jarjarbings12" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="uprotect" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="protect" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="kernel" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="services" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="interfaces" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="UProtect" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="UProtect" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ch" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jarjarbings12" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="uprotect" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="protect" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="kernel" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="objects" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="UProtect" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="UProtect" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ch" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jarjarbings12" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="uprotect" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="protect" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="kernel" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="managers" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="UProtect" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="UProtect" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ch" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jarjarbings12" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="uprotect" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="protect" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="kernel" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="flags" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="module" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="low" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="UProtect" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="UProtect" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ch" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jarjarbings12" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="uprotect" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="protect" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="kernel" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="flags" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="module" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="high" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="UProtect" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="UProtect" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ch" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jarjarbings12" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="uprotect" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="protect" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="kernel" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="events" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="UProtect" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="UProtect" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ch" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jarjarbings12" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="uprotect" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="core" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="UProtect" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="UProtect" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ch" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jarjarbings12" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="uprotect" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="commands" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="UProtect" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="UProtect" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ch" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jarjarbings12" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="uprotect" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="commands" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="subcommands" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -1480,9 +658,9 @@
     <property name="MemberChooser.sorted" value="false" />
     <property name="MemberChooser.showClasses" value="true" />
     <property name="MemberChooser.copyJavadoc" value="false" />
-    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
-    <property name="last_opened_file_path" value="E:/LIBARIES/JAVA/MINECRAFT/SERVER/SPIGOT/BUILDTOOLS/spigot-1.8.8.jar!/" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/UProtect.jar!/" />
     <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15332031" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -1510,6 +688,14 @@
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder3" value="3" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="recentsLimit" value="5" />
+    <property name="GenerateAntBuildDialog.generateSingleFile" value="false" />
+    <property name="GenerateAntBuildDialog.enableUiFormCompile" value="true" />
+    <property name="GenerateAntBuildDialog.forceTargetJdk" value="true" />
+    <property name="GenerateAntBuildDialog.backupFiles" value="true" />
+    <property name="GenerateAntBuildDialog.inclineRuntiemClasspath" value="false" />
+    <property name="GenerateAntBuildDialog.generateIdeaHomeProperty" value="false" />
+    <property name="GenerateAntBuildDialog.outputFileNameProperty" value="uprotect" />
   </component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
@@ -1824,11 +1010,51 @@
       <workItem from="1447797923667" duration="685000" />
       <workItem from="1447848790336" duration="7566000" />
       <workItem from="1447964596102" duration="4687000" />
+      <workItem from="1447970341916" duration="1613000" />
+      <workItem from="1448033619318" duration="670000" />
+      <workItem from="1448040009749" duration="8025000" />
+      <workItem from="1448119265057" duration="3714000" />
+      <workItem from="1448384952822" duration="1894000" />
+      <workItem from="1448395371476" duration="5970000" />
+      <workItem from="1448461318680" duration="6080000" />
+      <workItem from="1448488755145" duration="593000" />
+      <workItem from="1448633093020" duration="1170000" />
+      <workItem from="1448653857455" duration="686000" />
+      <workItem from="1448660476531" duration="615000" />
+      <workItem from="1449171268423" duration="5944000" />
+      <workItem from="1449230131384" duration="5763000" />
+      <workItem from="1449250715245" duration="883000" />
+      <workItem from="1449316814069" duration="5211000" />
+      <workItem from="1449353809850" duration="6207000" />
+      <workItem from="1449398386609" duration="3072000" />
+      <workItem from="1449420185540" duration="598000" />
+      <workItem from="1449488948232" duration="4289000" />
+      <workItem from="1449533722785" duration="2569000" />
+      <workItem from="1449606144009" duration="2488000" />
+      <workItem from="1449677882002" duration="1626000" />
+      <workItem from="1449695756377" duration="1784000" />
+      <workItem from="1449779123122" duration="1878000" />
+      <workItem from="1449834716525" duration="13447000" />
+      <workItem from="1449875613889" duration="7863000" />
+      <workItem from="1449926926612" duration="5812000" />
+      <workItem from="1450012579825" duration="15720000" />
+      <workItem from="1450095266094" duration="103000" />
+      <workItem from="1450129881312" duration="2439000" />
+      <workItem from="1450301025319" duration="359000" />
+      <workItem from="1450354547523" duration="379000" />
+      <workItem from="1450384607626" duration="898000" />
+      <workItem from="1450468241586" duration="591000" />
+      <workItem from="1450736778208" duration="4261000" />
+      <workItem from="1450802889617" duration="15312000" />
+      <workItem from="1450884562342" duration="15740000" />
+      <workItem from="1450980771866" duration="6496000" />
+      <workItem from="1451049350633" duration="26673000" />
+      <workItem from="1451176367057" duration="9691000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="160304000" />
+    <option name="totallyTimeSpent" value="359430000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1839,22 +1065,24 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="1912" y="-8" width="1936" height="1176" extended-state="6" />
+    <frame x="-8" y="-8" width="1456" height="876" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.1977507" sideWeight="0.49583334" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.29240862" sideWeight="0.44583333" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.29240862" sideWeight="0.42916667" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.29240862" sideWeight="0.5541667" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.12839738" sideWeight="0.5708333" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32923368" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2875" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2951389" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24947916" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2816167" sideWeight="0.42083332" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.16458334" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" x="3140" y="225" width="480" height="715" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1864,37 +1092,38 @@
       <window_info id="Tool Output" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24947916" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3298969" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Code Iris" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3296875" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39925024" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Preview" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.34864104" sideWeight="0.42708334" order="1" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Tool Output" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3289597" sideWeight="0.5104167" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.12839738" sideWeight="0.5708333" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Structure" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.16458334" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" x="3140" y="225" width="480" height="715" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24947916" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.16458334" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" x="3140" y="225" width="480" height="715" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.1977507" sideWeight="0.49791667" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3289597" sideWeight="0.48958334" order="13" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Code Iris" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3296875" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.1977507" sideWeight="0.49583334" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.29240862" sideWeight="0.42916667" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Preview" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32923368" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.30364582" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32802248" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3046875" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.34864104" sideWeight="0.42083332" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
     </layout-to-restore>
   </component>
@@ -1931,7 +1160,7 @@
           <option name="timeStamp" value="54" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="106" />
+      <option name="time" value="151" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1940,248 +1169,34 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/protect/kernel/services/objects/IndexDifference.java">
+    <entry file="file://$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/protect/kernel/flags/module/high/StringFlag.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+          <folding>
+            <element signature="method#applyForRegion#0;class#StringFlag#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/UPro-SQLITE-Driver/src/ch/jarjarbings12/uprotect/driver/user/NameUUIDService.java">
+    <entry file="file://$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/commands/subcommands/UserCommands.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="16" column="21" selection-start-line="16" selection-start-column="8" selection-end-line="16" selection-end-column="21" />
+          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/protect/kernel/events/internal/notices.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-12.592592">
-          <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/protect/kernel/events/module/bukkit/EntityEvents.java">
+    <entry file="file://$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/protect/kernel/flags/module/low/properties/ini/IniGroupFactory.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="18" column="78" selection-start-line="18" selection-start-column="78" selection-end-line="18" selection-end-column="78" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/protect/kernel/world/chunk/RDB/Querys.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/protect/kernel/storage/DriverModul/modul/low/DriverDescription.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.059371363">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/protect/kernel/storage/DriverModul/modul/low/properties/PropertyLoader.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.15832363">
-          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/protect/kernel/storage/DriverModul/modul/low/properties/DescriptionParser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.217695">
-          <caret line="17" column="11" selection-start-line="17" selection-start-column="11" selection-end-line="17" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_60/src.zip!/java/sql/ResultSet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33256084">
-          <caret line="1367" column="8" selection-start-line="1367" selection-start-column="8" selection-end-line="1367" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/protect/kernel/objects/RegionChangeable.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="13" column="17" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="17" />
+          <caret line="20" column="4" selection-start-line="20" selection-start-column="4" selection-end-line="20" selection-end-column="4" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/protect/kernel/objects/MProtectedChunkRegion.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="19" column="23" selection-start-line="19" selection-start-column="23" selection-end-line="19" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/protect/kernel/storage/DriverModul/modul/low/Driver.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.13789108">
-          <caret line="11" column="9" selection-start-line="11" selection-start-column="9" selection-end-line="11" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/protect/kernel/managers/index/RegionDatabase.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="25" column="13" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/core/UProtectAPI.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="16" column="20" selection-start-line="16" selection-start-column="20" selection-end-line="16" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://E:/LIBARIES/JAVA/MINECRAFT/SERVER/SPIGOT/BUILDTOOLS/spigot-1.8.8.jar!/org/bukkit/command/Command.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.346875">
-          <caret line="56" column="28" selection-start-line="56" selection-start-column="28" selection-end-line="56" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/protect/kernel/services/objects/DifferenceType.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/resources/notices.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/UPro-SQLITE-Driver/UPro-SQLITE-Driver.iml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/protect/kernel/storage/DriverModul/modul/low/support/RegionDBService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3328336">
-          <caret line="50" column="12" selection-start-line="50" selection-start-column="12" selection-end-line="50" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/protect/kernel/managers/RegionManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="100" column="139" selection-start-line="100" selection-start-column="139" selection-end-line="100" selection-end-column="139" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/protect/kernel/storage/DatabaseService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="49" column="25" selection-start-line="49" selection-start-column="25" selection-end-line="49" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/protect/kernel/storage/DriverModul/modul/high/DriverService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="101" column="17" selection-start-line="101" selection-start-column="17" selection-end-line="101" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/UPro-SQLITE-Driver/src/udriver.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="3" selection-start-line="0" selection-start-column="3" selection-end-line="0" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/protect/kernel/events/SubscriptionManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/protect/kernel/objects/ProtectedChunkRegion.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="247" column="20" selection-start-line="247" selection-start-column="20" selection-end-line="247" selection-end-column="20" />
-          <folding>
-            <element signature="method#ProtectedChunkRegion#3;class#ProtectedChunkRegion#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/core/UProtect.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="38" column="74" selection-start-line="38" selection-start-column="74" selection-end-line="38" selection-end-column="74" />
-          <folding>
-            <element signature="method#initSource#0;class#UProtect#0" expanded="true" />
-            <element signature="method#resourceCopy#0;class#UProtect#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/protect/kernel/flags/module/high/FlagService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="50" column="24" selection-start-line="50" selection-start-column="24" selection-end-line="50" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/protect/kernel/flags/module/high/FlagCallerService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="50" column="37" selection-start-line="50" selection-start-column="37" selection-end-line="50" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/protect/kernel/flags/module/low/Flag.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="14" column="22" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/protect/kernel/flags/module/high/BooleanFlag.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5743741">
-          <caret line="75" column="0" selection-start-line="75" selection-start-column="0" selection-end-line="75" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/utils/test.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.57584685">
-          <caret line="35" column="26" selection-start-line="35" selection-start-column="26" selection-end-line="35" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/protect/kernel/objects/ProtectedChunk.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.37407953">
-          <caret line="31" column="0" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/protect/kernel/world/chunk/ChunkRecorder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="31" column="0" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/protect/kernel/world/chunk/RDB/RecordDatabase.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -2192,133 +1207,536 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/protect/kernel/world/chunk/CSF/ChunkFormatter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4226804">
-          <caret line="32" column="21" selection-start-line="32" selection-start-column="21" selection-end-line="32" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/protect/kernel/world/chunk/AsyncRecodingThread.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.9322533">
-          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/protect/kernel/world/chunk/WorldChunkService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.12518409">
-          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://E:/LIBARIES/JAVA/MINECRAFT/SERVER/SPIGOT/BUILDTOOLS/spigot-1.8.8.jar!/org/bukkit/World.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.34662578">
-          <caret line="55" column="8" selection-start-line="55" selection-start-column="8" selection-end-line="55" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://E:/LIBARIES/JAVA/MINECRAFT/SERVER/SPIGOT/BUILDTOOLS/spigot-1.8.8.jar!/org/bukkit/entity/Player.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.39110428">
-          <caret line="29" column="17" selection-start-line="29" selection-start-column="17" selection-end-line="29" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://E:/LIBARIES/JAVA/MINECRAFT/SERVER/SPIGOT/BUILDTOOLS/spigot-1.8.8.jar!/org/bukkit/craftbukkit/v1_8_R3/entity/CraftPlayer.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.65827686">
-          <caret line="474" column="0" selection-start-line="474" selection-start-column="0" selection-end-line="474" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/commands/UProtectCommand.java">
+    <entry file="file://$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/protect/kernel/objects/ProtectedChunkRegion.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="27" column="9" selection-start-line="27" selection-start-column="9" selection-end-line="27" selection-end-column="9" />
-          <folding />
+          <caret line="201" column="4" selection-start-line="201" selection-start-column="4" selection-end-line="201" selection-end-column="4" />
+          <folding>
+            <element signature="method#hasAccess#0;class#ProtectedChunkRegion#0" expanded="true" />
+            <element signature="method#removeMember#0;class#ProtectedChunkRegion#0" expanded="true" />
+            <element signature="method#hasFlag#0;class#ProtectedChunkRegion#0" expanded="true" />
+            <element signature="method#delete#0;class#ProtectedChunkRegion#0" expanded="true" />
+            <element signature="method#deserialize#0;class#ProtectedChunkRegion#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_60/src.zip!/java/lang/String.java">
+    <entry file="file://$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/protect/utils/ChunkVector.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33287483">
-          <caret line="1104" column="19" selection-start-line="1104" selection-start-column="19" selection-end-line="1104" selection-end-column="19" />
-          <folding>
-            <element signature="method#equalsIgnoreCase#0;class#String#0" expanded="true" />
-          </folding>
+        <state vertical-scroll-proportion="0.0">
+          <caret line="9" column="15" selection-start-line="9" selection-start-column="15" selection-end-line="9" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/protect/utils/BooleanValue.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="11" column="43" selection-start-line="11" selection-start-column="43" selection-end-line="11" selection-end-column="43" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/commands/ChunkProtectCommands.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="43" column="32" selection-start-line="43" selection-start-column="32" selection-end-line="43" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/commands/subcommands/UserCommands.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="33" column="17" selection-start-line="33" selection-start-column="17" selection-end-line="33" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/commands/subcommands/RegionCommands.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="237" column="0" selection-start-line="237" selection-start-column="0" selection-end-line="237" selection-end-column="0" />
+          <caret line="14" column="33" selection-start-line="14" selection-start-column="33" selection-end-line="14" selection-end-column="33" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="method#execute#0;class#ChunkProtectCommands#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/UPro-SQLITE-Driver/src/ch/jarjarbings12/uprotect/driver/PlayerService.java">
+    <entry file="file://$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/protect/kernel/storage/DriverModul/modul/low/DriverClassLoader.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+          <caret line="15" column="31" selection-start-line="15" selection-start-column="31" selection-end-line="15" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/protect/kernel/storage/DriverModul/modul/high/DriverService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="23" column="23" selection-start-line="23" selection-start-column="23" selection-end-line="23" selection-end-column="23" />
+          <folding>
+            <element signature="method#init#0;class#DriverService#0" expanded="false" />
+            <element signature="method#initDrivers#0;class#DriverService#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/protect/kernel/flags/module/low/FlagClassLoader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="15" column="31" selection-start-line="15" selection-start-column="31" selection-end-line="15" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/protect/kernel/flags/module/low/FlagInfo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="10" column="25" selection-start-line="10" selection-start-column="25" selection-end-line="10" selection-end-column="25" />
+          <folding>
+            <element signature="e#794#795#0" expanded="true" />
+            <element signature="e#833#834#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/protect/kernel/storage/DriverModul/modul/high/extensions/ModuleInitializer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="17" column="29" selection-start-line="17" selection-start-column="29" selection-end-line="17" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/protect/kernel/world/chunk/RDB/Querys.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="15" column="25" selection-start-line="15" selection-start-column="25" selection-end-line="15" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/protect/kernel/services/ServiceCenter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="15" column="30" selection-start-line="15" selection-start-column="30" selection-end-line="15" selection-end-column="30" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/UPro-SQLITE-Driver/src/ch/jarjarbings12/uprotect/driver/SqliteDriver.java">
+    <entry file="file://$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/core/UProtectAPI.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="43" column="36" selection-start-line="43" selection-start-column="36" selection-end-line="43" selection-end-column="36" />
+          <caret line="16" column="32" selection-start-line="16" selection-start-column="32" selection-end-line="16" selection-end-column="32" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/resources/config.yml">
+    <entry file="file://$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/protect/kernel/storage/DriverModul/modul/low/Driver.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="11" column="12" selection-start-line="11" selection-start-column="12" selection-end-line="11" selection-end-column="12" />
-          <folding />
+          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/protect/kernel/world/chunk/ChunkRecorder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="41" column="4" selection-start-line="41" selection-start-column="4" selection-end-line="41" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/protect/kernel/world/TSchematic/v1/CSchematic.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/UPro-SQLITE-Driver/src/ch/jarjarbings12/uprotect/driver/RegionService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="102" column="37" selection-start-line="102" selection-start-column="37" selection-end-line="102" selection-end-column="37" />
+        <state vertical-scroll-proportion="0.33278957">
+          <caret line="242" column="32" selection-start-line="242" selection-start-column="32" selection-end-line="242" selection-end-column="32" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#save#0;class#RegionService#0" expanded="true" />
-            <element signature="method#save#1;class#RegionService#0" expanded="true" />
-            <element signature="method#load#4;class#RegionService#0" expanded="true" />
+            <element signature="method#save#0;class#RegionService#0" expanded="false" />
+            <element signature="method#save#2;class#RegionService#0" expanded="false" />
+            <element signature="method#isWorldNew#0;class#RegionService#0" expanded="false" />
+            <element signature="e#7694#7695#0" expanded="false" />
+            <element signature="e#7721#7722#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/UPro-SQLITE-Driver/src/ch/jarjarbings12/uprotect/driver/BaseSqliteConnection.java">
+    <entry file="file://$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/protect/kernel/storage/DriverModul/modul/low/support/RegionDBService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5144429">
-          <caret line="29" column="116" selection-start-line="29" selection-start-column="116" selection-end-line="29" selection-end-column="116" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="72" column="4" selection-start-line="72" selection-start-column="4" selection-end-line="72" selection-end-column="4" />
+          <folding>
+            <element signature="docComment;method#getRegion#0;class#RegionDBService#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/protect/kernel/services/objects/DifferenceType.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="7" column="12" selection-start-line="7" selection-start-column="12" selection-end-line="7" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/protect/kernel/world/chunk/AsyncRecodingThread.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="53" column="19" selection-start-line="53" selection-start-column="19" selection-end-line="53" selection-end-column="19" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="docComment;class#AsyncRecodingThread#0" expanded="false" />
+            <element signature="method#AsyncRecodingThread#0;class#AsyncRecodingThread#0" expanded="false" />
+            <element signature="e#1082#1083#0" expanded="false" />
+            <element signature="e#1118#1119#0" expanded="false" />
+            <element signature="e#1162#1163#0" expanded="false" />
+            <element signature="e#1196#1197#0" expanded="false" />
+            <element signature="e#1250#1251#0" expanded="false" />
+            <element signature="e#1277#1278#0" expanded="false" />
+            <element signature="e#1316#1317#0" expanded="false" />
+            <element signature="e#1347#1348#0" expanded="false" />
+            <element signature="e#1460#1461#0" expanded="false" />
+            <element signature="e#1500#1501#0" expanded="false" />
+            <element signature="e#1534#1535#0" expanded="false" />
+            <element signature="e#1566#1567#0" expanded="false" />
+            <element signature="e#1604#1605#0" expanded="false" />
+            <element signature="e#1637#1638#0" expanded="false" />
+            <element signature="e#1675#1676#0" expanded="false" />
+            <element signature="e#1709#1710#0" expanded="false" />
+            <element signature="e#1761#1762#0" expanded="false" />
+            <element signature="e#1798#1799#0" expanded="false" />
+            <element signature="e#1847#1848#0" expanded="false" />
+            <element signature="e#1896#1897#0" expanded="false" />
+            <element signature="e#1964#1965#0" expanded="false" />
+            <element signature="e#1991#1992#0" expanded="false" />
+            <element signature="method#pause#0;class#AsyncRecodingThread#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/protect/kernel/flags/module/low/ValueFlag.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="11" column="6" selection-start-line="11" selection-start-column="6" selection-end-line="11" selection-end-column="6" />
+          <folding>
+            <element signature="docComment;class#ValueFlag#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/protect/kernel/storage/DatabaseService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="19" column="32" selection-start-line="19" selection-start-column="32" selection-end-line="19" selection-end-column="32" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="docComment;class#DatabaseService#0" expanded="false" />
+            <element signature="method#DatabaseService#0;class#DatabaseService#0" expanded="false" />
+            <element signature="e#1048#1049#0" expanded="false" />
+            <element signature="e#1077#1078#0" expanded="false" />
+            <element signature="e#1123#1124#0" expanded="false" />
+            <element signature="e#1175#1176#0" expanded="false" />
+            <element signature="e#1226#1227#0" expanded="false" />
+            <element signature="e#1262#1263#0" expanded="false" />
+            <element signature="e#1315#1316#0" expanded="false" />
+            <element signature="e#1344#1345#0" expanded="false" />
+            <element signature="method#setup#0;class#DatabaseService#0" expanded="false" />
+            <element signature="method#shutdown#0;class#DatabaseService#0" expanded="false" />
+            <element signature="method#printDriverInfo#0;class#DatabaseService#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/protect/kernel/managers/index/RegionDatabase.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="27" column="49" selection-start-line="27" selection-start-column="49" selection-end-line="27" selection-end-column="49" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="docComment;class#RegionDatabase#0" expanded="false" />
+            <element signature="e#2799#2800#0" expanded="false" />
+            <element signature="e#2854#2855#0" expanded="false" />
+            <element signature="e#2921#2922#0" expanded="false" />
+            <element signature="e#2977#2978#0" expanded="false" />
+            <element signature="e#3040#3041#0" expanded="false" />
+            <element signature="e#3092#3093#0" expanded="false" />
+            <element signature="e#3155#3156#0" expanded="false" />
+            <element signature="e#3207#3208#0" expanded="false" />
+            <element signature="e#3430#3431#0" expanded="false" />
+            <element signature="e#3481#3482#0" expanded="false" />
+            <element signature="e#3557#3558#0" expanded="false" />
+            <element signature="e#3611#3612#0" expanded="false" />
+            <element signature="e#3693#3694#0" expanded="false" />
+            <element signature="e#3750#3751#0" expanded="false" />
+            <element signature="e#3828#3829#0" expanded="false" />
+            <element signature="e#3883#3884#0" expanded="false" />
+            <element signature="e#3957#3958#0" expanded="false" />
+            <element signature="e#4014#4015#0" expanded="false" />
+            <element signature="e#4421#4422#0" expanded="false" />
+            <element signature="e#4468#4469#0" expanded="false" />
+            <element signature="e#4531#4532#0" expanded="false" />
+            <element signature="e#4581#4582#0" expanded="false" />
+            <element signature="e#4650#4651#0" expanded="false" />
+            <element signature="e#4703#4704#0" expanded="false" />
+            <element signature="e#4768#4769#0" expanded="false" />
+            <element signature="e#4819#4820#0" expanded="false" />
+            <element signature="e#5882#5883#0" expanded="false" />
+            <element signature="e#5938#5939#0" expanded="false" />
+            <element signature="e#6031#6032#0" expanded="false" />
+            <element signature="e#6090#6091#0" expanded="false" />
+            <element signature="e#6881#6882#0" expanded="false" />
+            <element signature="e#6938#6939#0" expanded="false" />
+            <element signature="e#7004#7005#0" expanded="false" />
+            <element signature="e#7062#7063#0" expanded="false" />
+            <element signature="e#7423#7424#0" expanded="false" />
+            <element signature="e#7478#7479#0" expanded="false" />
+            <element signature="e#7544#7545#0" expanded="false" />
+            <element signature="e#7600#7601#0" expanded="false" />
+            <element signature="e#7901#7902#0" expanded="false" />
+            <element signature="e#7938#7939#0" expanded="false" />
+            <element signature="e#7991#7992#0" expanded="false" />
+            <element signature="e#8026#8027#0" expanded="false" />
+            <element signature="e#8081#8082#0" expanded="false" />
+            <element signature="e#8119#8120#0" expanded="false" />
+            <element signature="e#8180#8181#0" expanded="false" />
+            <element signature="e#8221#8222#0" expanded="false" />
+            <element signature="e#8278#8279#0" expanded="false" />
+            <element signature="e#8317#8318#0" expanded="false" />
+            <element signature="e#8364#8365#0" expanded="false" />
+            <element signature="e#8419#8420#0" expanded="false" />
+            <element signature="e#8497#8498#0" expanded="false" />
+            <element signature="e#8562#8563#0" expanded="false" />
+            <element signature="e#8980#8981#0" expanded="false" />
+            <element signature="e#9036#9037#0" expanded="false" />
+            <element signature="e#9118#9119#0" expanded="false" />
+            <element signature="e#9175#9176#0" expanded="false" />
+            <element signature="e#9825#9826#0" expanded="false" />
+            <element signature="e#9893#9894#0" expanded="false" />
+            <element signature="e#9949#9950#0" expanded="false" />
+            <element signature="e#9994#9995#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/protect/kernel/storage/DriverModul/modul/low/BasicHigh.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+          <folding>
+            <element signature="docComment;class#BasicHigh#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/protect/kernel/events/internal/PlayerBuildSubscription.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="36" column="9" selection-start-line="36" selection-start-column="9" selection-end-line="36" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/protect/kernel/events/internal/PlayerQuitSubscription.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="32" column="4" selection-start-line="32" selection-start-column="4" selection-end-line="32" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/protect/kernel/flags/module/low/properties/ini/IniReader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.059302326">
+          <caret line="42" column="5" selection-start-line="42" selection-start-column="5" selection-end-line="42" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#load#0;class#IniReader#0" expanded="true" />
+            <element signature="e#914#915#0" expanded="true" />
+            <element signature="e#971#972#0" expanded="true" />
+            <element signature="method#parse#0;class#IniReader#0" expanded="true" />
+            <element signature="method#write#1;class#IniReader#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/protect/kernel/events/internal/PlayerLoginSubscription.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="24" column="50" selection-start-line="24" selection-start-column="50" selection-end-line="24" selection-end-column="50" />
+          <folding>
+            <element signature="e#873#874#0" expanded="true" />
+            <element signature="e#930#931#0" expanded="true" />
+            <element signature="method#call#0;class#PlayerLoginSubscription#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/protect/kernel/flags/module/high/FlagService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="113" column="123" selection-start-line="113" selection-start-column="123" selection-end-line="113" selection-end-column="123" />
+          <folding>
+            <element signature="method#FlagService#0;class#FlagService#0" expanded="true" />
+            <element signature="method#getFlagInfo#0;class#FlagService#0" expanded="true" />
+            <element signature="method#setup#0;class#FlagService#0" expanded="true" />
+            <element signature="method#loadedFlags#0;class#FlagService#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/protect/kernel/events/internal/ChunkGenSubscription.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/protect/kernel/events/SubscriptionManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="89" column="71" selection-start-line="89" selection-start-column="71" selection-end-line="89" selection-end-column="71" />
+          <folding>
+            <element signature="method#SubscriptionManager#0;class#SubscriptionManager#0" expanded="true" />
+            <element signature="method#subscribe#1;class#SubscriptionManager#0" expanded="true" />
+            <element signature="method#unsubscribe#3;class#SubscriptionManager#0" expanded="true" />
+            <element signature="e#4473#4474#0" expanded="true" />
+            <element signature="e#4520#4521#0" expanded="true" />
+            <element signature="e#4574#4575#0" expanded="true" />
+            <element signature="e#4631#4632#0" expanded="true" />
+            <element signature="e#4711#4712#0" expanded="true" />
+            <element signature="e#4760#4761#0" expanded="true" />
+            <element signature="e#4821#4822#0" expanded="true" />
+            <element signature="e#4874#4875#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/protect/kernel/flags/module/low/Flag.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="16" column="46" selection-start-line="16" selection-start-column="46" selection-end-line="16" selection-end-column="46" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/protect/kernel/events/internal/PlayerBreakSubscription.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="22" column="34" selection-start-line="22" selection-start-column="34" selection-end-line="22" selection-end-column="34" />
+          <folding>
+            <element signature="e#679#680#0" expanded="true" />
+            <element signature="e#720#721#0" expanded="true" />
+            <element signature="method#call#0;class#PlayerBreakSubscription#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/protect/kernel/events/module/low/Events.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="27" column="22" selection-start-line="27" selection-start-column="22" selection-end-line="27" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/protect/kernel/events/module/bukkit/EntityEvents.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+          <folding>
+            <element signature="method#onEntityDamageEntityEvent#0;class#EntityEvents#0" expanded="true" />
+            <element signature="method#onEntityDamageBlockEvent#0;class#EntityEvents#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/commands/UProtectCommand.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/commands/UCommand.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="9" column="19" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/protect/kernel/events/module/low/SubscriptionPriority.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="7" column="12" selection-start-line="7" selection-start-column="12" selection-end-line="7" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/protect/kernel/events/module/low/AbstractEventSubscription.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="37" column="28" selection-start-line="37" selection-start-column="25" selection-end-line="37" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/protect/kernel/flags/module/low/AFlagEventSupport.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="16" selection-end-column="49" />
+          <folding>
+            <element signature="method#AFlagEventSupport#0;class#AFlagEventSupport#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/protect/kernel/flags/module/high/FlagCallerService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="18" column="3" selection-start-line="18" selection-start-column="3" selection-end-line="18" selection-end-column="3" />
+          <folding>
+            <element signature="method#FlagCallerService#0;class#FlagCallerService#0" expanded="true" />
+            <element signature="method#call#0;class#FlagCallerService#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/protect/kernel/flags/module/high/DefaultFlags.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="32" column="5" selection-start-line="32" selection-start-column="5" selection-end-line="32" selection-end-column="5" />
+          <folding>
+            <element signature="class#1382:2132" expanded="false" />
+            <element signature="class#2317:2723" expanded="false" />
+            <element signature="method#flagCall#0;class#2317:2723" expanded="true" />
+            <element signature="class#2914:3321" expanded="false" />
+            <element signature="method#flagCall#0;class#2914:3321" expanded="true" />
+            <element signature="class#3475:4163" expanded="false" />
+            <element signature="method#flagCall#0;class#3475:4163" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/resources/languages/german.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/resources/notices.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/core/UProtect.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="46" column="72" selection-start-line="46" selection-start-column="72" selection-end-line="46" selection-end-column="72" />
+          <folding>
+            <element signature="method#initSource#0;class#UProtect#0" expanded="true" />
+            <element signature="method#initCommands#0;class#UProtect#0" expanded="true" />
+            <element signature="method#resourceCopy#0;class#UProtect#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/resources/flagconfig.ini">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.39005736">
+          <caret line="12" column="12" selection-start-line="12" selection-start-column="12" selection-end-line="12" selection-end-column="12" />
           <folding />
         </state>
       </provider>
@@ -2329,7 +1747,7 @@
       <state key="ArtifactsStructureConfigurable.UI">
         <settings>
           <artifact-editor />
-          <last-edited>UProtect</last-edited>
+          <last-edited>Addon</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -2383,7 +1801,6 @@
             <option name="proportions">
               <list>
                 <option value="0.2" />
-                <option value="0.6" />
               </list>
             </option>
           </splitter-proportions>
@@ -2403,7 +1820,7 @@
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
-          <last-edited>Addon</last-edited>
+          <last-edited>UProtect</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

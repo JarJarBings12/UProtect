@@ -2,7 +2,8 @@ package ch.jarjarbings12.uprotect.protect.kernel.events.internal;
 
 import ch.jarjarbings12.uprotect.core.UProtect;
 import ch.jarjarbings12.uprotect.protect.kernel.events.module.low.AbstractEventSubscription;
-import ch.jarjarbings12.uprotect.protect.utils.exceptions.NotInUseException;
+import ch.jarjarbings12.uprotect.protect.kernel.events.module.low.SubscriptionPriority;
+import ch.jarjarbings12.uprotect.protect.kernel.storage.DriverModul.modul.low.support.DriverServices;
 import org.bukkit.entity.Player;
 import org.bukkit.event.Event;
 import org.bukkit.event.player.PlayerJoinEvent;
@@ -17,30 +18,42 @@ import java.util.UUID;
 public class PlayerLoginSubscription extends AbstractEventSubscription
 {
     private final UUID subid = UUID.fromString("d7ab0505-6e42-45cc-bef5-5bca989ed9d9");
+    private DriverServices driverServices = null;
+
+    public PlayerLoginSubscription()
+    {
+        setPriority(SubscriptionPriority.MONITOR);
+    }
 
     @Override
     public void call(Event event)
     {
-        PlayerJoinEvent localEvent = (PlayerJoinEvent)event;
+        PlayerJoinEvent playerJoinEvent = (PlayerJoinEvent)event;
+        Player player = playerJoinEvent.getPlayer();
 
-        Player player = localEvent.getPlayer();
-        UProtect.getUProtect().getUProtectAPI().getServiceCenter().getDatabaseService().getDriverServices().getUserDBService().getPlayTimeService().setLastLogin(localEvent.getPlayer().getUniqueId(), System.currentTimeMillis());
-
-        if (!UProtect.getUProtect().getUProtectAPI().getServiceCenter().getDatabaseService().getDriverServices().getUserDBService().getPlayerUUIDService().isUUIDRegistered(player.getUniqueId()))
+        if(driverServices.getUserDBService().getPlayerUUIDService().isUUIDRegistered(player.getUniqueId()))
         {
-            UProtect.getUProtect().getUProtectAPI().getServiceCenter().getDatabaseService().getDriverServices().getUserDBService().getPlayTimeService().setPlayTime(player.getUniqueId(), 0);
-            UProtect.getUProtect().getUProtectAPI().getServiceCenter().getDatabaseService().getDriverServices().getUserDBService().getPlayerUUIDService().setUserNameFor(player.getUniqueId(), player.getName());
+            driverServices.getUserDBService().getPlayerUUIDService().setUserNameFor(player.getUniqueId(), player.getName());
+            driverServices.getUserDBService().getPlayTimeService().setLastLogin(player.getUniqueId(), System.currentTimeMillis());
+            return;
         }
         else
         {
-            if (!UProtect.getUProtect().getUProtectAPI().getServiceCenter().getDatabaseService().getDriverServices().getUserDBService().getPlayerUUIDService().isNameCurrently(player.getUniqueId(), player.getName()))
-                UProtect.getUProtect().getUProtectAPI().getServiceCenter().getDatabaseService().getDriverServices().getUserDBService().getPlayerUUIDService().setUserNameFor(player.getUniqueId(), player.getName());
+            driverServices.getUserDBService().getPlayerUUIDService().setUserNameFor(player.getUniqueId(), player.getName());
+            driverServices.getUserDBService().getPlayTimeService().setLastLogin(player.getUniqueId(), System.currentTimeMillis());
+            driverServices.getUserDBService().getPlayTimeService().setFirstLogin(player.getUniqueId(), System.currentTimeMillis());
         }
     }
 
     @Override
-    public UUID getSubscriberID() throws NotInUseException
+    public UUID getSubscriberID()
     {
         return subid;
     }
+
+    public void onSubscribe()
+    {
+        driverServices = UProtect.getUProtect().getUProtectAPI().getServiceCenter().getDatabaseService().getDriverServices();
+    }
+
 }

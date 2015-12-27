@@ -3,8 +3,6 @@ package ch.jarjarbings12.uprotect.protect.kernel.events.internal;
 import ch.jarjarbings12.uprotect.core.UProtect;
 import ch.jarjarbings12.uprotect.protect.kernel.events.module.low.AbstractEventSubscription;
 import ch.jarjarbings12.uprotect.protect.kernel.managers.index.RegionDatabase;
-import ch.jarjarbings12.uprotect.protect.utils.exceptions.NotInUseException;
-import ch.jarjarbings12.uprotect.protect.utils.exceptions.UnknownWorldException;
 import org.bukkit.event.Event;
 import org.bukkit.event.block.BlockBreakEvent;
 
@@ -20,15 +18,16 @@ public class PlayerBreakSubscription extends AbstractEventSubscription
 
     private final UUID subid = UUID.fromString("d120a705-c64c-489d-934f-eeb906299502");
 
+    public PlayerBreakSubscription()
+    {
+        setIgnoreCancelled(false);
+    }
+
     @Override
     public void call(Event event)
     {
         BlockBreakEvent blockBreakEvent = (BlockBreakEvent) event;
-        RegionDatabase regionDatabase = null;
-        try
-        { regionDatabase = UProtect.getUProtect().getUProtectAPI().getRegionManager().getRegionDatabase(blockBreakEvent.getBlock().getLocation()); }
-        catch (UnknownWorldException e)
-        { e.printStackTrace(); }
+        RegionDatabase regionDatabase = UProtect.getUProtect().getUProtectAPI().getRegionManager().getRegionDatabase(blockBreakEvent.getBlock().getLocation());
 
         if (!regionDatabase.isProtected(blockBreakEvent.getBlock().getLocation()))
         {
@@ -44,11 +43,10 @@ public class PlayerBreakSubscription extends AbstractEventSubscription
         }
 
         blockBreakEvent.setCancelled(false);
-        return;
     }
 
     @Override
-    public UUID getSubscriberID() throws NotInUseException
+    public UUID getSubscriberID()
     {
         return subid;
     }

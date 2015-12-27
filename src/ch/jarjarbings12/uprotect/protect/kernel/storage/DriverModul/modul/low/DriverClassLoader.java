@@ -13,7 +13,7 @@ import java.net.URL;
  */
 public class DriverClassLoader
 {
-    private UClassLoader uClassLoader = new UClassLoader();
+    private final UClassLoader uClassLoader = new UClassLoader();
 
     public UDriver loadModule(String filePath, String classPath)
     {

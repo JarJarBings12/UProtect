@@ -5,7 +5,7 @@ package ch.jarjarbings12.uprotect.protect.kernel.storage.DriverModul.modul.excep
  * @creationDate 15.09.2015
  * © 2015 JarJarBings12
  */
-public class InvalidModuleDescription extends Exception
+public class InvalidModuleDescription extends RuntimeException
 {
     public InvalidModuleDescription(String filePath)
     {

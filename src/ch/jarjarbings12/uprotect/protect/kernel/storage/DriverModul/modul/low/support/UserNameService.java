@@ -14,8 +14,6 @@ public interface UserNameService
 
     boolean isNameRegistered(String name);
 
-    boolean isNameCurrently(UUID uuid, String name);
-
     void setUserNameFor(UUID uuid, String name);
 
     String getUserNameFor(UUID uuid);

@@ -1,9 +1,11 @@
 package ch.jarjarbings12.uprotect.protect.kernel.flags.module.high;
 
 import ch.jarjarbings12.uprotect.core.UProtect;
+import ch.jarjarbings12.uprotect.protect.kernel.events.module.low.Events;
 import ch.jarjarbings12.uprotect.protect.kernel.flags.module.low.Flag;
 import ch.jarjarbings12.uprotect.protect.kernel.flags.module.low.FlagClassLoader;
 import ch.jarjarbings12.uprotect.protect.kernel.flags.module.low.FlagInfo;
+import ch.jarjarbings12.uprotect.protect.kernel.flags.module.low.properties.ini.IniGroup;
 import ch.jarjarbings12.uprotect.protect.kernel.flags.module.low.properties.ini.IniReader;
 import ch.jarjarbings12.uprotect.protect.kernel.flags.module.low.support.FlagExtension;
 
@@ -20,16 +22,15 @@ import java.util.UUID;
  */
 public class FlagService
 {
-    private FlagClassLoader flagClassLoader = new FlagClassLoader();
-    private HashMap<UUID, Flag> flags = new HashMap<>(); //FlagID -> Flag
-    private HashMap<String, UUID> flagTagUUID = new HashMap<>(); //Flag tag -> FlagID
-    private HashMap<Integer, Set<UUID>> usedEvents = new HashMap<>(); //EventID -> Flags who use this event
-    private HashMap<UUID, FlagInfo> flagInfos = new HashMap<>();
-    private IniReader props = new IniReader();
+    private final FlagClassLoader flagClassLoader = new FlagClassLoader();
+    private final HashMap<UUID, Flag> flags = new HashMap<>(); //FlagID -> Flag
+    private final HashMap<String, UUID> flagNameUUID = new HashMap<>(); //Flag tag -> FlagID
+    private final HashMap<Integer, Set<UUID>> usedEvents = new HashMap<>(); //EventID -> Flags who use this event
+    private final HashMap<String, FlagInfo> nameFlagInfo = new HashMap<>();
+    private final IniReader props = new IniReader();
 
     public FlagService()
     {
-        usedEvents.put(1, new HashSet<>());
     }
 
     public Flag getFlag(UUID flagID)
@@ -37,9 +38,41 @@ public class FlagService
         return this.flags.get(flagID);
     }
 
+    public UUID getFlagID(String flagName)
+    {
+        return flagNameUUID.get(flagName);
+    }
+
     public Set<UUID> getFlagIDsForEventID(int i)
     {
         return this.usedEvents.get(i);
+    }
+
+    public FlagInfo getFlagInfo(String name)
+    {
+        if (nameFlagInfo.containsKey(name))
+            return nameFlagInfo.get(name);
+
+        if (props.existGroup(name))
+        {
+            IniGroup group = props.getGroup(name);
+            nameFlagInfo.put(name, new FlagInfo(group.getString("FILE"), group.getString("CLASSPATH"), name, group.getString("DESCRIPTION")));
+            return nameFlagInfo.get(name);
+        }
+        else
+        {
+            return null;
+        }
+    }
+
+    public FlagInfo getFlagInfo(UUID uuid)
+    {
+        return getFlagInfo(flagNameUUID.entrySet().stream().filter(entry -> entry.getValue().equals(uuid)).findFirst().get().getKey());
+    }
+
+    public HashMap<UUID, Flag> getAllFlags()
+    {
+        return this.flags;
     }
 
     public void setup()
@@ -52,7 +85,7 @@ public class FlagService
         });
 
         props.getGroups(keys).forEach(g -> {
-            FlagExtension flag = flagClassLoader.loadModule(g.get("FILE"), g.get("CLASSPATH"));
+            FlagExtension flag = flagClassLoader.loadModule(g.getString("FILE"), g.getString("CLASSPATH"));
             flag.load();
         });
     }
@@ -60,20 +93,27 @@ public class FlagService
     public void register(UUID flagID, Flag flag, int... requiredEvents)
     {
         flags.put(flagID, flag);
+        flagNameUUID.put(flag.getName(), flagID);
 
         if (requiredEvents != null)
             for (int i : requiredEvents)
-                if (usedEvents.containsKey(i))
+            {
+                if (!Events.existEvent(i))
                 {
-                    usedEvents.get(i).add(flagID);
-                    if (!UProtect.getUProtect().getUProtectAPI().getServiceCenter().getSubscriptionManager().hasSubscribers() || UProtect.getUProtect().getUProtectAPI().getServiceCenter().getSubscriptionManager().getSubscribersFor(i).stream().filter(s -> s instanceof FlagCallerService).findFirst().get() == null)
-                    {
-                        FlagCallerService temp = new FlagCallerService(i);
-                        UProtect.getUProtect().getUProtectAPI().getServiceCenter().getSubscriptionManager().subscribe(i, temp);
-                    }
+                    System.out.printf("[UProtect][FMS][->] %s try to register a unknown event id(%d)", flagID.toString(), i);
+                    continue;
                 }
-                else
-                {System.out.printf("[UProtect][FMS][->] %s try to register a unknown event id(%d)", flagID.toString(), i);}
+
+                if (!usedEvents.containsKey(i))
+                    usedEvents.put(i, new HashSet<>());
+
+                usedEvents.get(i).add(flagID);
+                if (!UProtect.getUProtect().getUProtectAPI().getServiceCenter().getSubscriptionManager().hasSubscribers(i))
+                {
+                    FlagCallerService temp = new FlagCallerService(i);
+                    UProtect.getUProtect().getUProtectAPI().getServiceCenter().getSubscriptionManager().subscribe(i, temp);
+                }
+            }
     }
 
     public void unregister(UUID flagID)
@@ -81,13 +121,10 @@ public class FlagService
         flags.remove(flagID);
     }
 
-    private void loadFlags()
+    public void loadedFlags()
     {
+        System.out.println(String.format("[UProtect][FMS][->] The flag system use %d/%d Events.", usedEvents.size(), Events.values().length));
         System.out.println("[UProtect][FMS][->] Flags:");
-        flags.values().forEach(f -> {
-            System.out.printf("[UProtectUProtect][FMS][->] - %s - %s", f.getName(), f.getFlagID());
-        });
+        flags.values().forEach(f -> System.out.println(String.format("[UProtect][FMS][->] - %s - %s - %s", f.getName(), f.getFlagID(), f.getPriority().toString())));
     }
-
-
 }

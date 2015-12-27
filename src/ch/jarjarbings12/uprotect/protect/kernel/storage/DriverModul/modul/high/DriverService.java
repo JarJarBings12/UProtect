@@ -1,7 +1,6 @@
 package ch.jarjarbings12.uprotect.protect.kernel.storage.DriverModul.modul.high;
 
 import ch.jarjarbings12.uprotect.protect.kernel.storage.DriverModul.modul.exceptions.InvalidClassPathException;
-import ch.jarjarbings12.uprotect.protect.kernel.storage.DriverModul.modul.exceptions.InvalidModuleDescription;
 import ch.jarjarbings12.uprotect.protect.kernel.storage.DriverModul.modul.high.extensions.UDriver;
 import ch.jarjarbings12.uprotect.protect.kernel.storage.DriverModul.modul.low.DriverClassLoader;
 import ch.jarjarbings12.uprotect.protect.kernel.storage.DriverModul.modul.low.DriverDescription;
@@ -9,7 +8,6 @@ import ch.jarjarbings12.uprotect.protect.kernel.storage.DriverModul.modul.low.pr
 import ch.jarjarbings12.uprotect.protect.kernel.storage.DriverModul.modul.low.properties.PropertyLoader;
 
 import java.io.File;
-import java.io.FilenameFilter;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.net.URLClassLoader;
@@ -23,12 +21,12 @@ import java.util.Properties;
  */
 public class DriverService
 {
-    private File folder = new File("plugins/UProtect/storage/drivers");
-    private HashMap<String, UDriver> drivers = new HashMap<>();
-    private HashMap<String, String> idFilePath = new HashMap<>();
-    private HashMap<String, DescriptionParser> idDescription = new HashMap<>();
+    private final File folder = new File("plugins/UProtect/storage/drivers");
+    private final HashMap<String, UDriver> drivers = new HashMap<>();
+    private final HashMap<String, String> idFilePath = new HashMap<>();
+    private final HashMap<String, DescriptionParser> idDescription = new HashMap<>();
     private String[] classPaths = null;
-    private DriverClassLoader driverClassLoader = new DriverClassLoader();
+    private final DriverClassLoader driverClassLoader = new DriverClassLoader();
 
     public DriverService()
     {
@@ -80,36 +78,23 @@ public class DriverService
 
     public void init()
     {
-        File[] files = folder.listFiles(new FilenameFilter()
-        {
-            @Override
-            public boolean accept(File dir, String name)
-            {
-                return name.endsWith(".jar");
-            }
+        File[] files = folder.listFiles((dir, name) -> {
+            return name.endsWith(".jar");
         });
 
         for (File f : files)
         {
+            Properties properties = null;
             try
+            { properties = new PropertyLoader().getProperty(f.getAbsolutePath(), new URLClassLoader(new URL[]{f.toURI().toURL()}, UDriver.class.getClassLoader()));
+            } catch (MalformedURLException e) { e.printStackTrace(); }
+            idDescription.put(properties.getProperty("id"), new DescriptionParser(properties));
+            if (!driverClassLoader.existClassPath(f, idDescription.get(properties.getProperty("id")).getDriverDescription().getClassPath()))
             {
-                Properties properties = new PropertyLoader().getProperty(f.getAbsolutePath(), new URLClassLoader(new URL[]{f.toURI().toURL()}, UDriver.class.getClassLoader()));
-                idDescription.put(properties.getProperty("id"), new DescriptionParser(properties));
-                if (!driverClassLoader.existClassPath(f, idDescription.get(properties.getProperty("id")).getDriverDescription().getClassPath()))
-                {
-                    new InvalidClassPathException(f.getAbsolutePath(), idDescription.get(properties.getProperty("classpath")).getDriverDescription().getClassPath()).printStackTrace();
-                    idDescription.remove(properties.getProperty("id"));
-                }
-                idFilePath.put(properties.getProperty("id"), f.getAbsolutePath());
+                idDescription.remove(properties.getProperty("id"));
+                throw new InvalidClassPathException(f.getAbsolutePath(), idDescription.get(properties.getProperty("classpath")).getDriverDescription().getClassPath());
             }
-            catch (InvalidModuleDescription invalidModuleDescription)
-            {
-                invalidModuleDescription.printStackTrace();
-            }
-            catch (MalformedURLException e)
-            {
-                e.printStackTrace();
-            }
+            idFilePath.put(properties.getProperty("id"), f.getAbsolutePath());
 
             this.classPaths = new String[idDescription.size()];
             int indexCount = 0;
@@ -125,9 +110,7 @@ public class DriverService
 
     public void initDrivers()
     {
-        idDescription.keySet().forEach(id -> {
-            drivers.put(this.idDescription.get(id).getDriverDescription().getID(), getModule(idFilePath.get(id), idDescription.get(id).getDriverDescription().getClassPath()));
-        });
+        idDescription.keySet().forEach(id -> drivers.put(this.idDescription.get(id).getDriverDescription().getID(), getModule(idFilePath.get(id), idDescription.get(id).getDriverDescription().getClassPath())));
 
         System.out.println("[UProtect][DSM][->] Drivers:");
         idDescription.values().forEach(v -> {
@@ -140,6 +123,6 @@ public class DriverService
 
     public UDriver getModule(String filePath, String classPath)
     {
-        return (UDriver) driverClassLoader.loadModule(filePath, classPath);
+        return driverClassLoader.loadModule(filePath, classPath);
     }
 }

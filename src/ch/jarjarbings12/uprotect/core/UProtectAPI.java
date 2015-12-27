@@ -14,10 +14,10 @@ import java.util.HashMap;
  */
 public class UProtectAPI
 {
-    private RegionManager regionManager = new RegionManager();
+    private final RegionManager regionManager = new RegionManager();
     private HashMap<String, RegionManager> regionIndex = new HashMap<>();
     private YamlConfiguration configuration = null;
-    private ServiceCenter serviceCenter = new ServiceCenter();
+    private final ServiceCenter serviceCenter = new ServiceCenter();
 
     public UProtectAPI()
     {

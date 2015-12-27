@@ -7,8 +7,9 @@
     </content>
     <orderEntry type="jdk" jdkName="1.8" jdkType="JavaSDK" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="library" name="UProtect" level="project" />
     <orderEntry type="library" name="Addon" level="project" />
     <orderEntry type="library" name="spigot-1.8.81" level="application" />
+    <orderEntry type="library" name="UProtect" level="project" />
+    <orderEntry type="module" module-name="UProtect" />
   </component>
 </module>

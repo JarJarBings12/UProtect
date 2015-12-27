@@ -5,6 +5,7 @@ import ch.jarjarbings12.uprotect.commands.UProtectCommand;
 import ch.jarjarbings12.uprotect.protect.kernel.events.internal.*;
 import ch.jarjarbings12.uprotect.protect.kernel.events.module.bukkit.BlockEvents;
 import ch.jarjarbings12.uprotect.protect.kernel.events.module.bukkit.ChunkEvents;
+import ch.jarjarbings12.uprotect.protect.kernel.events.module.bukkit.EntityEvents;
 import ch.jarjarbings12.uprotect.protect.kernel.events.module.bukkit.PlayerEvents;
 import org.bukkit.Bukkit;
 import org.bukkit.command.CommandMap;
@@ -31,19 +32,19 @@ public class UProtect extends JavaPlugin
         initCommands();
         this.uProtectAPI = new UProtectAPI();
         this.getUProtectAPI().getServiceCenter().getDatabaseService().setup();
-        this.getUProtectAPI().getRegionManager().setup();
         this.getUProtectAPI().getServiceCenter().getFlagService().setup();
+        this.getUProtectAPI().getRegionManager().setup();
         this.getUProtectAPI().getServiceCenter().getWorldServices().setup();
         Bukkit.getPluginManager().registerEvents(new ChunkEvents(), this);
+        Bukkit.getPluginManager().registerEvents(new EntityEvents(), this);
         Bukkit.getPluginManager().registerEvents(new PlayerEvents(), this);
         Bukkit.getPluginManager().registerEvents(new BlockEvents(), this);
         this.getUProtectAPI().getServiceCenter().getSubscriptionManager().subscribe(0, new PlayerBuildSubscription());
         this.getUProtectAPI().getServiceCenter().getSubscriptionManager().subscribe(1, new PlayerBreakSubscription());
-        //this.getUProtectAPI().getServiceCenter().getSubscriptionManager().subscribe(20, new PlayerLoginSubscription());
-        //this.getUProtectAPI().getServiceCenter().getSubscriptionManager().subscribe(21, new PlayerQuitSubscription());
+        this.getUProtectAPI().getServiceCenter().getSubscriptionManager().subscribe(20, new PlayerLoginSubscription());
+        this.getUProtectAPI().getServiceCenter().getSubscriptionManager().subscribe(21, new PlayerQuitSubscription());
         this.getUProtectAPI().getServiceCenter().getSubscriptionManager().subscribe(200, new ChunkGenSubscription());
-
-
+        this.getUProtectAPI().getServiceCenter().getFlagService().loadedFlags();
     }
 
     @Override
@@ -107,11 +108,7 @@ public class UProtect extends JavaPlugin
             commandMap.register("UProtect", new ChunkProtectCommands("ChunkProtect"));
             commandMap.register("UProtect", new UProtectCommand("UProtect"));
         }
-        catch (NoSuchFieldException e)
-        {
-            e.printStackTrace();
-        }
-        catch (IllegalAccessException e)
+        catch (NoSuchFieldException | IllegalAccessException e)
         {
             e.printStackTrace();
         }
@@ -137,12 +134,7 @@ public class UProtect extends JavaPlugin
             outputStream.flush();
             outputStream.close();
             return true;
-        }
-        catch (FileNotFoundException e)
-        {
-            e.printStackTrace();
-        }
-        catch (IOException e)
+        } catch (IOException e)
         {
             e.printStackTrace();
         }

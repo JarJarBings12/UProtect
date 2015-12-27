@@ -1,7 +1,5 @@
 package ch.jarjarbings12.uprotect.protect.kernel.events.module.low;
 
-import ch.jarjarbings12.uprotect.protect.utils.exceptions.NotInUseException;
-
 /**
  * @author JarJarBings12
  * @creationDate 15.09.2015
@@ -9,7 +7,7 @@ import ch.jarjarbings12.uprotect.protect.utils.exceptions.NotInUseException;
  */
 public interface BasicSubscription
 {
-    void onSubscribe() throws NotInUseException;
+    void onSubscribe();
 
-    void onUnsubscribe() throws NotInUseException;
+    void onUnsubscribe();
 }

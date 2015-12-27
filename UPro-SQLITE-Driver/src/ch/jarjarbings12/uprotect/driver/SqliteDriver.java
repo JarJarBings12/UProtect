@@ -20,15 +20,17 @@ public class SqliteDriver extends UDriver
 
     private BaseSqliteConnection baseSqliteConnection = null;
     private RegionService regionService;
+    private PlayerService playerService;
 
     @Override
     public void onEnable()
     {
         baseSqliteConnection = new BaseSqliteConnection();
         regionService = new RegionService(baseSqliteConnection);
-        PreparedStatement preparedStatement = null;
+        playerService = new PlayerService(baseSqliteConnection);
+        PreparedStatement preparedStatement;
         Iterator<World> var1 = Bukkit.getWorlds().iterator();
-        World var2 = null;
+        World var2;
         while (var1.hasNext())
         {
             var2 = var1.next();
@@ -39,6 +41,10 @@ public class SqliteDriver extends UDriver
                 preparedStatement.close();
 
                 preparedStatement = baseSqliteConnection.createPreparedStatement(baseSqliteConnection.createRegionDatabase.replace("%w", var2.getUID().toString().replace("-", "")));
+                preparedStatement.execute();
+                preparedStatement.close();
+
+                preparedStatement = baseSqliteConnection.createPreparedStatement(baseSqliteConnection.createUserRegister);
                 preparedStatement.execute();
                 preparedStatement.close();
             } catch (SQLException e)
@@ -87,6 +93,6 @@ public class SqliteDriver extends UDriver
     @Override
     public UserDBServices getUserDBService()
     {
-        return null;
+        return playerService;
     }
 }

@@ -3,13 +3,10 @@ package ch.jarjarbings12.uprotect.protect.kernel.events;
 import ch.jarjarbings12.uprotect.protect.kernel.events.module.low.AbstractEventSubscription;
 import ch.jarjarbings12.uprotect.protect.kernel.events.module.low.Events;
 import ch.jarjarbings12.uprotect.protect.kernel.flags.module.low.AFlagEventSupport;
-import ch.jarjarbings12.uprotect.protect.utils.exceptions.NotInUseException;
+import org.bukkit.event.Cancellable;
 import org.bukkit.event.Event;
 
-import java.util.HashMap;
-import java.util.HashSet;
-import java.util.Set;
-import java.util.UUID;
+import java.util.*;
 
 /**
  * @author JarJarBings12
@@ -18,9 +15,7 @@ import java.util.UUID;
  */
 public class SubscriptionManager
 {
-
-    private HashMap<Integer, Set<AbstractEventSubscription>> subscriptions = new HashMap<>();
-    private HashMap<UUID, Integer> subscriptionsByUUID = new HashMap<>();
+    private final HashMap<Integer, Set<AbstractEventSubscription>> subscriptions = new HashMap<>();
 
     public SubscriptionManager()
     {
@@ -33,28 +28,16 @@ public class SubscriptionManager
 
     public void subscribe(int eventID, AbstractEventSubscription abstractEventSubscription)
     {
-        try
-        {
-            if (!(abstractEventSubscription instanceof AFlagEventSupport))
-                System.out.println(String.format("[UProtect][ESM][->] Register event for %s subscriber id %s", Events.getNameByID(eventID), abstractEventSubscription.getSubscriberID().toString()));
-        }
-        catch (NotInUseException e)
-        { e.printStackTrace(); }
+        if (!(abstractEventSubscription instanceof AFlagEventSupport))
+            System.out.println(String.format("[UProtect][ESM][->] Register new subscriber for %s with subscriber id %s. Priority %s", Events.getNameByID(eventID), abstractEventSubscription.getSubscriberID().toString(), abstractEventSubscription.getPriority()));
 
         if (!subscriptions.containsKey(eventID))
-        {
-            Set<AbstractEventSubscription> temp = new HashSet<>();
-            subscriptions.put(eventID, temp);
-        }
+            subscriptions.put(eventID, new HashSet<>());
         subscriptions.get(eventID).add(abstractEventSubscription);
 
-        try
-        {
-            if (!(abstractEventSubscription instanceof AFlagEventSupport))
-                abstractEventSubscription.onSubscribe();
-        } catch (NotInUseException e)
-        { e.printStackTrace(); }
-        return;
+        if (!(abstractEventSubscription instanceof AFlagEventSupport))
+            abstractEventSubscription.onSubscribe();
+
     }
 
     public void unsubscribe(Events event, UUID uuid)
@@ -70,37 +53,75 @@ public class SubscriptionManager
 
     public void unsubscribe(int eventID, Set<UUID> uuids)
     {
-        uuids.forEach(uuid -> {
-            unsubscribe(eventID, uuid);
-        });
+        uuids.forEach(uuid -> unsubscribe(eventID, uuid));
     }
 
     public void unsubscribe(int eventID, UUID uuid)
     {
         subscriptions.get(eventID).removeIf(sub -> {
-            try
+            if (sub.getSubscriberID() == uuid)
             {
-                if (sub.getSubscriberID() == uuid)
-                {
-                    sub.onUnsubscribe();
-                    return true;
-                }
-                return false;
-            }
-            catch (NotInUseException e)
-            {
-                e.printStackTrace();
+                sub.onUnsubscribe();
+                return true;
             }
             return false;
         });
-        return;
     }
 
     public void callSubscribers(int eventID, Event event)
     {
-        Set<AbstractEventSubscription> temp = getSubscribersFor(eventID);
-        if (!temp.isEmpty())
-            temp.forEach(e -> e.call(event));
+        if (!hasSubscribers(eventID))
+            return;
+
+        HashSet<AbstractEventSubscription> temp = (HashSet)((HashSet) getSubscribersFor(eventID)).clone();
+        if (temp.isEmpty())
+            return;
+
+        Iterator<AbstractEventSubscription> iterator = temp.iterator();
+        AbstractEventSubscription subscription;
+        if (isEventCancellable(event))
+        {
+            Cancellable cancellableInstance = (Cancellable)event;
+            for (int i = 0; i < 6; i++)
+            {
+                while (iterator.hasNext())
+                {
+                    subscription = iterator.next();
+                    System.out.println(subscription.getSubscriberID());
+                    System.out.println(!cancellableInstance.isCancelled() || (!cancellableInstance.isCancelled() && (subscription.ignoreCancelled() || subscription.getPriority().getPriority() == 0)));
+                    if (!cancellableInstance.isCancelled() || (!cancellableInstance.isCancelled() && (subscription.ignoreCancelled() || subscription.getPriority().getPriority() == 0)))
+                        subscription.call(event);
+                    iterator.remove();
+                }
+                /*
+                for (AbstractEventSubscription subscription : loopList)
+                {
+                    if ((cancellableInstance.isCancelled() && !subscription.ignoreCancelled()) && subscription.getPriority().getPriority() != 0)
+                    {
+                        temp.remove(subscription);
+                        continue;
+                    }
+                    subscription.call(event);
+                    temp.remove(subscription);
+                }
+                loopList = temp;
+                if (loopList.isEmpty())
+                    break;
+                    */
+            }
+        }
+        else
+        {
+            for (int i = 0; i < 6; i++)
+            {
+                while (iterator.hasNext())
+                {
+                    subscription = iterator.next();
+                    subscription.call(event);
+                    iterator.remove();
+                }
+            }
+        }
     }
 
     public boolean hasSubscribers()
@@ -108,10 +129,18 @@ public class SubscriptionManager
         return !subscriptions.isEmpty();
     }
 
+    public boolean hasSubscribers(int eventID)
+    {
+        return subscriptions.containsKey(eventID);
+    }
+
     public Set<AbstractEventSubscription> getSubscribersFor(int eventID)
     {
-        if (!subscriptions.containsKey(eventID) && Events.getEventByID(eventID) != null)
-            subscriptions.put(eventID, new HashSet<>());
         return subscriptions.get(eventID);
+    }
+
+    protected boolean isEventCancellable(Event event)
+    {
+        return (event instanceof Cancellable);
     }
 }

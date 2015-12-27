@@ -3,8 +3,6 @@ package ch.jarjarbings12.uprotect.protect.kernel.events.internal;
 import ch.jarjarbings12.uprotect.core.UProtect;
 import ch.jarjarbings12.uprotect.protect.kernel.events.module.low.AbstractEventSubscription;
 import ch.jarjarbings12.uprotect.protect.kernel.managers.index.RegionDatabase;
-import ch.jarjarbings12.uprotect.protect.utils.exceptions.NotInUseException;
-import ch.jarjarbings12.uprotect.protect.utils.exceptions.UnknownWorldException;
 import org.bukkit.event.Event;
 import org.bukkit.event.block.BlockPlaceEvent;
 
@@ -23,11 +21,7 @@ public class PlayerBuildSubscription extends AbstractEventSubscription
     public void call(Event event)
     {
         BlockPlaceEvent blockPlaceEvent = (BlockPlaceEvent)event;
-        RegionDatabase regionDatabase = null;
-        try
-        { regionDatabase = UProtect.getUProtect().getUProtectAPI().getRegionManager().getRegionDatabase(blockPlaceEvent.getBlock().getLocation()); }
-        catch (UnknownWorldException e)
-        { e.printStackTrace(); }
+        RegionDatabase regionDatabase = UProtect.getUProtect().getUProtectAPI().getRegionManager().getRegionDatabase(blockPlaceEvent.getBlock().getLocation());
 
         if (!regionDatabase.isProtected(blockPlaceEvent.getBlock().getLocation()))
         {
@@ -41,11 +35,10 @@ public class PlayerBuildSubscription extends AbstractEventSubscription
             blockPlaceEvent.setCancelled(true);
             return;
         }
-        blockPlaceEvent.setCancelled(false);
     }
 
     @Override
-    public UUID getSubscriberID() throws NotInUseException
+    public UUID getSubscriberID()
     {
         return subid;
     }

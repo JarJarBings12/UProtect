@@ -1,5 +1,7 @@
 package ch.jarjarbings12.uprotect.protect.kernel.flags.module.low;
 
+import ch.jarjarbings12.uprotect.commands.UCommand;
+import ch.jarjarbings12.uprotect.protect.kernel.objects.ProtectedChunkRegion;
 import ch.jarjarbings12.uprotect.protect.utils.exceptions.NotInUseException;
 import org.bukkit.event.Event;
 import org.json.simple.JSONObject;
@@ -22,17 +24,19 @@ public abstract class Flag extends AFlagEventSupport implements Serializable
     {
     }
 
-    public UUID getSubscriberID() throws NotInUseException
+    public abstract void applyForRegion(ProtectedChunkRegion protectedChunkRegion, Flag flag, UCommand command);
+
+    public UUID getSubscriberID()
     {
         throw new NotInUseException("This event doesn't use any event subscriptions.");
     }
 
-    public void onSubscribe() throws NotInUseException
+    public void onSubscribe()
     {
         throw new NotInUseException("This event doesn't use any event subscriptions.");
     }
 
-    public void onUnsubscribe() throws NotInUseException
+    public void onUnsubscribe()
     {
         throw new NotInUseException("This event doesn't use any event subscriptions.");
     }

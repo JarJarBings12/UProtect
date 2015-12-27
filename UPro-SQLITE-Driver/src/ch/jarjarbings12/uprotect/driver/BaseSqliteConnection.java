@@ -32,6 +32,31 @@ public class BaseSqliteConnection
     public final String updateRegion = "UPDATE UPRO_%w_REGIONS SET REGION_DATA=? WHERE R_UUID=?";
     public final String removeRegion = "REMOVE * FROM UPRO_%w_REGIONS WHERE R_UUID=?";
 
+    //USER DB
+
+    public final String createUserRegister = "CREATE TABLE IF NOT EXISTS UPRO_USER_REGISTER (UUID VARCHAR(32) UNIQUE, NAME VARCHAR, LAST_LOGIN INTEGER, FIRST_LOGIN INTEGER, PLAY_TIME INTEGER)";
+
+    //NAME DB
+
+    public final String isUUIDRegistered = "SELECT COUNT(*) AS _COUNT_ FROM UPRO_USER_REGISTER WHERE UUID=?";
+    public final String isNameRegistered = "SELECT COUNT(*) AS _COUNT_ FROM UPRO_USER_REGISTER WHERE NAME=?";
+
+    public final String insertUserNameFor = "INSERT OR IGNORE INTO UPRO_USER_REGISTER (UUID, NAME) VALUES (?, ?)";
+    public final String updateUserNameFor = "UPDATE UPRO_USER_REGISTER SET UUID=?, NAME=?";
+
+    public final String selectNameForUUID = "SELECT NAME FROM UPRO_USER_REGISTER WHERE UUID=?";
+    public final String selectUUIDForName = "SELECT UUID FROM UPRO_USER_REGISTER WHERE NAME=?";
+
+    //PLAYTIME DB
+
+    public final String updatePlayTimeFor = "UPDATE UPRO_USER_REGISTER SET UUID=?, PLAY_TIME=?";
+    public final String updateLastLoginFor = "UPDATE UPRO_USER_REGISTER SET UUID=?, LAST_LOGIN=?";
+    public final String updateFirstLoginFor = "UPDATE UPRO_USER_REGISTER SET UUID=?, FIRST_LOGIN=?";
+
+    public final String selectPlayTimeFor = "SELECT PLAY_TIME FROM UPRO_USER_REGISTER WHERE UUID=?";
+    public final String selectLastLoginFor = "SELECT LAST_LOGIN FROM UPRO_USER_REGISTER WHERE UUID=?";
+    public final String selectFirstLoginFor = "SELECT FIRST_LOGIN FROM UPRO_USER_REGISTER WHERE UUID=?";
+
 
     public Connection openConnection()
     {

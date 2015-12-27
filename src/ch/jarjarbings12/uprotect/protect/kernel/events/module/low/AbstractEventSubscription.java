@@ -1,6 +1,5 @@
 package ch.jarjarbings12.uprotect.protect.kernel.events.module.low;
 
-import ch.jarjarbings12.uprotect.protect.utils.exceptions.NotInUseException;
 import org.bukkit.event.Event;
 
 import java.util.UUID;
@@ -12,15 +11,39 @@ import java.util.UUID;
  */
 public abstract class AbstractEventSubscription implements BasicSubscription
 {
+    private SubscriptionPriority priority = SubscriptionPriority.NORMAL;
+
+    private boolean ignoreCancelled = false;
+
+    public final SubscriptionPriority getPriority()
+    {
+        return priority;
+    }
+
+    public final boolean ignoreCancelled()
+    {
+        return ignoreCancelled;
+    }
+
+    public final void setPriority(SubscriptionPriority priority)
+    {
+        this.priority = priority;
+    }
+
+    public final void setIgnoreCancelled(boolean bool)
+    {
+        this.ignoreCancelled = bool;
+    }
+
     public abstract void call(Event event);
 
-    public abstract UUID getSubscriberID() throws NotInUseException;
+    public abstract UUID getSubscriberID();
 
-    public void onSubscribe() throws NotInUseException
+    public void onSubscribe()
     {
     }
 
-    public void onUnsubscribe() throws NotInUseException
+    public void onUnsubscribe()
     {
     }
 }

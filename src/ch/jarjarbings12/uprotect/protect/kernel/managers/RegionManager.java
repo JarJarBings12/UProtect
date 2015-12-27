@@ -23,32 +23,32 @@ public class RegionManager
     private final HashMap<String, UUID> nameUUID = new HashMap<>();
     private final HashMap<UUID, RegionDatabase> worldIndex = new HashMap<>();
 
-    public RegionDatabase getRegionDatabase(Player player) throws UnknownWorldException
+    public RegionDatabase getRegionDatabase(Player player)
     {
         return getRegionDatabase(player.getLocation());
     }
 
-    public RegionDatabase getRegionDatabase(Location location) throws UnknownWorldException
+    public RegionDatabase getRegionDatabase(Location location)
     {
         return getRegionDatabase(location.getWorld().getUID());
     }
 
-    public RegionDatabase getRegionDatabase(Chunk chunk) throws UnknownWorldException
+    public RegionDatabase getRegionDatabase(Chunk chunk)
     {
         return getRegionDatabase(chunk.getWorld().getUID());
     }
 
-    public RegionDatabase getRegionDatabase(String worldName) throws UnknownWorldException
+    public RegionDatabase getRegionDatabase(String worldName)
     {
         return getRegionDatabase(nameUUID.get(worldName));
     }
 
-    public RegionDatabase getRegionDatabase(World world) throws UnknownWorldException
+    public RegionDatabase getRegionDatabase(World world)
     {
         return getRegionDatabase(world.getUID());
     }
 
-    public RegionDatabase getRegionDatabase(UUID worldUUID) throws UnknownWorldException
+    public RegionDatabase getRegionDatabase(UUID worldUUID)
     {
         if (!worldIndex.containsKey(worldUUID))
         {
@@ -61,14 +61,14 @@ public class RegionManager
 
     }
 
-    public void saveDatabase(String worldName) throws UnknownWorldException
+    public void saveDatabase(String worldName)
     {
         if (!nameUUID.containsKey(worldName))
             throw new UnknownWorldException(worldName);
         saveDatabase(worldIndex.get(nameUUID.get(worldName)));
     }
 
-    public void saveDatabase(UUID worldUUID) throws UnknownWorldException
+    public void saveDatabase(UUID worldUUID)
     {
         if (!worldIndex.containsKey(worldUUID))
             throw new UnknownWorldException(worldUUID);

@@ -2,8 +2,6 @@ package ch.jarjarbings12.uprotect.protect.kernel.events.internal;
 
 import ch.jarjarbings12.uprotect.core.UProtect;
 import ch.jarjarbings12.uprotect.protect.kernel.events.module.low.AbstractEventSubscription;
-import ch.jarjarbings12.uprotect.protect.utils.exceptions.NotInUseException;
-import ch.jarjarbings12.uprotect.protect.utils.exceptions.UnknownWorldException;
 import org.bukkit.event.Event;
 import org.bukkit.event.world.ChunkLoadEvent;
 
@@ -24,15 +22,12 @@ public class ChunkGenSubscription extends AbstractEventSubscription
         ChunkLoadEvent loadEvent = (ChunkLoadEvent) event;
         if (loadEvent.isNewChunk())
         {
-            try
-            { UProtect.getUProtect().getUProtectAPI().getServiceCenter().getWorldServices().getChunkServiceFor(loadEvent.getWorld().getUID(), false).getChunkRecorder().record(loadEvent.getChunk()); }
-            catch (UnknownWorldException e)
-            { e.printStackTrace(); }
+            UProtect.getUProtect().getUProtectAPI().getServiceCenter().getWorldServices().getChunkServiceFor(loadEvent.getWorld().getUID(), false).getChunkRecorder().record(loadEvent.getChunk());
         }
     }
 
     @Override
-    public UUID getSubscriberID() throws NotInUseException
+    public UUID getSubscriberID()
     {
         return subid;
     }
@@ -41,18 +36,14 @@ public class ChunkGenSubscription extends AbstractEventSubscription
     public void onSubscribe()
     {
         if (!UProtect.getUProtect().getUProtectAPI().getConfiguration().getBoolean("world.chunk.restore.use"))
-            try
-            { UProtect.getUProtect().getUProtectAPI().getServiceCenter().getSubscriptionManager().unsubscribe(200, this.getSubscriberID()); }
-            catch (NotInUseException e)
-            { e.printStackTrace(); }
+            UProtect.getUProtect().getUProtectAPI().getServiceCenter().getSubscriptionManager().unsubscribe(200, this.getSubscriberID());
         else
-            System.out.println("[UProtect][->] Enable: Chunk generate listener.");
-        return;
+            System.out.println("[UProtect][ESM][->] Enable: Chunk generate listener.");
     }
 
     @Override
     public void onUnsubscribe()
     {
-        System.out.println("[UProtect][->] Disable: Chunk generate listener.");
+        System.out.println("[UProtect][ESM][->] Disable: Chunk generate listener.");
     }
 }

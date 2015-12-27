@@ -1,6 +1,7 @@
 package ch.jarjarbings12.uprotect.commands;
 
 import ch.jarjarbings12.uprotect.commands.subcommands.RegionCommands;
+import ch.jarjarbings12.uprotect.protect.utils.ListFactory;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandSender;
 
@@ -11,11 +12,11 @@ import org.bukkit.command.CommandSender;
  */
 public class ChunkProtectCommands extends Command
 {
-    private RegionCommands regionCommands = new RegionCommands();
+    private final RegionCommands regionCommands = new RegionCommands();
 
     public ChunkProtectCommands(String name)
     {
-        super(name);
+        super(name, "", "", new ListFactory<String>().add("cp").getList());
     }
 
     @Override
@@ -30,6 +31,8 @@ public class ChunkProtectCommands extends Command
         {
             if (args[0].equalsIgnoreCase("list"))
                 regionCommands.list(sender, label, args);
+            else if (args[0].equalsIgnoreCase("flags"))
+                regionCommands.showFlags(sender, label, args);
             return true;
         }
         else if (args.length == 2)
@@ -44,9 +47,46 @@ public class ChunkProtectCommands extends Command
                 regionCommands.append(sender, label, args);
             else if (args[0].equalsIgnoreCase("list"))
                 regionCommands.list(sender, label, args);
+            else if (args[0].equalsIgnoreCase("flags"))
+                regionCommands.showFlags(sender, label, args);
             else
                 return true;
-            return true;
+        }
+        else if (args.length == 3)
+        {
+            if (args[0].equalsIgnoreCase("addMember"))
+                regionCommands.addMember(sender, label, args);
+            else if (args[0].equalsIgnoreCase("removeMember"))
+                regionCommands.removeMember(sender, label, args);
+            else if (args[0].equalsIgnoreCase("addOwner"))
+                regionCommands.addOwner(sender, label, args);
+            else if (args[0].equalsIgnoreCase("removeOwner"))
+                regionCommands.removeOwner(sender, label, args);
+            else if (args[0].equalsIgnoreCase("create"))
+                regionCommands.create(sender, label, args);
+            else if (args[0].equalsIgnoreCase("addFlag"))
+                regionCommands.addFlag(sender, label, args);
+            else if (args[0].equalsIgnoreCase("removeFlag"))
+                regionCommands.removeFlag(sender, label, args);
+            else
+                return true;
+        }
+        else if (args.length >= 4)
+        {
+            if (args[0].equalsIgnoreCase("addMember"))
+                regionCommands.addMember(sender, label, args);
+            else if (args[0].equalsIgnoreCase("removeMember"))
+                regionCommands.removeMember(sender, label, args);
+            else if (args[0].equalsIgnoreCase("addOwner"))
+                regionCommands.addOwner(sender, label, args);
+            else if (args[0].equalsIgnoreCase("removeOwner"))
+                regionCommands.removeOwner(sender, label, args);
+            else if (args[0].equalsIgnoreCase("create"))
+                regionCommands.create(sender, label, args);
+            else if (args[0].equalsIgnoreCase("addFlag"))
+                regionCommands.addFlag(sender, label, args);
+            else
+                return true;
         }
         return true;
     }

@@ -13,7 +13,7 @@ import java.net.URL;
  */
 public class FlagClassLoader
 {
-    private UClassLoader uClassLoader = new UClassLoader();
+    private final UClassLoader uClassLoader = new UClassLoader();
 
     public FlagExtension loadModule(String filePath, String classPath)
     {

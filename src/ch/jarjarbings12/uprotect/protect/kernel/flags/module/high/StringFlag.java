@@ -1,6 +1,8 @@
 package ch.jarjarbings12.uprotect.protect.kernel.flags.module.high;
 
+import ch.jarjarbings12.uprotect.commands.UCommand;
 import ch.jarjarbings12.uprotect.protect.kernel.flags.module.low.*;
+import ch.jarjarbings12.uprotect.protect.kernel.objects.ProtectedChunkRegion;
 import org.bukkit.event.Event;
 import org.json.simple.JSONObject;
 
@@ -47,6 +49,11 @@ public class StringFlag extends Flag implements ValueFlag<String>, PermissionFla
     }
 
     @Override
+    public void applyForRegion(ProtectedChunkRegion protectedChunkRegion, Flag flag, UCommand command)
+    {
+    }
+
+    @Override
     public String getPermission()
     {
         return this.permission;
@@ -85,6 +92,4 @@ public class StringFlag extends Flag implements ValueFlag<String>, PermissionFla
     {
         return new StringFlag(flagID, name, (String)value.get("value"), permission, flagCall);
     }
-
-
 }

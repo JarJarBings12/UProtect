@@ -12,7 +12,7 @@ import java.util.Properties;
  */
 public class PropertyLoader
 {
-    public Properties getProperty(String filePath, ClassLoader classLoader) throws InvalidModuleDescription
+    public Properties getProperty(String filePath, ClassLoader classLoader)
     {
         Properties properties = new Properties();
         try

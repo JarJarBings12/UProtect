@@ -1,10 +1,10 @@
 package ch.jarjarbings12.uprotect.protect.kernel.objects;
 
 import ch.jarjarbings12.uprotect.core.UProtect;
+import ch.jarjarbings12.uprotect.protect.kernel.flags.module.high.FlagService;
 import ch.jarjarbings12.uprotect.protect.kernel.flags.module.low.Flag;
 import ch.jarjarbings12.uprotect.protect.kernel.managers.index.RegionDatabase;
 import ch.jarjarbings12.uprotect.protect.utils.HashMapFactory;
-import ch.jarjarbings12.uprotect.protect.utils.exceptions.UnknownWorldException;
 import org.bukkit.Bukkit;
 import org.bukkit.World;
 import org.json.simple.JSONArray;
@@ -13,7 +13,6 @@ import org.json.simple.parser.JSONParser;
 import org.json.simple.parser.ParseException;
 
 import java.util.HashSet;
-import java.util.Iterator;
 import java.util.Set;
 import java.util.UUID;
 
@@ -142,7 +141,7 @@ public class ProtectedChunkRegion
 
     public boolean hasAccess(UUID uuid)
     {
-        return (isMember(uuid) || isOwner(uuid)) ? true : false;
+        return (isMember(uuid) || isOwner(uuid)) || Bukkit.getPlayer(uuid).hasPermission("uprotect.region.bypass");
     }
 
     public boolean isOwner(UUID uuid)
@@ -223,11 +222,12 @@ public class ProtectedChunkRegion
 
     public boolean hasFlag(UUID uuid)
     {
-        Iterator<Flag> flags = this.flags.iterator();
 
-        while (flags.hasNext())
-            if (flags.next().getFlagID().equals(uuid))
+        for (Flag flag : this.flags)
+            if (flag.getFlagID().equals(uuid))
+            {
                 return true;
+            }
 
         return false;
     }
@@ -270,24 +270,16 @@ public class ProtectedChunkRegion
 
     public void update()
     {
-        try
-        { getRegionDatabase().setRegion(getUUID(), this); }
-        catch (UnknownWorldException e)
-        { e.printStackTrace(); }
+        getRegionDatabase().setRegion(this.uuid, this);
     }
 
     public void delete()
     {
-        try
-        {
-            if (getRegionDatabase().existRegion(getUUID()))
-                getRegionDatabase().removeRegion(getUUID());
-        }
-        catch (UnknownWorldException e)
-        { e.printStackTrace(); }
+        if (getRegionDatabase().existRegion(getUUID()))
+            getRegionDatabase().removeRegion(getUUID());
     }
 
-    public RegionDatabase getRegionDatabase() throws UnknownWorldException
+    public RegionDatabase getRegionDatabase()
     {
         return UProtect.getUProtect().getUProtectAPI().getRegionManager().getRegionDatabase(world);
     }
@@ -312,6 +304,9 @@ public class ProtectedChunkRegion
         JSONArray member = new JSONArray();
         JSONArray owner = new JSONArray();
 
+        this.members.forEach(var1 -> member.add(var1.toString()));
+        this.owners.forEach(var1 -> member.add(var1.toString()));
+
         user.put("member", member);
         user.put("owner", owner);
         object.put("user", user);
@@ -327,8 +322,9 @@ public class ProtectedChunkRegion
     public static ProtectedChunkRegion deserialize(final String value)
     {
         JSONParser parser = new JSONParser();
-        JSONObject object = null;
+        JSONObject object;
         ProtectedChunkRegion chunkRegion = null;
+        FlagService flagService = UProtect.getUProtect().getUProtectAPI().getServiceCenter().getFlagService();
 
         try
         {
@@ -343,7 +339,7 @@ public class ProtectedChunkRegion
             Set<UUID> owners = new HashSet<>();
             ((JSONArray)temp.get("owner")).forEach(owner -> owners.add(UUID.fromString((String)owner)));
             final Set<Flag> flags = new HashSet<>();
-            ((JSONArray)object.get("flags")).forEach(flag -> flags.add(UProtect.getUProtect().getUProtectAPI().getServiceCenter().getFlagService().getFlag(UUID.fromString((String)((JSONObject) flag).get("fid"))).deserialize(((JSONObject)flag))));
+            ((JSONArray)object.get("flags")).forEach(flag -> flags.add(flagService.getFlag(UUID.fromString((String) ((JSONObject) flag).get("fid"))).deserialize(((JSONObject) flag))));
             //---------------------------------
 
             temp = (JSONObject) object.get("rinfo");

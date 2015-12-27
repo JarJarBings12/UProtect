@@ -4,6 +4,7 @@ import ch.jarjarbings12.uprotect.protect.kernel.events.SubscriptionManager;
 import ch.jarjarbings12.uprotect.protect.kernel.flags.module.high.FlagService;
 import ch.jarjarbings12.uprotect.protect.kernel.storage.DatabaseService;
 import ch.jarjarbings12.uprotect.protect.kernel.world.WorldServices;
+import ch.jarjarbings12.uprotect.protect.utils.BooleanValue;
 
 /**
  * @author JarJarBings12
@@ -12,11 +13,12 @@ import ch.jarjarbings12.uprotect.protect.kernel.world.WorldServices;
  */
 public class ServiceCenter
 {
-    private FlagService flagService = new FlagService();
-    private SubscriptionManager subscriptionManager = new SubscriptionManager();
-    private DatabaseService databaseService = new DatabaseService();
-    private ObjectService objectService = new ObjectService();
-    private WorldServices worldServices = new WorldServices();
+    private final FlagService flagService = new FlagService();
+    private final SubscriptionManager subscriptionManager = new SubscriptionManager();
+    private final DatabaseService databaseService = new DatabaseService();
+    private final ObjectService objectService = new ObjectService();
+    private final WorldServices worldServices = new WorldServices();
+    private final BooleanValue booleanValue = new BooleanValue();
 
     public DatabaseService getDatabaseService()
     {
@@ -40,7 +42,12 @@ public class ServiceCenter
 
     public WorldServices getWorldServices()
     {
-        return worldServices;
+        return this.worldServices;
+    }
+
+    public BooleanValue getBooleanValue()
+    {
+        return this.booleanValue;
     }
 
 }

@@ -9,7 +9,7 @@ import java.util.UUID;
  * @creationDate 22.09.2015
  * © 2015 JarJarBings12
  */
-public class UnknownWorldException extends Exception
+public class UnknownWorldException extends RuntimeException
 {
     public UnknownWorldException(UUID uuid)
     {

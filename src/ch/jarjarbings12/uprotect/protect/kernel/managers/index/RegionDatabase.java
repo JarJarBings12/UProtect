@@ -25,11 +25,11 @@ import java.util.UUID;
  */
 public class RegionDatabase implements RegionIndex
 {
-    private HashMap<UUID, IndexDifference> indexDifferences = new HashMap<>();
+    private final HashMap<UUID, IndexDifference> indexDifferences = new HashMap<>();
     private HashMap<UUID, ProtectedChunkRegion> index = new HashMap<>();
-    private HashMap<UUID, String> uuidIDIndex = new HashMap<>();
-    private HashMap<String, UUID> nameUUIDIndex = new HashMap<>();
-    private HashMap<ChunkVector, UUID> chunkUUIDIndex = new HashMap<>();
+    private final HashMap<UUID, String> uuidIDIndex = new HashMap<>();
+    private final HashMap<String, UUID> nameUUIDIndex = new HashMap<>();
+    private final HashMap<ChunkVector, UUID> chunkUUIDIndex = new HashMap<>();
 
     public RegionDatabase()
     {}
@@ -43,9 +43,7 @@ public class RegionDatabase implements RegionIndex
             index.put(temp.getUUID(), temp);
             uuidIDIndex.put(temp.getUUID(), temp.getId());
             nameUUIDIndex.put(temp.getId(), temp.getUUID());
-            temp.getProtectedChunks().forEach(pc -> {
-                chunkUUIDIndex.put(new ChunkVector(pc.getX(), pc.getZ()), temp.getUUID());
-            });
+            temp.getProtectedChunks().forEach(pc -> chunkUUIDIndex.put(new ChunkVector(pc.getX(), pc.getZ()), temp.getUUID()));
         });
     }
 
@@ -55,9 +53,7 @@ public class RegionDatabase implements RegionIndex
         this.index.values().forEach(pcr -> {
             this.uuidIDIndex.put(pcr.getUUID(), pcr.getId());
             this.nameUUIDIndex.put(pcr.getId(), pcr.getUUID());
-            pcr.getProtectedChunks().forEach(pc -> {
-                this.chunkUUIDIndex.put(new ChunkVector(pc.getX(), pc.getZ()), pcr.getUUID());
-            });
+            pcr.getProtectedChunks().forEach(pc -> this.chunkUUIDIndex.put(new ChunkVector(pc.getX(), pc.getZ()), pcr.getUUID()));
         });
     }
 
@@ -172,9 +168,7 @@ public class RegionDatabase implements RegionIndex
             this.index.put(uuid, protection);
             this.uuidIDIndex.put(protection.getUUID(), protection.getId());
             this.nameUUIDIndex.put(protection.getId(), uuid);
-            protection.getProtectedChunks().forEach(protectedChunk -> {
-                chunkUUIDIndex.put(new ChunkVector(protectedChunk.getX(), protectedChunk.getZ()), protection.getUUID());
-            });
+            protection.getProtectedChunks().forEach(protectedChunk -> chunkUUIDIndex.put(new ChunkVector(protectedChunk.getX(), protectedChunk.getZ()), protection.getUUID()));
         }
 
         if (this.indexDifferences.containsKey(protection.getUUID()))
@@ -184,7 +178,6 @@ public class RegionDatabase implements RegionIndex
             return;
         }
         this.indexDifferences.put(uuid, new IndexDifference(protection, DifferenceType.ADDED));
-        return;
     }
 
     @Override
@@ -302,9 +295,7 @@ public class RegionDatabase implements RegionIndex
     @Override
     public void saveAll()
     {
-        this.index.values().forEach(pcr -> {
-            save(pcr);
-        });
+        this.index.values().forEach(this::save);
     }
 
     @Override

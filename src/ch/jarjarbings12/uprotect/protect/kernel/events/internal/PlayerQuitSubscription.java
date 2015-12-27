@@ -2,7 +2,7 @@ package ch.jarjarbings12.uprotect.protect.kernel.events.internal;
 
 import ch.jarjarbings12.uprotect.core.UProtect;
 import ch.jarjarbings12.uprotect.protect.kernel.events.module.low.AbstractEventSubscription;
-import ch.jarjarbings12.uprotect.protect.utils.exceptions.NotInUseException;
+import ch.jarjarbings12.uprotect.protect.kernel.events.module.low.SubscriptionPriority;
 import org.bukkit.event.Event;
 import org.bukkit.event.player.PlayerQuitEvent;
 
@@ -17,6 +17,11 @@ public class PlayerQuitSubscription extends AbstractEventSubscription
 {
     private final UUID subid = UUID.fromString("61b6a427-1b73-44b9-abfc-a844ecf78013");
 
+    public PlayerQuitSubscription()
+    {
+        setPriority(SubscriptionPriority.MONITOR);
+    }
+
     @Override
     public void call(Event event)
     {
@@ -28,7 +33,7 @@ public class PlayerQuitSubscription extends AbstractEventSubscription
     }
 
     @Override
-    public UUID getSubscriberID() throws NotInUseException
+    public UUID getSubscriberID()
     {
         return subid;
     }

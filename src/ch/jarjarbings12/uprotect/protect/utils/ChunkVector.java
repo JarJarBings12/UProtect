@@ -7,8 +7,8 @@ package ch.jarjarbings12.uprotect.protect.utils;
  */
 public class ChunkVector
 {
-    public int X;
-    public int Z;
+    public final int X;
+    public final int Z;
 
     public ChunkVector(int X, int Z)
     {

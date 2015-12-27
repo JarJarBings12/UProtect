@@ -21,7 +21,6 @@ public class UserCommands
             {
                 UserDBServices services = UProtect.getUProtect().getUProtectAPI().getServiceCenter().getDatabaseService().getDriverServices().getUserDBService();
                 sender.sendMessage("[UProtect] %s played %d".replace("%s", services.getPlayerUUIDService().getUserNameFor(UUID.fromString(args[1]))) .replace("%d", String.valueOf(services.getPlayTimeService().getPlayTime(UUID.fromString(args[1])))));
-                return;
             }
             else
             {
@@ -33,7 +32,6 @@ public class UserCommands
                     return;
                 }
                 sender.sendMessage("[UProtect] %s never played on this Server!");
-                return;
             }
         }
     }

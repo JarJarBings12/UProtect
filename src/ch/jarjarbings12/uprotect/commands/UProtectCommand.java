@@ -4,7 +4,7 @@ import org.bukkit.command.Command;
 import org.bukkit.command.CommandSender;
 
 /**
- * Created by tobias on 28.10.2015.
+ *
  */
 public class UProtectCommand extends Command
 {

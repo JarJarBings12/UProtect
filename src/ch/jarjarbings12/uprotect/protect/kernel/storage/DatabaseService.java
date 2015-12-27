@@ -17,7 +17,7 @@ import java.net.URLClassLoader;
  */
 public final class DatabaseService
 {
-    private DriverService driverService = new DriverService();
+    private final DriverService driverService = new DriverService();
     private UDriver driver = null;
 
     public DatabaseService()

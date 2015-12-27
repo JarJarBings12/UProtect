@@ -1,9 +1,8 @@
 <component name="ArtifactManager">
   <artifact type="jar" name="Addon">
-    <output-path>$PROJECT_DIR$/out/artifacts/Addon</output-path>
+    <output-path>$USER_HOME$/Desktop</output-path>
     <root id="archive" name="Addon.jar">
-      <element id="module-output" name="UPro-Sqlite-Driver" />
-      <element id="library" level="application" name="UProtect" />
+      <element id="module-output" name="UPro-SQLITE-Driver" />
     </root>
   </artifact>
 </component>

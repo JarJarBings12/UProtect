@@ -16,4 +16,8 @@ public interface PlayTimeService
     void setLastLogin(UUID uuid, long lastLogin);
 
     long getLastLogin(UUID uuid);
+
+    void setFirstLogin(UUID uuid, long firstLogin);
+
+    long getFirstLogin(UUID uuid);
 }
