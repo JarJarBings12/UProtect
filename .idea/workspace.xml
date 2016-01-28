@@ -6,76 +6,29 @@
     </artifacts-to-build>
   </component>
   <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/protect/kernel/events/internal/PlayerBreakSubscription.java" line="37" mnemonic="8" />
+    <bookmark url="file://$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/protect/kernel/events/internal/PlayerBreakSubscription.java" line="45" mnemonic="8" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="109a1794-a90b-48be-80d4-990bb4ca5d7a" name="Default" comment="">
-      <change type="DELETED" beforePath="E:\JAVA-WORKSPACE\UProtect\src\ch\jarjarbings12\uprotect\utils\test.java" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/protect/kernel/flags/module/low/AFlagEventSupport.java" afterPath="$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/protect/kernel/flags/module/low/AFlagEventSupport.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/protect/kernel/events/module/low/AbstractEventSubscription.java" afterPath="$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/protect/kernel/events/module/low/AbstractEventSubscription.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/artifacts/Addon.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/Addon.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/protect/kernel/world/chunk/AsyncRecodingThread.java" afterPath="$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/protect/kernel/world/chunk/AsyncRecodingThread.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/UPro-SQLITE-Driver/src/ch/jarjarbings12/uprotect/driver/BaseSqliteConnection.java" afterPath="$PROJECT_DIR$/UPro-SQLITE-Driver/src/ch/jarjarbings12/uprotect/driver/BaseSqliteConnection.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/protect/kernel/events/module/low/BasicSubscription.java" afterPath="$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/protect/kernel/events/module/low/BasicSubscription.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/protect/kernel/flags/module/high/BooleanFlag.java" afterPath="$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/protect/kernel/flags/module/high/BooleanFlag.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/protect/kernel/events/internal/ChunkGenSubscription.java" afterPath="$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/protect/kernel/events/internal/ChunkGenSubscription.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/commands/ChunkProtectCommands.java" afterPath="$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/commands/ChunkProtectCommands.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/protect/kernel/world/chunk/ChunkRestorer.java" afterPath="$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/protect/kernel/world/chunk/ChunkRestorer.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/protect/utils/ChunkVector.java" afterPath="$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/protect/utils/ChunkVector.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/protect/kernel/storage/DatabaseService.java" afterPath="$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/protect/kernel/storage/DatabaseService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/protect/kernel/flags/module/high/DefaultFlags.java" afterPath="$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/protect/kernel/flags/module/high/DefaultFlags.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/protect/kernel/storage/DriverModul/modul/low/DriverClassLoader.java" afterPath="$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/protect/kernel/storage/DriverModul/modul/low/DriverClassLoader.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/protect/kernel/storage/DriverModul/modul/high/DriverService.java" afterPath="$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/protect/kernel/storage/DriverModul/modul/high/DriverService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/protect/kernel/events/module/low/Events.java" afterPath="$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/protect/kernel/events/module/low/Events.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/protect/kernel/flags/module/low/Flag.java" afterPath="$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/protect/kernel/flags/module/low/Flag.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/protect/kernel/flags/module/high/FlagCallerService.java" afterPath="$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/protect/kernel/flags/module/high/FlagCallerService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/protect/kernel/flags/module/low/FlagClassLoader.java" afterPath="$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/protect/kernel/flags/module/low/FlagClassLoader.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/protect/kernel/flags/module/low/FlagInfo.java" afterPath="$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/protect/kernel/flags/module/low/FlagInfo.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/protect/kernel/flags/module/high/FlagService.java" afterPath="$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/protect/kernel/flags/module/high/FlagService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/protect/kernel/flags/module/low/properties/ini/IniGroup.java" afterPath="$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/protect/kernel/flags/module/low/properties/ini/IniGroup.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/protect/kernel/flags/module/low/properties/ini/IniReader.java" afterPath="$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/protect/kernel/flags/module/low/properties/ini/IniReader.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/protect/kernel/storage/DriverModul/modul/exceptions/InvalidClassPathException.java" afterPath="$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/protect/kernel/storage/DriverModul/modul/exceptions/InvalidClassPathException.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/protect/kernel/storage/DriverModul/modul/exceptions/InvalidModuleDescription.java" afterPath="$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/protect/kernel/storage/DriverModul/modul/exceptions/InvalidModuleDescription.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/protect/kernel/objects/MProtectedChunkRegion.java" afterPath="$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/protect/kernel/objects/MProtectedChunkRegion.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/protect/kernel/storage/DriverModul/modul/high/extensions/ModuleInitializer.java" afterPath="$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/protect/kernel/storage/DriverModul/modul/high/extensions/ModuleInitializer.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/UPro-SQLITE-Driver/src/ch/jarjarbings12/uprotect/driver/user/NameUUIDService.java" afterPath="$PROJECT_DIR$/UPro-SQLITE-Driver/src/ch/jarjarbings12/uprotect/driver/user/NameUUIDService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/protect/utils/exceptions/NotInUseException.java" afterPath="$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/protect/utils/exceptions/NotInUseException.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/protect/kernel/storage/DriverModul/modul/low/support/PlayTimeService.java" afterPath="$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/protect/kernel/storage/DriverModul/modul/low/support/PlayTimeService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/protect/kernel/events/internal/PlayerBreakSubscription.java" afterPath="$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/protect/kernel/events/internal/PlayerBreakSubscription.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/protect/kernel/events/internal/PlayerBuildSubscription.java" afterPath="$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/protect/kernel/events/internal/PlayerBuildSubscription.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/protect/kernel/events/internal/PlayerLoginSubscription.java" afterPath="$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/protect/kernel/events/internal/PlayerLoginSubscription.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/protect/kernel/events/internal/PlayerQuitSubscription.java" afterPath="$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/protect/kernel/events/internal/PlayerQuitSubscription.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/UPro-SQLITE-Driver/src/ch/jarjarbings12/uprotect/driver/PlayerService.java" afterPath="$PROJECT_DIR$/UPro-SQLITE-Driver/src/ch/jarjarbings12/uprotect/driver/PlayerService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/protect/kernel/storage/DriverModul/modul/low/properties/PropertyLoader.java" afterPath="$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/protect/kernel/storage/DriverModul/modul/low/properties/PropertyLoader.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/protect/kernel/objects/ProtectedChunkRegion.java" afterPath="$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/protect/kernel/objects/ProtectedChunkRegion.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/protect/kernel/world/chunk/RDB/Querys.java" afterPath="$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/protect/kernel/world/chunk/RDB/Querys.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/protect/kernel/world/chunk/RDB/RecordDatabase.java" afterPath="$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/protect/kernel/world/chunk/RDB/RecordDatabase.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/protect/kernel/world/chunk/CSF/RecordedChunk.java" afterPath="$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/protect/kernel/world/chunk/CSF/RecordedChunk.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/commands/subcommands/RegionCommands.java" afterPath="$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/commands/subcommands/RegionCommands.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/protect/kernel/managers/index/RegionDatabase.java" afterPath="$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/protect/kernel/managers/index/RegionDatabase.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/protect/kernel/managers/RegionManager.java" afterPath="$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/protect/kernel/managers/RegionManager.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/UPro-SQLITE-Driver/src/ch/jarjarbings12/uprotect/driver/RegionService.java" afterPath="$PROJECT_DIR$/UPro-SQLITE-Driver/src/ch/jarjarbings12/uprotect/driver/RegionService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/protect/kernel/services/ServiceCenter.java" afterPath="$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/protect/kernel/services/ServiceCenter.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/UPro-SQLITE-Driver/src/ch/jarjarbings12/uprotect/driver/SqliteDriver.java" afterPath="$PROJECT_DIR$/UPro-SQLITE-Driver/src/ch/jarjarbings12/uprotect/driver/SqliteDriver.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/protect/kernel/flags/module/high/StringFlag.java" afterPath="$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/protect/kernel/flags/module/high/StringFlag.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/protect/kernel/events/SubscriptionManager.java" afterPath="$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/protect/kernel/events/SubscriptionManager.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/protect/utils/UClassLoader.java" afterPath="$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/protect/utils/UClassLoader.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/UPro-SQLITE-Driver/UPro-SQLITE-Driver.iml" afterPath="$PROJECT_DIR$/UPro-SQLITE-Driver/UPro-SQLITE-Driver.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/core/UProtect.java" afterPath="$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/core/UProtect.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/UProtect.xml" afterPath="$PROJECT_DIR$/.idea/libraries/UProtect.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/core/UProtectAPI.java" afterPath="$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/core/UProtectAPI.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/commands/UProtectCommand.java" afterPath="$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/commands/UProtectCommand.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/protect/utils/exceptions/UnknownWorldException.java" afterPath="$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/protect/utils/exceptions/UnknownWorldException.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/commands/subcommands/UserCommands.java" afterPath="$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/commands/subcommands/UserCommands.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/protect/kernel/storage/DriverModul/modul/low/support/UserNameService.java" afterPath="$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/protect/kernel/storage/DriverModul/modul/low/support/UserNameService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/protect/kernel/world/chunk/WorldChunkService.java" afterPath="$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/protect/kernel/world/chunk/WorldChunkService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/protect/kernel/world/WorldServices.java" afterPath="$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/protect/kernel/world/WorldServices.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/codeStyleSettings.xml" afterPath="$PROJECT_DIR$/.idea/codeStyleSettings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/resources/flagconfig.ini" afterPath="$PROJECT_DIR$/src/resources/flagconfig.ini" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/resources/notices.txt" afterPath="$PROJECT_DIR$/src/resources/notices.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dictionaries/tobias.xml" afterPath="$PROJECT_DIR$/.idea/dictionaries/tobias.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/commands/subcommands/DatabaseCommands.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/lang/I18N.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/protect/kernel/services/DirectInput/DirectHandler.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/protect/kernel/services/DirectInput/DirectInput.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/protect/kernel/services/DirectInput/DirectInputSubscription.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/protect/kernel/services/future/CancelledFuture.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/protect/kernel/services/future/DelayedFuture.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/protect/kernel/services/future/ExecutedFuture.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/protect/kernel/services/future/Future.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/protect/kernel/services/future/TriggerCall.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/protect/kernel/services/objects/IDifferenceService.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/protect/kernel/services/objects/compressor.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/protect/kernel/services/objects/objectCompressor.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/protect/kernel/services/objects/objectSerialize.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/protect/kernel/services/objects/serialize.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/protect/kernel/services/processing/Processing.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/protect/kernel/world/TSchematic/v1/CSchematic.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MOVED" beforePath="E:\JAVA-WORKSPACE\UProtect\UPro-SQLITE-Driver\src\ch\jarjarbings12\uprotect\driver\user\PlayTimeService.java" afterPath="$PROJECT_DIR$/UPro-SQLITE-Driver/src/ch/jarjarbings12/uprotect/driver/user/UserPlayTimeService.java" />
     </list>
     <ignored path="UProtect.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -98,12 +51,12 @@
     <favorites_list name="UProtect" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="FlagCallerService.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/protect/kernel/flags/module/high/FlagCallerService.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="18" column="3" selection-start-line="18" selection-start-column="3" selection-end-line="18" selection-end-column="3" />
+              <caret line="17" column="3" selection-start-line="17" selection-start-column="3" selection-end-line="17" selection-end-column="3" />
               <folding>
                 <element signature="method#FlagCallerService#0;class#FlagCallerService#0" expanded="true" />
                 <element signature="method#call#0;class#FlagCallerService#0" expanded="true" />
@@ -126,10 +79,8 @@
         <entry file="file://$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/protect/kernel/flags/module/low/AFlagEventSupport.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="16" selection-end-column="49" />
-              <folding>
-                <element signature="method#AFlagEventSupport#0;class#AFlagEventSupport#0" expanded="true" />
-              </folding>
+              <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -138,25 +89,7 @@
         <entry file="file://$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/protect/kernel/flags/module/high/DefaultFlags.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="32" column="5" selection-start-line="32" selection-start-column="5" selection-end-line="32" selection-end-column="5" />
-              <folding>
-                <element signature="class#1382:2132" expanded="false" />
-                <element signature="class#2317:2723" expanded="false" />
-                <element signature="method#flagCall#0;class#2317:2723" expanded="true" />
-                <element signature="class#2914:3321" expanded="false" />
-                <element signature="method#flagCall#0;class#2914:3321" expanded="true" />
-                <element signature="class#3475:4163" expanded="false" />
-                <element signature="method#flagCall#0;class#3475:4163" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="german.properties" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/resources/languages/german.properties">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <caret line="30" column="5" selection-start-line="30" selection-start-column="5" selection-end-line="30" selection-end-column="5" />
               <folding />
             </state>
           </provider>
@@ -165,8 +98,8 @@
       <file leaf-file-name="flagconfig.ini" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/resources/flagconfig.ini">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.39005736">
-              <caret line="12" column="12" selection-start-line="12" selection-start-column="12" selection-end-line="12" selection-end-column="12" />
+            <state vertical-scroll-proportion="0.23541048">
+              <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
               <folding />
             </state>
           </provider>
@@ -186,7 +119,7 @@
         <entry file="file://$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/core/UProtect.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="46" column="72" selection-start-line="46" selection-start-column="72" selection-end-line="46" selection-end-column="72" />
+              <caret line="43" column="72" selection-start-line="43" selection-start-column="72" selection-end-line="43" selection-end-column="72" />
               <folding>
                 <element signature="method#initSource#0;class#UProtect#0" expanded="true" />
                 <element signature="method#initCommands#0;class#UProtect#0" expanded="true" />
@@ -290,6 +223,7 @@
     </option>
   </component>
   <component name="JsBuildToolGruntFileManager" detection-done="true" />
+  <component name="JsBuildToolPackageJson" detection-done="true" />
   <component name="JsGulpfileManager">
     <detection-done>true</detection-done>
   </component>
@@ -300,14 +234,11 @@
       </MavenGeneralSettings>
     </option>
   </component>
-  <component name="NamedScopeManager">
-    <order />
-  </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-8" />
+    <option name="x" value="1912" />
     <option name="y" value="-8" />
-    <option name="width" value="1456" />
-    <option name="height" value="876" />
+    <option name="width" value="1936" />
+    <option name="height" value="1176" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -352,9 +283,12 @@
       <autoscrollToSource />
       <autoscrollFromSource />
       <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
       <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
@@ -612,11 +546,15 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="resources" />
+              <option name="myItemId" value="ch" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="languages" />
+              <option name="myItemId" value="jarjarbings12" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="uprotect" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -645,10 +583,43 @@
               <option name="myItemId" value="uprotect" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="protect" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="UProtect" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="UProtect" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ch" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jarjarbings12" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="uprotect" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lang" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -741,6 +712,15 @@
       <option name="CLEAR_LOGCAT" value="false" />
       <option name="SHOW_LOGCAT_AUTOMATICALLY" value="true" />
       <option name="FILTER_LOGCAT_AUTOMATICALLY" value="true" />
+      <option name="SELECTED_CLOUD_MATRIX_CONFIGURATION_ID" value="0" />
+      <option name="SELECTED_CLOUD_MATRIX_PROJECT_ID" value="" />
+      <option name="SELECTED_CLOUD_DEVICE_CONFIGURATION_ID" value="0" />
+      <option name="SELECTED_CLOUD_DEVICE_PROJECT_ID" value="" />
+      <option name="IS_VALID_CLOUD_MATRIX_SELECTION" value="false" />
+      <option name="INVALID_CLOUD_MATRIX_SELECTION_ERROR" value="" />
+      <option name="IS_VALID_CLOUD_DEVICE_SELECTION" value="false" />
+      <option name="INVALID_CLOUD_DEVICE_SELECTION_ERROR" value="" />
+      <option name="CLOUD_DEVICE_SERIAL_NUMBER" value="" />
       <method />
     </configuration>
     <configuration default="true" type="AndroidTestRunConfigurationType" factoryName="Android Tests">
@@ -762,6 +742,15 @@
       <option name="CLEAR_LOGCAT" value="false" />
       <option name="SHOW_LOGCAT_AUTOMATICALLY" value="true" />
       <option name="FILTER_LOGCAT_AUTOMATICALLY" value="true" />
+      <option name="SELECTED_CLOUD_MATRIX_CONFIGURATION_ID" value="0" />
+      <option name="SELECTED_CLOUD_MATRIX_PROJECT_ID" value="" />
+      <option name="SELECTED_CLOUD_DEVICE_CONFIGURATION_ID" value="0" />
+      <option name="SELECTED_CLOUD_DEVICE_PROJECT_ID" value="" />
+      <option name="IS_VALID_CLOUD_MATRIX_SELECTION" value="false" />
+      <option name="INVALID_CLOUD_MATRIX_SELECTION_ERROR" value="" />
+      <option name="IS_VALID_CLOUD_DEVICE_SELECTION" value="false" />
+      <option name="INVALID_CLOUD_DEVICE_SELECTION_ERROR" value="" />
+      <option name="CLOUD_DEVICE_SERIAL_NUMBER" value="" />
       <method />
     </configuration>
     <configuration default="true" type="Applet" factoryName="Applet">
@@ -1050,11 +1039,12 @@
       <workItem from="1450980771866" duration="6496000" />
       <workItem from="1451049350633" duration="26673000" />
       <workItem from="1451176367057" duration="9691000" />
+      <workItem from="1454020079127" duration="159000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="359430000" />
+    <option name="totallyTimeSpent" value="359589000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1065,66 +1055,66 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1456" height="876" extended-state="6" />
-    <editor active="true" />
+    <frame x="1912" y="-8" width="1936" height="1176" extended-state="6" />
+    <editor active="false" />
     <layout>
-      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.1977507" sideWeight="0.49583334" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.29240862" sideWeight="0.42916667" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.12839738" sideWeight="0.5708333" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32923368" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2951389" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24947916" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2816167" sideWeight="0.42083332" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.16458334" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" x="3140" y="225" width="480" height="715" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Tool Output" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3298969" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Code Iris" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3296875" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39925024" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Preview" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.1977507" sideWeight="0.49583334" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.12839738" sideWeight="0.5708333" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32923368" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.29479167" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.16458334" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" x="3140" y="225" width="480" height="715" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Tool Output" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3298969" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24947916" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Code Iris" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296875" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.29240862" sideWeight="0.42916667" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39925024" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Preview" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2816167" sideWeight="0.42083332" order="1" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
-      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Tool Output" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.12839738" sideWeight="0.5708333" order="8" side_tool="true" content_ui="tabs" />
-      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24947916" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.16458334" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" x="3140" y="225" width="480" height="715" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Code Iris" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3296875" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.1977507" sideWeight="0.49583334" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.29240862" sideWeight="0.42916667" order="13" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Preview" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32923368" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3046875" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.34864104" sideWeight="0.42083332" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Tool Output" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.12839738" sideWeight="0.5708333" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24947916" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.16458334" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" x="3140" y="225" width="480" height="715" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Code Iris" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296875" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.1977507" sideWeight="0.49583334" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.29240862" sideWeight="0.42916667" order="13" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Preview" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32923368" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3046875" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.34864104" sideWeight="0.42083332" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
     </layout-to-restore>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -1169,13 +1159,18 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/protect/kernel/events/module/low/SubscriptionPriority.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="7" column="12" selection-start-line="7" selection-start-column="12" selection-end-line="7" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/protect/kernel/flags/module/high/StringFlag.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
-          <folding>
-            <element signature="method#applyForRegion#0;class#StringFlag#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1211,13 +1206,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="201" column="4" selection-start-line="201" selection-start-column="4" selection-end-line="201" selection-end-column="4" />
-          <folding>
-            <element signature="method#hasAccess#0;class#ProtectedChunkRegion#0" expanded="true" />
-            <element signature="method#removeMember#0;class#ProtectedChunkRegion#0" expanded="true" />
-            <element signature="method#hasFlag#0;class#ProtectedChunkRegion#0" expanded="true" />
-            <element signature="method#delete#0;class#ProtectedChunkRegion#0" expanded="true" />
-            <element signature="method#deserialize#0;class#ProtectedChunkRegion#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1239,9 +1227,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="14" column="33" selection-start-line="14" selection-start-column="33" selection-end-line="14" selection-end-column="33" />
-          <folding>
-            <element signature="method#execute#0;class#ChunkProtectCommands#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1256,10 +1241,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="23" column="23" selection-start-line="23" selection-start-column="23" selection-end-line="23" selection-end-column="23" />
-          <folding>
-            <element signature="method#init#0;class#DriverService#0" expanded="false" />
-            <element signature="method#initDrivers#0;class#DriverService#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1274,10 +1255,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="10" column="25" selection-start-line="10" selection-start-column="25" selection-end-line="10" selection-end-column="25" />
-          <folding>
-            <element signature="e#794#795#0" expanded="true" />
-            <element signature="e#833#834#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1299,7 +1276,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="15" column="30" selection-start-line="15" selection-start-column="30" selection-end-line="15" selection-end-column="30" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1307,7 +1283,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="16" column="32" selection-start-line="16" selection-start-column="32" selection-end-line="16" selection-end-column="32" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1350,9 +1325,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="72" column="4" selection-start-line="72" selection-start-column="4" selection-end-line="72" selection-end-column="4" />
-          <folding>
-            <element signature="docComment;method#getRegion#0;class#RegionDBService#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1360,7 +1332,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="7" column="12" selection-start-line="7" selection-start-column="12" selection-end-line="7" selection-end-column="12" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1368,34 +1339,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="53" column="19" selection-start-line="53" selection-start-column="19" selection-end-line="53" selection-end-column="19" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="docComment;class#AsyncRecodingThread#0" expanded="false" />
-            <element signature="method#AsyncRecodingThread#0;class#AsyncRecodingThread#0" expanded="false" />
-            <element signature="e#1082#1083#0" expanded="false" />
-            <element signature="e#1118#1119#0" expanded="false" />
-            <element signature="e#1162#1163#0" expanded="false" />
-            <element signature="e#1196#1197#0" expanded="false" />
-            <element signature="e#1250#1251#0" expanded="false" />
-            <element signature="e#1277#1278#0" expanded="false" />
-            <element signature="e#1316#1317#0" expanded="false" />
-            <element signature="e#1347#1348#0" expanded="false" />
-            <element signature="e#1460#1461#0" expanded="false" />
-            <element signature="e#1500#1501#0" expanded="false" />
-            <element signature="e#1534#1535#0" expanded="false" />
-            <element signature="e#1566#1567#0" expanded="false" />
-            <element signature="e#1604#1605#0" expanded="false" />
-            <element signature="e#1637#1638#0" expanded="false" />
-            <element signature="e#1675#1676#0" expanded="false" />
-            <element signature="e#1709#1710#0" expanded="false" />
-            <element signature="e#1761#1762#0" expanded="false" />
-            <element signature="e#1798#1799#0" expanded="false" />
-            <element signature="e#1847#1848#0" expanded="false" />
-            <element signature="e#1896#1897#0" expanded="false" />
-            <element signature="e#1964#1965#0" expanded="false" />
-            <element signature="e#1991#1992#0" expanded="false" />
-            <element signature="method#pause#0;class#AsyncRecodingThread#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1403,9 +1346,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="11" column="6" selection-start-line="11" selection-start-column="6" selection-end-line="11" selection-end-column="6" />
-          <folding>
-            <element signature="docComment;class#ValueFlag#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1413,22 +1353,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="19" column="32" selection-start-line="19" selection-start-column="32" selection-end-line="19" selection-end-column="32" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="docComment;class#DatabaseService#0" expanded="false" />
-            <element signature="method#DatabaseService#0;class#DatabaseService#0" expanded="false" />
-            <element signature="e#1048#1049#0" expanded="false" />
-            <element signature="e#1077#1078#0" expanded="false" />
-            <element signature="e#1123#1124#0" expanded="false" />
-            <element signature="e#1175#1176#0" expanded="false" />
-            <element signature="e#1226#1227#0" expanded="false" />
-            <element signature="e#1262#1263#0" expanded="false" />
-            <element signature="e#1315#1316#0" expanded="false" />
-            <element signature="e#1344#1345#0" expanded="false" />
-            <element signature="method#setup#0;class#DatabaseService#0" expanded="false" />
-            <element signature="method#shutdown#0;class#DatabaseService#0" expanded="false" />
-            <element signature="method#printDriverInfo#0;class#DatabaseService#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1436,70 +1360,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="27" column="49" selection-start-line="27" selection-start-column="49" selection-end-line="27" selection-end-column="49" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="docComment;class#RegionDatabase#0" expanded="false" />
-            <element signature="e#2799#2800#0" expanded="false" />
-            <element signature="e#2854#2855#0" expanded="false" />
-            <element signature="e#2921#2922#0" expanded="false" />
-            <element signature="e#2977#2978#0" expanded="false" />
-            <element signature="e#3040#3041#0" expanded="false" />
-            <element signature="e#3092#3093#0" expanded="false" />
-            <element signature="e#3155#3156#0" expanded="false" />
-            <element signature="e#3207#3208#0" expanded="false" />
-            <element signature="e#3430#3431#0" expanded="false" />
-            <element signature="e#3481#3482#0" expanded="false" />
-            <element signature="e#3557#3558#0" expanded="false" />
-            <element signature="e#3611#3612#0" expanded="false" />
-            <element signature="e#3693#3694#0" expanded="false" />
-            <element signature="e#3750#3751#0" expanded="false" />
-            <element signature="e#3828#3829#0" expanded="false" />
-            <element signature="e#3883#3884#0" expanded="false" />
-            <element signature="e#3957#3958#0" expanded="false" />
-            <element signature="e#4014#4015#0" expanded="false" />
-            <element signature="e#4421#4422#0" expanded="false" />
-            <element signature="e#4468#4469#0" expanded="false" />
-            <element signature="e#4531#4532#0" expanded="false" />
-            <element signature="e#4581#4582#0" expanded="false" />
-            <element signature="e#4650#4651#0" expanded="false" />
-            <element signature="e#4703#4704#0" expanded="false" />
-            <element signature="e#4768#4769#0" expanded="false" />
-            <element signature="e#4819#4820#0" expanded="false" />
-            <element signature="e#5882#5883#0" expanded="false" />
-            <element signature="e#5938#5939#0" expanded="false" />
-            <element signature="e#6031#6032#0" expanded="false" />
-            <element signature="e#6090#6091#0" expanded="false" />
-            <element signature="e#6881#6882#0" expanded="false" />
-            <element signature="e#6938#6939#0" expanded="false" />
-            <element signature="e#7004#7005#0" expanded="false" />
-            <element signature="e#7062#7063#0" expanded="false" />
-            <element signature="e#7423#7424#0" expanded="false" />
-            <element signature="e#7478#7479#0" expanded="false" />
-            <element signature="e#7544#7545#0" expanded="false" />
-            <element signature="e#7600#7601#0" expanded="false" />
-            <element signature="e#7901#7902#0" expanded="false" />
-            <element signature="e#7938#7939#0" expanded="false" />
-            <element signature="e#7991#7992#0" expanded="false" />
-            <element signature="e#8026#8027#0" expanded="false" />
-            <element signature="e#8081#8082#0" expanded="false" />
-            <element signature="e#8119#8120#0" expanded="false" />
-            <element signature="e#8180#8181#0" expanded="false" />
-            <element signature="e#8221#8222#0" expanded="false" />
-            <element signature="e#8278#8279#0" expanded="false" />
-            <element signature="e#8317#8318#0" expanded="false" />
-            <element signature="e#8364#8365#0" expanded="false" />
-            <element signature="e#8419#8420#0" expanded="false" />
-            <element signature="e#8497#8498#0" expanded="false" />
-            <element signature="e#8562#8563#0" expanded="false" />
-            <element signature="e#8980#8981#0" expanded="false" />
-            <element signature="e#9036#9037#0" expanded="false" />
-            <element signature="e#9118#9119#0" expanded="false" />
-            <element signature="e#9175#9176#0" expanded="false" />
-            <element signature="e#9825#9826#0" expanded="false" />
-            <element signature="e#9893#9894#0" expanded="false" />
-            <element signature="e#9949#9950#0" expanded="false" />
-            <element signature="e#9994#9995#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1507,9 +1367,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-          <folding>
-            <element signature="docComment;class#BasicHigh#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1517,7 +1374,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="36" column="9" selection-start-line="36" selection-start-column="9" selection-end-line="36" selection-end-column="9" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1525,7 +1381,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="32" column="4" selection-start-line="32" selection-start-column="4" selection-end-line="32" selection-end-column="4" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1533,14 +1388,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-0.059302326">
           <caret line="42" column="5" selection-start-line="42" selection-start-column="5" selection-end-line="42" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#load#0;class#IniReader#0" expanded="true" />
-            <element signature="e#914#915#0" expanded="true" />
-            <element signature="e#971#972#0" expanded="true" />
-            <element signature="method#parse#0;class#IniReader#0" expanded="true" />
-            <element signature="method#write#1;class#IniReader#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1548,11 +1395,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="24" column="50" selection-start-line="24" selection-start-column="50" selection-end-line="24" selection-end-column="50" />
-          <folding>
-            <element signature="e#873#874#0" expanded="true" />
-            <element signature="e#930#931#0" expanded="true" />
-            <element signature="method#call#0;class#PlayerLoginSubscription#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1560,12 +1402,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="113" column="123" selection-start-line="113" selection-start-column="123" selection-end-line="113" selection-end-column="123" />
-          <folding>
-            <element signature="method#FlagService#0;class#FlagService#0" expanded="true" />
-            <element signature="method#getFlagInfo#0;class#FlagService#0" expanded="true" />
-            <element signature="method#setup#0;class#FlagService#0" expanded="true" />
-            <element signature="method#loadedFlags#0;class#FlagService#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1573,7 +1409,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1581,19 +1416,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="89" column="71" selection-start-line="89" selection-start-column="71" selection-end-line="89" selection-end-column="71" />
-          <folding>
-            <element signature="method#SubscriptionManager#0;class#SubscriptionManager#0" expanded="true" />
-            <element signature="method#subscribe#1;class#SubscriptionManager#0" expanded="true" />
-            <element signature="method#unsubscribe#3;class#SubscriptionManager#0" expanded="true" />
-            <element signature="e#4473#4474#0" expanded="true" />
-            <element signature="e#4520#4521#0" expanded="true" />
-            <element signature="e#4574#4575#0" expanded="true" />
-            <element signature="e#4631#4632#0" expanded="true" />
-            <element signature="e#4711#4712#0" expanded="true" />
-            <element signature="e#4760#4761#0" expanded="true" />
-            <element signature="e#4821#4822#0" expanded="true" />
-            <element signature="e#4874#4875#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1601,7 +1423,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="16" column="46" selection-start-line="16" selection-start-column="46" selection-end-line="16" selection-end-column="46" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1610,9 +1431,7 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="22" column="34" selection-start-line="22" selection-start-column="34" selection-end-line="22" selection-end-column="34" />
           <folding>
-            <element signature="e#679#680#0" expanded="true" />
-            <element signature="e#720#721#0" expanded="true" />
-            <element signature="method#call#0;class#PlayerBreakSubscription#0" expanded="true" />
+            <element signature="method#PlayerBreakSubscription#0;class#PlayerBreakSubscription#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1621,7 +1440,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="27" column="22" selection-start-line="27" selection-start-column="22" selection-end-line="27" selection-end-column="22" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1629,10 +1447,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-          <folding>
-            <element signature="method#onEntityDamageEntityEvent#0;class#EntityEvents#0" expanded="true" />
-            <element signature="method#onEntityDamageBlockEvent#0;class#EntityEvents#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1640,7 +1454,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1671,17 +1484,15 @@
     <entry file="file://$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/protect/kernel/flags/module/low/AFlagEventSupport.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="16" selection-end-column="49" />
-          <folding>
-            <element signature="method#AFlagEventSupport#0;class#AFlagEventSupport#0" expanded="true" />
-          </folding>
+          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/protect/kernel/flags/module/high/FlagCallerService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="18" column="3" selection-start-line="18" selection-start-column="3" selection-end-line="18" selection-end-column="3" />
+          <caret line="17" column="3" selection-start-line="17" selection-start-column="3" selection-end-line="17" selection-end-column="3" />
           <folding>
             <element signature="method#FlagCallerService#0;class#FlagCallerService#0" expanded="true" />
             <element signature="method#call#0;class#FlagCallerService#0" expanded="true" />
@@ -1692,23 +1503,7 @@
     <entry file="file://$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/protect/kernel/flags/module/high/DefaultFlags.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="32" column="5" selection-start-line="32" selection-start-column="5" selection-end-line="32" selection-end-column="5" />
-          <folding>
-            <element signature="class#1382:2132" expanded="false" />
-            <element signature="class#2317:2723" expanded="false" />
-            <element signature="method#flagCall#0;class#2317:2723" expanded="true" />
-            <element signature="class#2914:3321" expanded="false" />
-            <element signature="method#flagCall#0;class#2914:3321" expanded="true" />
-            <element signature="class#3475:4163" expanded="false" />
-            <element signature="method#flagCall#0;class#3475:4163" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/resources/languages/german.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <caret line="30" column="5" selection-start-line="30" selection-start-column="5" selection-end-line="30" selection-end-column="5" />
           <folding />
         </state>
       </provider>
@@ -1717,14 +1512,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/ch/jarjarbings12/uprotect/core/UProtect.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="46" column="72" selection-start-line="46" selection-start-column="72" selection-end-line="46" selection-end-column="72" />
+          <caret line="43" column="72" selection-start-line="43" selection-start-column="72" selection-end-line="43" selection-end-column="72" />
           <folding>
             <element signature="method#initSource#0;class#UProtect#0" expanded="true" />
             <element signature="method#initCommands#0;class#UProtect#0" expanded="true" />
@@ -1735,8 +1529,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/resources/flagconfig.ini">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.39005736">
-          <caret line="12" column="12" selection-start-line="12" selection-start-column="12" selection-end-line="12" selection-end-column="12" />
+        <state vertical-scroll-proportion="0.23541048">
+          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
           <folding />
         </state>
       </provider>
